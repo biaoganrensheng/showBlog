@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-21T00:45:38+08:00</updated><id>http://localhost:4000/</id><title type="html">Blog - 努力的人生</title><subtitle>面向标杆直奔
+</subtitle><author><name>nldrs</name></author><entry><title type="html">前端相关</title><link href="http://localhost:4000/web/" rel="alternate" type="text/html" title="前端相关" /><published>2018-08-12T18:50:00+08:00</published><updated>2018-08-12T18:50:00+08:00</updated><id>http://localhost:4000/web</id><content type="html" xml:base="http://localhost:4000/web/">&lt;p&gt;前端相关&lt;/p&gt;
+
+&lt;h3 id=&quot;前端相关&quot;&gt;前端相关&lt;/h3&gt;</content><author><name>nldrs</name></author><category term="前端" /><summary type="html">前端相关</summary></entry><entry><title type="html">react redux 基本用法</title><link href="http://localhost:4000/react1/" rel="alternate" type="text/html" title="react redux 基本用法" /><published>2018-07-10T19:10:00+08:00</published><updated>2018-07-10T19:10:00+08:00</updated><id>http://localhost:4000/react1</id><content type="html" xml:base="http://localhost:4000/react1/">&lt;h2 id=&quot;1store&quot;&gt;1.Store&lt;/h2&gt;
+&lt;p&gt;Store 就是保存数据的地方，你可以把它看成一个容器。整个应用只能有一个 Store。
+Redux 提供createStore这个函数，用来生成 Store。Redux 提供createStore这个函数，用来生成 Store。&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createStore&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'redux'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;上面代码中，createStore函数接受另一个函数作为参数，返回新生成的 Store 对象。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2state&quot;&gt;2.State&lt;/h2&gt;
+
+&lt;p&gt;Store对象包含所有数据。如果想得到某个时点的数据，就要对 Store 生成快照。这种时点的数据集合，就叫做 State。
+当前时刻的 State，可以通过store.getState()拿到。&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createStore&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'redux'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Redux 规定， 一个 State 对应一个 View。只要 State 相同，View 就相同。你知道 State，就知道 View 是什么样，反之亦然。&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;3action&quot;&gt;3.Action&lt;/h2&gt;
+
+&lt;p&gt;State 的变化，会导致 View 的变化。但是，用户接触不到 State，只能接触到 View。所以，State 的变化必须是 View 导致的。Action 就是 View 发出的通知，表示 State 应该要发生变化了。
+Action 是一个对象。其中的type属性是必须的，表示 Action 的名称。其他属性可以自由设置，社区有一个规范可以参考。&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'ADD_TODO'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Learn Redux'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;上面代码中，Action 的名称是ADD_TODO，它携带的信息是字符串Learn Redux。
+可以这样理解，Action 描述当前发生的事情。改变 State 的唯一办法，就是使用 Action。它会运送数据到 Store。&lt;/p&gt;
+
+&lt;h2 id=&quot;4-action-creator&quot;&gt;4 .Action Creator&lt;/h2&gt;
+
+&lt;p&gt;View 要发送多少种消息，就会有多少种 Action。如果都手写，会很麻烦。可以定义一个函数来生成 Action，这个函数就叫 Action Creator。&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ADD_TODO&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'添加 TODO'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;addTodo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ADD_TODO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;addTodo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Learn Redux'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;上面代码中，addTodo函数就是一个 Action Creator。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;5-storedispatch5-storedispatch&quot;&gt;5 .store.dispatch()5 .store.dispatch()&lt;/h2&gt;
+
+&lt;p&gt;store.dispatch()是 View 发出 Action 的唯一方法。&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createStore&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'redux'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'ADD_TODO'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Learn Redux'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;上面代码中，store.dispatch接受一个 Action 对象作为参数，将它发送出去。
+结合 Action Creator，这段代码可以改写如下。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addTodo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Learn Redux'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;6-reducer&quot;&gt;6. Reducer&lt;/h2&gt;
+
+&lt;p&gt;Store 收到 Action 以后，必须给出一个新的 State，这样 View 才会发生变化。这种 State 的计算过程就叫做 Reducer。
+Reducer 是一个函数，它接受 Action 和当前 State 作为参数，返回一个新的 State。&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reducer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;};&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;整个应用的初始状态，可以作为 State 的默认值。下面是一个实际的例子。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defaultState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reducer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defaultState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'ADD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}};&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reducer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'ADD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;上面代码中，reducer函数收到名为ADD的 Action 以后，就返回一个新的 State，作为加法的计算结果。其他运算的逻辑（比如减法），也可以根据 Action 的不同来实现。
+实际应用中，Reducer 函数不用像上面这样手动调用，store.dispatch方法会触发 Reducer 的自动执行。为此，Store 需要知道 Reducer 函数，做法就是在生成 Store 的时候，将 Reducer 传入createStore方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createStore&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'redux'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reducer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;上面代码中，createStore接受 Reducer 作为参数，生成一个新的 Store。以后每当store.dispatch发送过来一个新的 Action，就会自动调用 Reducer，得到新的 State。
+为什么这个函数叫做 Reducer 呢？因为它可以作为数组的reduce方法的参数。请看下面的例子，一系列 Action 对象按照顺序作为一个数组。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;actions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'ADD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'ADD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'ADD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;total&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reducer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 3&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;上面代码中，数组actions表示依次有三个 Action，分别是加0、加1和加2。数组的reduce方法接受 Reducer 函数作为参数，就可以直接得到最终的状态3。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;7-纯函数&quot;&gt;7 .纯函数&lt;/h2&gt;
+
+&lt;p&gt;Reducer 函数最重要的特征是，它是一个纯函数。也就是说，只要是同样的输入，必定得到同样的输出。
+纯函数是函数式编程的概念，必须遵守以下一些约束。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;不得改写参数&lt;/li&gt;
+    &lt;li&gt;不能调用系统 I/O 的API&lt;/li&gt;
+    &lt;li&gt;不能调用Date.now()或者Math.random()等不纯的方法，因为每次会得到不一样的结果&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;由于 Reducer 是纯函数，就可以保证同样的State，必定得到同样的 View。但也正因为这一点，Reducer 函数里面不能改变 State，必须返回一个全新的对象，请参考下面的写法。&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// State 是一个对象&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reducer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({},&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;thingToChange&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 或者&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;newState&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// State 是一个数组&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reducer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[...&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newItem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;最好把 State 对象设成只读。你没法改变它，要得到新的 State，唯一办法就是生成一个新对象。这样的好处是，任何时候，与某个 View 对应的 State 总是一个不变的对象。&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>nldrs</name></author><category term="React" /><category term="redux" /><summary type="html">1.Store Store 就是保存数据的地方，你可以把它看成一个容器。整个应用只能有一个 Store。 Redux 提供createStore这个函数，用来生成 Store。Redux 提供createStore这个函数，用来生成 Store。</summary></entry><entry><title type="html">科目三笔记二</title><link href="http://localhost:4000/car-yangjiaolian/" rel="alternate" type="text/html" title="科目三笔记二" /><published>2018-06-28T11:46:00+08:00</published><updated>2018-06-28T11:46:00+08:00</updated><id>http://localhost:4000/car-yangjiaolian</id><content type="html" xml:base="http://localhost:4000/car-yangjiaolian/">&lt;p&gt;吉安县成达考场科目三新规标准操作方法和注意事项&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. 上车准备&lt;/strong&gt;  &lt;br /&gt;
+从一上车，关闭车门，调整座椅，靠背，有转灯也要关闭，拨到近光灯，前照灯是要归零。然后摇旗，安全员就会按考试系统，隔几秒就会报，正在获取学员考试信息，请耐心等待，再过几秒钟之后就会报开始考试，当听到“开始考试”四个字，就可以侧头打开车门下去并关闭车门，逆时针绕车一圈按两个感应器，再上车，打开车门并关闭车门，再系安全带，一系安全带就会报“请开启前照灯”。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. 起步考试&lt;/strong&gt; &lt;br /&gt;
+当做完夜间模拟考试，要关闭所有灯光，然后就会报“请起步，继续完成考试”，接下来就是起步5项，少一项最少也要扣10分，少松手刹扣100分，所以起步时要养成数12345，否则就很难考 &lt;br /&gt;
+一、打转向灯 &lt;br /&gt;
+二，打喇叭 &lt;br /&gt;
+三，挂一挡 &lt;br /&gt;
+四，松手刹 &lt;br /&gt;
+五、侧头观看左后视镜，安全情况下再起步 &lt;br /&gt;
+&lt;strong&gt;起步时正确的操作方法:&lt;/strong&gt; 先将离合器用三到四秒的时间，抬到转速表指针往下动或听到啫啫时，松刹车，离合器保持不动，等车走4秒时间，松开离合器，这样车子就可以平稳起步，也不会熄火，熄火是最容易扣分的项目&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3.通过公共汽车站&lt;/strong&gt;  &lt;br /&gt;
+不会报指令，车头进入公共汽车站轻点刹车然后左右摆头就完成&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.直线行驶&lt;/strong&gt; &lt;br /&gt;
+当第一个公共汽车站完成后，就要坐正看远，并且尽快调整车子在路中间行驶，当听到报请保持直线行驶时，油门加到35码以上40码以下，知前眼睛要看正前方100米以外最好，千万不要看后视镜和左右两边，始终看正前方，如车子歪了一点点要及时修正，如不及时修正会报“考试不合格”方向盘不要打太大，车子不然左右偏移大于20厘米，直线行驶里面只要有一秒钟达到35码以上40码以下极可。
+注意，这项是打耙最多的项目&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5.第一个掉头&lt;/strong&gt;  &lt;br /&gt;
+第一个掉头，听到结束直线之后，就要开启转向灯，否则报了前方路口请掉头再打转向灯就来不及了，然后当车头碰到实线区把离合器踩到底再轻点刹车换2挡，然后把离合器和油门，刹车全松掉，2挡怠速掉头注意，掉头时转向灯打错了，没有打或没打到底都是扣100分。掉头时要记得背口诀“动手动脚动挡”动手就是打转向灯，动脚就是要先把离合踩到底再轻点刹车，动挡就是换二挡&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6.加减档&lt;/strong&gt; &lt;br /&gt;
+掉完头过来就是加减挡，千万不要换3挡，一旦换了3挡报了加减挡操作要及时换回2挡才能补就，因为加减挡是两加一减才是加减挡项目，也就是2加3，3加4，4减3。2加3，3加4一定要把怠数加到1500一2000转之间换挡，这样速度容易提起，否则不够距离做不完:&lt;br /&gt;
+一，每次加挡前要先把离合器踩到底，再换挡，否则就会报不按指令平稳加减挡，考试不合格 &lt;br /&gt;
+二，2挡最好加到抬数1500以上2000转以进3挡 &lt;br /&gt;
+三，3挡最好加到1500以上2000以下进4挡 &lt;br /&gt;
+四，进入4挡后，加速到上了40码就踩刹车，再踩离合进3挡 &lt;br /&gt;
+五，做加减挡操作时，要记住离合器要快速踩到底，再动挡，换挡时速度不要过快或过重，否则会报“不听指令平稳加减挡”，但油门要加到最大，否则怕完成不了 &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7.通过公共汽车&lt;/strong&gt;  &lt;br /&gt;
+不会报，同上一个车站一样&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8.通过直行路口&lt;/strong&gt; &lt;br /&gt;
+当一听到“报通过直行路口，等指令报完轻点刹车，然后左右摆头就行&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;9.通过公共汽车站&lt;/strong&gt; &lt;br /&gt;
+通过公共汽车站(不会报指令，车头进入公共汽车站轻点刹车，然后左右摆头，打右转向灯4秒后自行变右道就行&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;10.前方路口右转&lt;/strong&gt; &lt;br /&gt;
+当听到前方路口右转，打右转向灯，当车子越过第二根灯管时把离合器踩到底，轻点刹车，换二挡，用2挡右转，注意右转进口和出口不能停车，否则就会报“阻碍交通行驶考试不合格”，出右转路口时，摆正车子提速到1500转以上2000转以下进入3挡。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;11.通过人行横道&lt;/strong&gt; &lt;br /&gt;
+通过人行横道(不会报指令，离人行横道线5一10米左右轻点刹车再左右摆头就完成&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;12.会车&lt;/strong&gt; &lt;br /&gt;
+报完会车指令，轻点刹车，然后左右摆头就完成&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;13.超越前方车辆&lt;/strong&gt; &lt;br /&gt;
+注意要提前打转向灯，结束会车后就开启超车转向灯，当报完超越前方车辆时，这样就可以侧头安全情况下，方向盘转向孤度最好不要大于30度，然后侧头转到左车道，当车子摆正时，打右转向灯，这时方向要保持直行，然后数4秒侧头转到右车道， 超车项目最好保持20一24码速度完成最好，因为超车只有80米的距离，如速度过快就完成不了&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;14.第二个掉头&lt;/strong&gt; &lt;br /&gt;
+当听到前方路口请掉头  &lt;br /&gt;
+一，提前打转向灯，并打到底，否则不打或没打到底都是扣100分 &lt;br /&gt;
+二，打完转向灯，等车子进入2个掉头箭头中间极可把离合器踩到底再点刹换2挡，2挡侧头怠速掉头，注意千万不要压边上实线和中间的双黄线，虚线可短暂的压 &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;15.变更车道&lt;/strong&gt; &lt;br /&gt;
+当听到变更车道，先打转向灯，数4秒，侧头安全变更车道&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;16.通过人行横道&lt;/strong&gt;  &lt;br /&gt;
+通过人行横道(不会报指令，离人行横道5一10米左右轻点刹车，再左右摆头&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;17.通过学校区域&lt;/strong&gt;  &lt;br /&gt;
+通过学校区域(不会报,指令，接近学校区域牌子轻点刹车再左右摆头就完成。注意时速不能高于30码，否则不合格&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;18.前方路口左转&lt;/strong&gt; &lt;br /&gt;
+一、当听到前方路口左转，先打转向灯 &lt;br /&gt;
+二，保持24码左右跳过离减速带把离合器踩到底，当车子越过减速带轻点刹车，将车停到箭头上，注意看红绿灯，趟红灯不合格并且要在信号灯左边左转
+注意:不敢前面是红灯还是绿灯都要停，当是绿灯时也要等下一个绿灯，因为绿灯只有10秒左右，否则不等就来不及了，如是绿灯起步熄火，最好再等下一个绿灯走&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;19.靠边停车&lt;/strong&gt; &lt;br /&gt;
+一，左转过来就是靠边停车，当车子越过路口，摆正车子提速到15码左右进2挡，最好走中间车道，然后会报靠边停车，打转向灯数4秒后，注意:打转灯同时要保持方向直行4秒后，才能转动方向，否则转了就不合格，然后4秒后侧头观看右车道安全情况下右转，摆正车子最好用1档怠速修线，如修线还不确定标不标准了，停下来再看右后视镜确认一下，如不标准可以继续修，等车修好为止，注意要150米以内完成  &lt;br /&gt;
+二，靠边停车要数123456六项，否则不是扣10分就是100分  &lt;br /&gt;
+三，五项分别是: &lt;br /&gt;
+1.放空挡  &lt;br /&gt;
+2.拉手刹  &lt;br /&gt;
+3.熄火  &lt;br /&gt;
+4.松离合器和脚刹  &lt;br /&gt;
+5.解安全带  &lt;br /&gt;
+6.开关车门  &lt;br /&gt;
+注意一定要按顺序操作。然后就报等考官综合评判，考试合格，等安全员下车学员才可以下车，否则报了合格也无效，因为要上传科三成绩到省考试网时，需要几分钟时间，平时练车时要等教练员说你下车才能下车，一定要养成好习惯，否则后果自负&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;21.扣分项目&lt;/strong&gt; &lt;br /&gt;
+1，考试时不关手机不合格 &lt;br /&gt;
+2，变更车道，超车时方向过大不合格 &lt;br /&gt;
+3，所有路口不能停车，前方路口右转进口出口不能停车 &lt;br /&gt;
+4，超车道不能停车 &lt;br /&gt;
+5，报了加减挡操作不能停车 &lt;br /&gt;
+6，带挡打火不合格 &lt;br /&gt;
+7，越级加挡不合格 &lt;br /&gt;
+8，全程压路边实线或路中间双黄线不合格 &lt;br /&gt;
+9，车子停在停止线上和人行横道线上不合格 &lt;br /&gt;
+10，换挡时离合器没踩到底就挂挡或2次挂挡不入不合格 &lt;br /&gt;
+11，没有关闭转向灯就做夜间模似考试不合格 &lt;br /&gt;
+12，除转向灯外，其他项目抢指令做项目不合格 &lt;br /&gt;
+13，考试结束时，安全员没有下车自己就下车不合格 &lt;br /&gt;
+14，做上车准备时没听到”开始考试”就下车考试不合格 &lt;br /&gt;
+15，所有转向灯没有打，打错了或没有打到底未满3秒不合格，还有转向灯完成到了下一个项目报时没有回掉也是考试不合格 &lt;br /&gt;
+16，车子在运行过程中没有松手刹考试不合格 &lt;br /&gt;
+17，两次挂档不入不合格 &lt;br /&gt;
+18，空挡滑行不合格 &lt;br /&gt;
+19，遇到危险不提前踩离合和刹车，等安全员踩刹车不合格。注意停车时最好要和前车保持5米以上 &lt;br /&gt;
+20，1挡一次性行驶不能超过100米，2挡一次性行驶不能超过200米，否则不合格 &lt;br /&gt;
+21，熄火一次扣10分 &lt;br /&gt;
+22，在开车过程中看挡位挂挡扣10分 &lt;br /&gt;
+23，挡位与速度不匹配扣10分 &lt;br /&gt;
+24，没松手刹起 动时3秒以内及时纠正扣10分 &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;注意:&lt;/strong&gt; &lt;br /&gt;
+一，所有变更车道，打了转向灯要保持4秒直行后才可打方向更道，尤其是靠边停车打了转向灯没有保持4秒直行就转动方向是不合格最多的一项 &lt;br /&gt;
+二，所有变更车道，变到另一个车道时，车头要在另一个车道的三分之二以上回掉了转向灯才行，否则不合格 &lt;br /&gt;
+三，全程不能低于20码，最好走20一25码最好。 &lt;br /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Other" /><summary type="html">吉安县成达考场科目三新规标准操作方法和注意事项</summary></entry><entry><title type="html">科三笔记一</title><link href="http://localhost:4000/car-liujiaolian/" rel="alternate" type="text/html" title="科三笔记一" /><published>2018-06-28T11:46:00+08:00</published><updated>2018-06-28T11:46:00+08:00</updated><id>http://localhost:4000/car-liujiaolian</id><content type="html" xml:base="http://localhost:4000/car-liujiaolian/">&lt;p&gt;成达科三注意事项和先后顺序流程表 &lt;br /&gt;
+&lt;strong&gt;1，&lt;/strong&gt; 起步 &lt;br /&gt;
+&lt;strong&gt;2，&lt;/strong&gt; 通过公共汽车站(不会报指令，接近站台点刹完成) &lt;br /&gt;
+&lt;strong&gt;3，&lt;/strong&gt; 直线行驶(一报直线行驶加速至接近31一35码后，保持25码左右直线行驶，并且左右不然偏差30厘米以上) &lt;br /&gt;
+&lt;strong&gt;4，&lt;/strong&gt; 掉头 &lt;br /&gt;
+&lt;strong&gt;5，&lt;/strong&gt; 加减档，(转速1500转左右进3档，转速1500转左右进4档，进4档后加速至40码以上指针超40码，踩刹车至40以下松掉刹车，踩离合进3挡就完成) &lt;br /&gt;
+&lt;strong&gt;6，&lt;/strong&gt; 通过公交车站(同上一个一样) &lt;br /&gt;
+&lt;strong&gt;7，&lt;/strong&gt; 通过直行路口 &lt;br /&gt;
+&lt;strong&gt;8，&lt;/strong&gt; 通过公共汽车站(同上一个一样完成后，打右转向灯4秒以后自行变右道) &lt;br /&gt;
+&lt;strong&gt;9，&lt;/strong&gt; 前方路口右转 &lt;br /&gt;
+&lt;strong&gt;10，&lt;/strong&gt; 通过人行横道(不会报指令，离人行横道3-5米左右点刹完成 &lt;br /&gt;
+&lt;strong&gt;11，&lt;/strong&gt; 会车指（令报完点刹车完成） &lt;br /&gt;
+&lt;strong&gt;12，&lt;/strong&gt; 超越前方车辆(不会报驶回原车道)机动车会车结束左转向调正方向右转向过灯柱回原车道 &lt;br /&gt;
+&lt;strong&gt;13，&lt;/strong&gt; 掉头 &lt;br /&gt;
+&lt;strong&gt;14，&lt;/strong&gt; 变更车道 &lt;br /&gt;
+&lt;strong&gt;15，&lt;/strong&gt; 通过学校区域(不会报指令，接近学校区域牌子轻点刹车完成，并且点刹完不然超过30码) &lt;br /&gt;
+&lt;strong&gt;16，&lt;/strong&gt; 通过人行横道(离人行横道3-5米左右点刹完成) &lt;br /&gt;
+&lt;strong&gt;17，&lt;/strong&gt; 前方路口左转(要在交通指示灯左边行驶) &lt;br /&gt;
+&lt;strong&gt;18，&lt;/strong&gt; 靠边停车(报完指令150米以内完成，并且停示时前后轮不能大于50厘米) &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/other/jiaolian/1.jpg&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Other" /><summary type="html">成达科三注意事项和先后顺序流程表 1， 起步 2， 通过公共汽车站(不会报指令，接近站台点刹完成) 3， 直线行驶(一报直线行驶加速至接近31一35码后，保持25码左右直线行驶，并且左右不然偏差30厘米以上) 4， 掉头 5， 加减档，(转速1500转左右进3档，转速1500转左右进4档，进4档后加速至40码以上指针超40码，踩刹车至40以下松掉刹车，踩离合进3挡就完成) 6， 通过公交车站(同上一个一样) 7， 通过直行路口 8， 通过公共汽车站(同上一个一样完成后，打右转向灯4秒以后自行变右道) 9， 前方路口右转 10， 通过人行横道(不会报指令，离人行横道3-5米左右点刹完成 11， 会车指（令报完点刹车完成） 12， 超越前方车辆(不会报驶回原车道)机动车会车结束左转向调正方向右转向过灯柱回原车道 13， 掉头 14， 变更车道 15， 通过学校区域(不会报指令，接近学校区域牌子轻点刹车完成，并且点刹完不然超过30码) 16， 通过人行横道(离人行横道3-5米左右点刹完成) 17， 前方路口左转(要在交通指示灯左边行驶) 18， 靠边停车(报完指令150米以内完成，并且停示时前后轮不能大于50厘米)</summary></entry><entry><title type="html">Git 命令行</title><link href="http://localhost:4000/git/" rel="alternate" type="text/html" title="Git 命令行" /><published>2018-06-26T08:41:00+08:00</published><updated>2018-06-26T08:41:00+08:00</updated><id>http://localhost:4000/git</id><content type="html" xml:base="http://localhost:4000/git/">&lt;p&gt;Git命令行比打开客户端操作更快捷，持续更新。&lt;/p&gt;
+
+&lt;h2 id=&quot;远程仓库相关命令&quot;&gt;远程仓库相关命令&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;克隆项目
+    &lt;blockquote&gt;
+      &lt;p&gt;git clone https://github.com/leach-chen/leach-chen.github.io.git&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;查看远程仓库
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git remote -v&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;添加远程仓库
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git remote add [name] [url]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;删除远程仓库
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git remote rm [name]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;修改远程仓库
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git remote set-url –push[name][newUrl]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;拉取远程仓库
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git pull [remoteName] [localBranchName]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;添加更新
+    &lt;blockquote&gt;
+      &lt;p&gt;git add .  //.代表添加文件夹下所有文件&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;提交更新
+    &lt;blockquote&gt;
+      &lt;p&gt;git commit -m “first commit” //引号里面的为注释&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;推送远程仓库
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git push [remoteName] [localBranchName]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/7182b2faab84&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;免密码&lt;/a&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;方式一（该方式设置了我不知道怎么取消记住密码）：&lt;br /&gt;
+git remote set-url origin https://yourname:password@leach-chen/leach-chen.github.io.git @后面是仓库地址&lt;br /&gt; &lt;br /&gt;
+方式二（该方式设置了，删除.git-credentials文件，即可取消记住密码）：&lt;br /&gt;
+ 在Git bash命令行里面输入：touch .git-credentials &lt;br /&gt;
+ 然后会在 ：C:\Users\你的用户名 目录下生成.git-credentials文件，打开该文件 &lt;br /&gt;
+ 输入：https://yourname:password@github.com,@后面跟的是域名&lt;br /&gt;
+ 然后执行：git config –global credential.helper store &lt;br /&gt;
+ 记住密码（默认15分钟）：git config –global credential.helper cache &lt;br /&gt;
+ 自定义存储时间：git config credential.helper ‘cache –timeout=3600’ &lt;br /&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;设置用户名及邮箱
+    &lt;blockquote&gt;
+      &lt;p&gt;git config –global user.name “Your Name” &lt;br /&gt;
+git config –global user.email you@example.com&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;分支branch操作相关命令&quot;&gt;分支(branch)操作相关命令&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;查看本地分支
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git branch&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;查看本地分支及映射
+    &lt;blockquote&gt;
+      &lt;p&gt;git branch -a&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;查看远程分支
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git branch -r&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;创建本地分支
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git branch [name] —-注意新分支创建后不会自动切换为当前分支&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;切换分支
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git checkout [name]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;创建新分支并立即切换到新分支
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git checkout -b [name]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;删除分支
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git branch -d [name] —- -d选项只能删除已经参与了合并的分支，对于未有合并的分支是无法删除的。如果想强制删除一个分支，可以使用-D选项&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;合并分支
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git merge [name] —-将名称为[name]的分支与当前分支合并&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;创建远程分支(本地分支push到远程)
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git push origin [name]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;删除远程分支
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git push origin :heads/[name]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;我从master分支创建了一个issue5560分支，做了一些修改后，使用git push origin master提交，但是显示的结果却是’Everything up-to-date’，发生问题的原因是git push origin master 在没有track远程分支的本地分支中默认提交的master分支，因为master分支默认指向了origin 1. master 分支，这里要使用git push origin issue5560：master 就可以把issue5560推送到远程的master分支了。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;如果想把本地的某个分支test提交到远程仓库，并作为远程仓库的master分支，或者作为另外一个名叫test的分支，那么可以这么做。
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git push origin test:master // 提交本地test分支作为远程的master分支 //好像只写这一句，远程的github就会自动创建一个test分支
+$ git push origin test:test // 提交本地test分支作为远程的test分支&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;如果想删除远程的分支呢？类似于上面，如果:左边的分支为空，那么将删除:右边的远程的分支。
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git push origin :test // 刚提交到远程的test将被删除，但是本地还会保存的，不用担心&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;版本tag操作相关命令&quot;&gt;版本(tag)操作相关命令&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;查看版本
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git tag&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;创建版本
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git tag [name]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;删除版本
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git tag -d [name]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;查看远程版本
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git tag -r&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;创建远程版本(本地版本push到远程)
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git push origin [name]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;删除远程版本
+    &lt;blockquote&gt;
+      &lt;p&gt;$ git push origin :refs/tags/[name]&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;推送所有tag
+    &lt;blockquote&gt;
+      &lt;p&gt;git push origin –tags&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;tag迁出branch：
+    &lt;blockquote&gt;
+      &lt;p&gt;git checkout tagname
+git checkout -b new_branch_name&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;git-stash暂存相关命令&quot;&gt;git stash暂存相关命令&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中。
+    &lt;blockquote&gt;
+      &lt;p&gt;git stash&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;从Git栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个Stash的内容，所以用栈来管理，pop会从最近的一个stash中读取内容并恢复
+    &lt;blockquote&gt;
+      &lt;p&gt;git stash pop&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;显示Git栈内的所有备份，可以利用这个列表来决定从那个地方恢复
+    &lt;blockquote&gt;
+      &lt;p&gt;git stash list&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;清空Git栈。此时使用gitg等图形化工具会发现，原来stash的哪些节点都消失了
+    &lt;blockquote&gt;
+      &lt;p&gt;git stash clear:&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;git-rebase-使用&quot;&gt;git rebase 使用&lt;/h2&gt;
+
+&lt;p&gt;当前分支问题develop，从master拉取最新代码
+git pull –rebase origin master 或者 git rebase develop
+先将develop分支的代码checkout出来，作为工作目录
+然后将master分支从develop分支创建起的所有改变的补丁，依次打上。如果打补丁的过程没问题，rebase就搞定了
+如果打补丁的时候出现了问题，就会提示你处理冲突。处理好了，可以运行git rebase –continue继续直到完成
+如果你不想处理，你还是有两个选择，一个是放弃rebase过程（运行git rebase –abort），另一个是直接用test分支的取代当前分支的（git rebase –skip）。&lt;/p&gt;
+
+&lt;h2 id=&quot;工具&quot;&gt;工具&lt;/h2&gt;
+
+&lt;p&gt;SourceTree &amp;amp; git bash &amp;amp; Git desktop &amp;amp; &lt;a href=&quot;https://www.cnblogs.com/hubcarl/p/4208144.html&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;参考&lt;/a&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Other" /><summary type="html">Git命令行比打开客户端操作更快捷，持续更新。</summary></entry><entry><title type="html">Flutter 创建第一个应用程序</title><link href="http://localhost:4000/nginx/" rel="alternate" type="text/html" title="Flutter 创建第一个应用程序" /><published>2018-06-25T15:49:00+08:00</published><updated>2018-06-25T15:49:00+08:00</updated><id>http://localhost:4000/nginx</id><content type="html" xml:base="http://localhost:4000/nginx/">&lt;p&gt;学习是成长的过程&lt;/p&gt;
+
+&lt;h2 id=&quot;anglur&quot;&gt;anglur&lt;/h2&gt;</content><author><name>nldrs</name></author><category term="Nginx2" /><summary type="html">学习是成长的过程</summary></entry><entry><title type="html">Anglur</title><link href="http://localhost:4000/flutter-first-application/" rel="alternate" type="text/html" title="Anglur" /><published>2018-06-25T15:49:00+08:00</published><updated>2018-06-25T15:49:00+08:00</updated><id>http://localhost:4000/flutter-first-application</id><content type="html" xml:base="http://localhost:4000/flutter-first-application/">&lt;p&gt;学习是成长的过程,暂无内容，敬请期待。。。。。。&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Anglur" /><summary type="html">学习是成长的过程,暂无内容，敬请期待。。。。。。</summary></entry><entry><title type="html">API网址</title><link href="http://localhost:4000/api/" rel="alternate" type="text/html" title="API网址" /><published>2018-05-29T13:11:00+08:00</published><updated>2018-05-29T13:11:00+08:00</updated><id>http://localhost:4000/api</id><content type="html" xml:base="http://localhost:4000/api/">&lt;p&gt;记录提供API的网站,持续更新………&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;聚合数据&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.juhe.cn/docs&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;https://www.juhe.cn/docs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;淘宝开发平台&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;http://open.taobao.com/docs/api_list.htm?spm=a219a.7386653.1.22.4yDbZE&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;http://open.taobao.com/docs/api_list.htm?spm=a219a.7386653.1.22.4yDbZE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1688开放平台&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://open.1688.com/api/sysDescription.htm?spm=a260s.11051009.jb7hjul7.5.496a55edmKGJje&amp;amp;ns=cn.alibaba.open&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;https://open.1688.com/api/sysDescription.htm?spm=a260s.11051009.jb7hjul7.5.496a55edmKGJje&amp;amp;ns=cn.alibaba.open&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;开源中国&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.oschina.net/openapi&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;https://www.oschina.net/openapi&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;华为&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://app.huaweicloud.com/api/&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;https://app.huaweicloud.com/api/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;百度API&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;http://developer.baidu.com/platform/s38&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;http://developer.baidu.com/platform/s38&lt;/a&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Other" /><summary type="html">记录提供API的网站,持续更新………</summary></entry><entry><title type="html">python 基本操作</title><link href="http://localhost:4000/python-operation/" rel="alternate" type="text/html" title="python 基本操作" /><published>2018-05-25T15:49:00+08:00</published><updated>2018-05-25T15:49:00+08:00</updated><id>http://localhost:4000/python-operation</id><content type="html" xml:base="http://localhost:4000/python-operation/">&lt;h2 id=&quot;数据库操作&quot;&gt;数据库操作&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/python&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# -*- coding: UTF-8 -*-&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;MySQLdb&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;db&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MySQLdb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;localhost&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;root&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;leachchen&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#打开数据库连接&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#使用cursor()方法获取操作游标&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SELECT * FROM persons&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#使用execute方法执行SQL语句&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fetchall&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#获取查询结果&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;#循环输出数据库表中各字段结果&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;lastname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;firstname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;city&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lastname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;firstname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;city&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# 关闭数据库连接&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>nldrs</name></author><category term="Python" /><summary type="html">数据库操作 ``` #!/usr/bin/python -- coding: UTF-8 --</summary></entry><entry><title type="html">python 开发环境搭建</title><link href="http://localhost:4000/python-install/" rel="alternate" type="text/html" title="python 开发环境搭建" /><published>2018-05-25T14:45:00+08:00</published><updated>2018-05-25T14:45:00+08:00</updated><id>http://localhost:4000/python-install</id><content type="html" xml:base="http://localhost:4000/python-install/">&lt;h2 id=&quot;python下载配置&quot;&gt;Python下载配置&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;python&lt;/strong&gt;, 下载地址：https://www.python.org/， 下载2.X 的版本(Windows x86-64 MSI installer),假设安装至D盘，D:\Software\Python27,配置环境变量： &lt;br /&gt;
+(1)编辑-&amp;gt;变量名PATH，变量值 D:\Software\Python27
+(2)编辑-&amp;gt;变量名PATH，变量值 D:\Software\Python27\Scripts &lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;pycharm-开发工具下载安装&quot;&gt;Pycharm 开发工具下载安装&lt;/h2&gt;
+
+&lt;p&gt;下载地址：https://www.jetbrains.com/pycharm/download/#section=windows&lt;/p&gt;
+
+&lt;p&gt;安装这两个东西就可以进行python开发了，Python开发还要依赖各种库，可以在Pycharm开发工具File-&amp;gt;settings-&amp;gt;project-&amp;gt;Project Interpreter里面进行下载 或者在命令行里通过pip下载&lt;/p&gt;
+
+&lt;h2 id=&quot;问题&quot;&gt;问题&lt;/h2&gt;
+
+&lt;p&gt;A. import MySQLdb 报错&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ImportError: No module named MySQLdb &amp;lt;br&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;解决办法:&lt;/strong&gt; pip install mysql-python or pip install mysqlclient&lt;/p&gt;
+
+&lt;p&gt;B. Python3.4 安装mysqlClient提示 Microsoft Visual C++ 10.0 is required (Unable to find vcvarsall.bat).错误的解决 &lt;br /&gt;
+&lt;strong&gt;解决办法下载：&lt;/strong&gt; https://www.microsoft.com/en-us/download/details.aspx?id=44266&lt;/p&gt;
+
+&lt;p&gt;C. pip install MySQL-python 报错 &lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;_mysql.c(42) : fatal error C1083: Cannot open include file: 'config-win.h': No s
+uch file or directory
+
+error: command 'C:\\Program Files (x86)\\Common Files\\Microsoft\\Visual C++ for
+ Python\\9.0\\VC\\Bin\\cl.exe' failed with exit status 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;解决办法参考：&lt;/strong&gt; https://blog.csdn.net/yxwb1253587469/article/details/53310803    https://blog.csdn.net/fr4world/article/details/79615744&lt;/p&gt;
+
+&lt;p&gt;可参考：https://www.cnblogs.com/EmptyFS/p/6184627.html&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Python" /><summary type="html">Python下载配置</summary></entry></feed>
