@@ -1,7 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-21T00:45:38+08:00</updated><id>http://localhost:4000/</id><title type="html">Blog - 努力的人生</title><subtitle>面向标杆直奔
-</subtitle><author><name>nldrs</name></author><entry><title type="html">前端相关</title><link href="http://localhost:4000/web/" rel="alternate" type="text/html" title="前端相关" /><published>2018-08-12T18:50:00+08:00</published><updated>2018-08-12T18:50:00+08:00</updated><id>http://localhost:4000/web</id><content type="html" xml:base="http://localhost:4000/web/">&lt;p&gt;前端相关&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-08-24T12:48:09+08:00</updated><id>/</id><title type="html">Blog - 努力的人生</title><subtitle>面向标杆直奔
+</subtitle><author><name>nldrs</name></author><entry><title type="html">前端相关</title><link href="/web/" rel="alternate" type="text/html" title="前端相关" /><published>2018-08-12T18:50:00+08:00</published><updated>2018-08-12T18:50:00+08:00</updated><id>/web</id><content type="html" xml:base="/web/">&lt;p&gt;前端相关&lt;/p&gt;
 
-&lt;h3 id=&quot;前端相关&quot;&gt;前端相关&lt;/h3&gt;</content><author><name>nldrs</name></author><category term="前端" /><summary type="html">前端相关</summary></entry><entry><title type="html">react redux 基本用法</title><link href="http://localhost:4000/react1/" rel="alternate" type="text/html" title="react redux 基本用法" /><published>2018-07-10T19:10:00+08:00</published><updated>2018-07-10T19:10:00+08:00</updated><id>http://localhost:4000/react1</id><content type="html" xml:base="http://localhost:4000/react1/">&lt;h2 id=&quot;1store&quot;&gt;1.Store&lt;/h2&gt;
+&lt;h3 id=&quot;前端相关&quot;&gt;前端相关&lt;/h3&gt;</content><author><name>nldrs</name></author><category term="前端" /><summary type="html">前端相关</summary></entry><entry><title type="html">我参与的项目</title><link href="/pro/" rel="alternate" type="text/html" title="我参与的项目" /><published>2018-08-07T20:16:00+08:00</published><updated>2018-08-07T20:16:00+08:00</updated><id>/pro</id><content type="html" xml:base="/pro/">&lt;p&gt;在实际项目中提升自己&lt;/p&gt;
+
+&lt;h3 id=&quot;实战项目&quot;&gt;实战项目&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;1.&lt;a href=&quot;http://www.yyrcfw.com/&quot;&gt;渔业人才招聘网&lt;/a&gt;
+2.&lt;a href=&quot;http://www.yyrcfw.com/beach_tz/login/auth&quot;&gt;滩涂助手后台&lt;/a&gt;
+3.&lt;a href=&quot;http://xmb.imengshun.com/newGoods.html&quot;&gt;小卖铺&lt;/a&gt;
+4.&lt;a href=&quot;http:sf.sixi.com&quot;&gt;四喜官网&lt;/a&gt;
+5.&lt;a href=&quot;https://lpf-manger.herokuapp.com/&quot;&gt;课程总结&lt;/a&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="随笔" /><summary type="html">在实际项目中提升自己</summary></entry><entry><title type="html">react redux 基本用法</title><link href="/react1/" rel="alternate" type="text/html" title="react redux 基本用法" /><published>2018-07-10T19:10:00+08:00</published><updated>2018-07-10T19:10:00+08:00</updated><id>/react1</id><content type="html" xml:base="/react1/">&lt;h2 id=&quot;1store&quot;&gt;1.Store&lt;/h2&gt;
 &lt;p&gt;Store 就是保存数据的地方，你可以把它看成一个容器。整个应用只能有一个 Store。
 Redux 提供createStore这个函数，用来生成 Store。Redux 提供createStore这个函数，用来生成 Store。&lt;/p&gt;
 
@@ -179,7 +189,7 @@ Reducer 是一个函数，它接受 Action 和当前 State 作为参数，返回
 
 &lt;blockquote&gt;
   &lt;p&gt;最好把 State 对象设成只读。你没法改变它，要得到新的 State，唯一办法就是生成一个新对象。这样的好处是，任何时候，与某个 View 对应的 State 总是一个不变的对象。&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>nldrs</name></author><category term="React" /><category term="redux" /><summary type="html">1.Store Store 就是保存数据的地方，你可以把它看成一个容器。整个应用只能有一个 Store。 Redux 提供createStore这个函数，用来生成 Store。Redux 提供createStore这个函数，用来生成 Store。</summary></entry><entry><title type="html">科目三笔记二</title><link href="http://localhost:4000/car-yangjiaolian/" rel="alternate" type="text/html" title="科目三笔记二" /><published>2018-06-28T11:46:00+08:00</published><updated>2018-06-28T11:46:00+08:00</updated><id>http://localhost:4000/car-yangjiaolian</id><content type="html" xml:base="http://localhost:4000/car-yangjiaolian/">&lt;p&gt;吉安县成达考场科目三新规标准操作方法和注意事项&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>nldrs</name></author><category term="React" /><category term="redux" /><summary type="html">1.Store Store 就是保存数据的地方，你可以把它看成一个容器。整个应用只能有一个 Store。 Redux 提供createStore这个函数，用来生成 Store。Redux 提供createStore这个函数，用来生成 Store。</summary></entry><entry><title type="html">科目三笔记二</title><link href="/car-yangjiaolian/" rel="alternate" type="text/html" title="科目三笔记二" /><published>2018-06-28T11:46:00+08:00</published><updated>2018-06-28T11:46:00+08:00</updated><id>/car-yangjiaolian</id><content type="html" xml:base="/car-yangjiaolian/">&lt;p&gt;吉安县成达考场科目三新规标准操作方法和注意事项&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1. 上车准备&lt;/strong&gt;  &lt;br /&gt;
 从一上车，关闭车门，调整座椅，靠背，有转灯也要关闭，拨到近光灯，前照灯是要归零。然后摇旗，安全员就会按考试系统，隔几秒就会报，正在获取学员考试信息，请耐心等待，再过几秒钟之后就会报开始考试，当听到“开始考试”四个字，就可以侧头打开车门下去并关闭车门，逆时针绕车一圈按两个感应器，再上车，打开车门并关闭车门，再系安全带，一系安全带就会报“请开启前照灯”。&lt;/p&gt;
@@ -292,7 +302,7 @@ Reducer 是一个函数，它接受 Action 和当前 State 作为参数，返回
 &lt;p&gt;&lt;strong&gt;注意:&lt;/strong&gt; &lt;br /&gt;
 一，所有变更车道，打了转向灯要保持4秒直行后才可打方向更道，尤其是靠边停车打了转向灯没有保持4秒直行就转动方向是不合格最多的一项 &lt;br /&gt;
 二，所有变更车道，变到另一个车道时，车头要在另一个车道的三分之二以上回掉了转向灯才行，否则不合格 &lt;br /&gt;
-三，全程不能低于20码，最好走20一25码最好。 &lt;br /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Other" /><summary type="html">吉安县成达考场科目三新规标准操作方法和注意事项</summary></entry><entry><title type="html">科三笔记一</title><link href="http://localhost:4000/car-liujiaolian/" rel="alternate" type="text/html" title="科三笔记一" /><published>2018-06-28T11:46:00+08:00</published><updated>2018-06-28T11:46:00+08:00</updated><id>http://localhost:4000/car-liujiaolian</id><content type="html" xml:base="http://localhost:4000/car-liujiaolian/">&lt;p&gt;成达科三注意事项和先后顺序流程表 &lt;br /&gt;
+三，全程不能低于20码，最好走20一25码最好。 &lt;br /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Other" /><summary type="html">吉安县成达考场科目三新规标准操作方法和注意事项</summary></entry><entry><title type="html">科三笔记一</title><link href="/car-liujiaolian/" rel="alternate" type="text/html" title="科三笔记一" /><published>2018-06-28T11:46:00+08:00</published><updated>2018-06-28T11:46:00+08:00</updated><id>/car-liujiaolian</id><content type="html" xml:base="/car-liujiaolian/">&lt;p&gt;成达科三注意事项和先后顺序流程表 &lt;br /&gt;
 &lt;strong&gt;1，&lt;/strong&gt; 起步 &lt;br /&gt;
 &lt;strong&gt;2，&lt;/strong&gt; 通过公共汽车站(不会报指令，接近站台点刹完成) &lt;br /&gt;
 &lt;strong&gt;3，&lt;/strong&gt; 直线行驶(一报直线行驶加速至接近31一35码后，保持25码左右直线行驶，并且左右不然偏差30厘米以上) &lt;br /&gt;
@@ -312,7 +322,7 @@ Reducer 是一个函数，它接受 Action 和当前 State 作为参数，返回
 &lt;strong&gt;17，&lt;/strong&gt; 前方路口左转(要在交通指示灯左边行驶) &lt;br /&gt;
 &lt;strong&gt;18，&lt;/strong&gt; 靠边停车(报完指令150米以内完成，并且停示时前后轮不能大于50厘米) &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/other/jiaolian/1.jpg&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Other" /><summary type="html">成达科三注意事项和先后顺序流程表 1， 起步 2， 通过公共汽车站(不会报指令，接近站台点刹完成) 3， 直线行驶(一报直线行驶加速至接近31一35码后，保持25码左右直线行驶，并且左右不然偏差30厘米以上) 4， 掉头 5， 加减档，(转速1500转左右进3档，转速1500转左右进4档，进4档后加速至40码以上指针超40码，踩刹车至40以下松掉刹车，踩离合进3挡就完成) 6， 通过公交车站(同上一个一样) 7， 通过直行路口 8， 通过公共汽车站(同上一个一样完成后，打右转向灯4秒以后自行变右道) 9， 前方路口右转 10， 通过人行横道(不会报指令，离人行横道3-5米左右点刹完成 11， 会车指（令报完点刹车完成） 12， 超越前方车辆(不会报驶回原车道)机动车会车结束左转向调正方向右转向过灯柱回原车道 13， 掉头 14， 变更车道 15， 通过学校区域(不会报指令，接近学校区域牌子轻点刹车完成，并且点刹完不然超过30码) 16， 通过人行横道(离人行横道3-5米左右点刹完成) 17， 前方路口左转(要在交通指示灯左边行驶) 18， 靠边停车(报完指令150米以内完成，并且停示时前后轮不能大于50厘米)</summary></entry><entry><title type="html">Git 命令行</title><link href="http://localhost:4000/git/" rel="alternate" type="text/html" title="Git 命令行" /><published>2018-06-26T08:41:00+08:00</published><updated>2018-06-26T08:41:00+08:00</updated><id>http://localhost:4000/git</id><content type="html" xml:base="http://localhost:4000/git/">&lt;p&gt;Git命令行比打开客户端操作更快捷，持续更新。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/other/jiaolian/1.jpg&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Other" /><summary type="html">成达科三注意事项和先后顺序流程表 1， 起步 2， 通过公共汽车站(不会报指令，接近站台点刹完成) 3， 直线行驶(一报直线行驶加速至接近31一35码后，保持25码左右直线行驶，并且左右不然偏差30厘米以上) 4， 掉头 5， 加减档，(转速1500转左右进3档，转速1500转左右进4档，进4档后加速至40码以上指针超40码，踩刹车至40以下松掉刹车，踩离合进3挡就完成) 6， 通过公交车站(同上一个一样) 7， 通过直行路口 8， 通过公共汽车站(同上一个一样完成后，打右转向灯4秒以后自行变右道) 9， 前方路口右转 10， 通过人行横道(不会报指令，离人行横道3-5米左右点刹完成 11， 会车指（令报完点刹车完成） 12， 超越前方车辆(不会报驶回原车道)机动车会车结束左转向调正方向右转向过灯柱回原车道 13， 掉头 14， 变更车道 15， 通过学校区域(不会报指令，接近学校区域牌子轻点刹车完成，并且点刹完不然超过30码) 16， 通过人行横道(离人行横道3-5米左右点刹完成) 17， 前方路口左转(要在交通指示灯左边行驶) 18， 靠边停车(报完指令150米以内完成，并且停示时前后轮不能大于50厘米)</summary></entry><entry><title type="html">Git 命令行</title><link href="/git/" rel="alternate" type="text/html" title="Git 命令行" /><published>2018-06-26T08:41:00+08:00</published><updated>2018-06-26T08:41:00+08:00</updated><id>/git</id><content type="html" xml:base="/git/">&lt;p&gt;Git命令行比打开客户端操作更快捷，持续更新。&lt;/p&gt;
 
 &lt;h2 id=&quot;远程仓库相关命令&quot;&gt;远程仓库相关命令&lt;/h2&gt;
 
@@ -534,9 +544,9 @@ git pull –rebase origin master 或者 git rebase develop
 
 &lt;h2 id=&quot;工具&quot;&gt;工具&lt;/h2&gt;
 
-&lt;p&gt;SourceTree &amp;amp; git bash &amp;amp; Git desktop &amp;amp; &lt;a href=&quot;https://www.cnblogs.com/hubcarl/p/4208144.html&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;参考&lt;/a&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Other" /><summary type="html">Git命令行比打开客户端操作更快捷，持续更新。</summary></entry><entry><title type="html">Flutter 创建第一个应用程序</title><link href="http://localhost:4000/nginx/" rel="alternate" type="text/html" title="Flutter 创建第一个应用程序" /><published>2018-06-25T15:49:00+08:00</published><updated>2018-06-25T15:49:00+08:00</updated><id>http://localhost:4000/nginx</id><content type="html" xml:base="http://localhost:4000/nginx/">&lt;p&gt;学习是成长的过程&lt;/p&gt;
+&lt;p&gt;SourceTree &amp;amp; git bash &amp;amp; Git desktop &amp;amp; &lt;a href=&quot;https://www.cnblogs.com/hubcarl/p/4208144.html&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;参考&lt;/a&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Other" /><summary type="html">Git命令行比打开客户端操作更快捷，持续更新。</summary></entry><entry><title type="html">Flutter 创建第一个应用程序</title><link href="/nginx/" rel="alternate" type="text/html" title="Flutter 创建第一个应用程序" /><published>2018-06-25T15:49:00+08:00</published><updated>2018-06-25T15:49:00+08:00</updated><id>/nginx</id><content type="html" xml:base="/nginx/">&lt;p&gt;学习是成长的过程&lt;/p&gt;
 
-&lt;h2 id=&quot;anglur&quot;&gt;anglur&lt;/h2&gt;</content><author><name>nldrs</name></author><category term="Nginx2" /><summary type="html">学习是成长的过程</summary></entry><entry><title type="html">Anglur</title><link href="http://localhost:4000/flutter-first-application/" rel="alternate" type="text/html" title="Anglur" /><published>2018-06-25T15:49:00+08:00</published><updated>2018-06-25T15:49:00+08:00</updated><id>http://localhost:4000/flutter-first-application</id><content type="html" xml:base="http://localhost:4000/flutter-first-application/">&lt;p&gt;学习是成长的过程,暂无内容，敬请期待。。。。。。&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Anglur" /><summary type="html">学习是成长的过程,暂无内容，敬请期待。。。。。。</summary></entry><entry><title type="html">API网址</title><link href="http://localhost:4000/api/" rel="alternate" type="text/html" title="API网址" /><published>2018-05-29T13:11:00+08:00</published><updated>2018-05-29T13:11:00+08:00</updated><id>http://localhost:4000/api</id><content type="html" xml:base="http://localhost:4000/api/">&lt;p&gt;记录提供API的网站,持续更新………&lt;/p&gt;
+&lt;h2 id=&quot;anglur&quot;&gt;anglur&lt;/h2&gt;</content><author><name>nldrs</name></author><category term="Nginx2" /><summary type="html">学习是成长的过程</summary></entry><entry><title type="html">Anglur</title><link href="/flutter-first-application/" rel="alternate" type="text/html" title="Anglur" /><published>2018-06-25T15:49:00+08:00</published><updated>2018-06-25T15:49:00+08:00</updated><id>/flutter-first-application</id><content type="html" xml:base="/flutter-first-application/">&lt;p&gt;学习是成长的过程,暂无内容，敬请期待。。。。。。&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Anglur" /><summary type="html">学习是成长的过程,暂无内容，敬请期待。。。。。。</summary></entry><entry><title type="html">API网址</title><link href="/api/" rel="alternate" type="text/html" title="API网址" /><published>2018-05-29T13:11:00+08:00</published><updated>2018-05-29T13:11:00+08:00</updated><id>/api</id><content type="html" xml:base="/api/">&lt;p&gt;记录提供API的网站,持续更新………&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;聚合数据&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&quot;https://www.juhe.cn/docs&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;https://www.juhe.cn/docs&lt;/a&gt;&lt;/p&gt;
@@ -554,7 +564,7 @@ git pull –rebase origin master 或者 git rebase develop
 &lt;a href=&quot;https://app.huaweicloud.com/api/&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;https://app.huaweicloud.com/api/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;百度API&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;http://developer.baidu.com/platform/s38&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;http://developer.baidu.com/platform/s38&lt;/a&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Other" /><summary type="html">记录提供API的网站,持续更新………</summary></entry><entry><title type="html">python 基本操作</title><link href="http://localhost:4000/python-operation/" rel="alternate" type="text/html" title="python 基本操作" /><published>2018-05-25T15:49:00+08:00</published><updated>2018-05-25T15:49:00+08:00</updated><id>http://localhost:4000/python-operation</id><content type="html" xml:base="http://localhost:4000/python-operation/">&lt;h2 id=&quot;数据库操作&quot;&gt;数据库操作&lt;/h2&gt;
+&lt;a href=&quot;http://developer.baidu.com/platform/s38&quot; style=&quot;text-decoration: none;&quot; target=&quot;\_blank&quot; title=&quot;&quot;&gt;http://developer.baidu.com/platform/s38&lt;/a&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Other" /><summary type="html">记录提供API的网站,持续更新………</summary></entry><entry><title type="html">python 基本操作</title><link href="/python-operation/" rel="alternate" type="text/html" title="python 基本操作" /><published>2018-05-25T15:49:00+08:00</published><updated>2018-05-25T15:49:00+08:00</updated><id>/python-operation</id><content type="html" xml:base="/python-operation/">&lt;h2 id=&quot;数据库操作&quot;&gt;数据库操作&lt;/h2&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/python&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# -*- coding: UTF-8 -*-&lt;/span&gt;
 
@@ -575,37 +585,4 @@ git pull –rebase origin master 或者 git rebase develop
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lastname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;firstname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;city&lt;/span&gt;
 
 &lt;span class=&quot;n&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# 关闭数据库连接&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>nldrs</name></author><category term="Python" /><summary type="html">数据库操作 ``` #!/usr/bin/python -- coding: UTF-8 --</summary></entry><entry><title type="html">python 开发环境搭建</title><link href="http://localhost:4000/python-install/" rel="alternate" type="text/html" title="python 开发环境搭建" /><published>2018-05-25T14:45:00+08:00</published><updated>2018-05-25T14:45:00+08:00</updated><id>http://localhost:4000/python-install</id><content type="html" xml:base="http://localhost:4000/python-install/">&lt;h2 id=&quot;python下载配置&quot;&gt;Python下载配置&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;python&lt;/strong&gt;, 下载地址：https://www.python.org/， 下载2.X 的版本(Windows x86-64 MSI installer),假设安装至D盘，D:\Software\Python27,配置环境变量： &lt;br /&gt;
-(1)编辑-&amp;gt;变量名PATH，变量值 D:\Software\Python27
-(2)编辑-&amp;gt;变量名PATH，变量值 D:\Software\Python27\Scripts &lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;pycharm-开发工具下载安装&quot;&gt;Pycharm 开发工具下载安装&lt;/h2&gt;
-
-&lt;p&gt;下载地址：https://www.jetbrains.com/pycharm/download/#section=windows&lt;/p&gt;
-
-&lt;p&gt;安装这两个东西就可以进行python开发了，Python开发还要依赖各种库，可以在Pycharm开发工具File-&amp;gt;settings-&amp;gt;project-&amp;gt;Project Interpreter里面进行下载 或者在命令行里通过pip下载&lt;/p&gt;
-
-&lt;h2 id=&quot;问题&quot;&gt;问题&lt;/h2&gt;
-
-&lt;p&gt;A. import MySQLdb 报错&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ImportError: No module named MySQLdb &amp;lt;br&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;解决办法:&lt;/strong&gt; pip install mysql-python or pip install mysqlclient&lt;/p&gt;
-
-&lt;p&gt;B. Python3.4 安装mysqlClient提示 Microsoft Visual C++ 10.0 is required (Unable to find vcvarsall.bat).错误的解决 &lt;br /&gt;
-&lt;strong&gt;解决办法下载：&lt;/strong&gt; https://www.microsoft.com/en-us/download/details.aspx?id=44266&lt;/p&gt;
-
-&lt;p&gt;C. pip install MySQL-python 报错 &lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;_mysql.c(42) : fatal error C1083: Cannot open include file: 'config-win.h': No s
-uch file or directory
-
-error: command 'C:\\Program Files (x86)\\Common Files\\Microsoft\\Visual C++ for
- Python\\9.0\\VC\\Bin\\cl.exe' failed with exit status 2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;解决办法参考：&lt;/strong&gt; https://blog.csdn.net/yxwb1253587469/article/details/53310803    https://blog.csdn.net/fr4world/article/details/79615744&lt;/p&gt;
-
-&lt;p&gt;可参考：https://www.cnblogs.com/EmptyFS/p/6184627.html&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Python" /><summary type="html">Python下载配置</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>nldrs</name></author><category term="Python" /><summary type="html">数据库操作 ``` #!/usr/bin/python -- coding: UTF-8 --</summary></entry></feed>
