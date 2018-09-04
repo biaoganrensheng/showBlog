@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-04T12:15:58+08:00</updated><id>http://localhost:4000/</id><title type="html">Blog - 努力的人生</title><subtitle>面向标杆直奔
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-04T18:22:05+08:00</updated><id>http://localhost:4000/</id><title type="html">Blog - 努力的人生</title><subtitle>面向标杆直奔
 </subtitle><author><name>nldrs</name></author><entry><title type="html">mpvue (三)</title><link href="http://localhost:4000/mpvue3/" rel="alternate" type="text/html" title="mpvue (三)" /><published>2018-09-04T10:12:00+08:00</published><updated>2018-09-04T10:12:00+08:00</updated><id>http://localhost:4000/mpvue3</id><content type="html" xml:base="http://localhost:4000/mpvue3/">&lt;h1 id=&quot;mpvue-如何在mpvue中正确的引用小程序的原生自定义组件&quot;&gt;mpvue 如何在mpvue中正确的引用小程序的原生自定义组件&lt;/h1&gt;
 
 &lt;p&gt;最近，很多人给我留言，问我说怎么在mpvue项目中引入小程序原生框架中的自定义组件。&lt;/p&gt;
@@ -43,7 +43,9 @@
 &lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
 &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/template&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;运行这个小程序，能看到如下的样子：&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Wechat" /><category term="mpvue" /><summary type="html">mpvue 如何在mpvue中正确的引用小程序的原生自定义组件</summary></entry><entry><title type="html">mpvue (二)</title><link href="http://localhost:4000/mpvue2/" rel="alternate" type="text/html" title="mpvue (二)" /><published>2018-09-04T09:12:00+08:00</published><updated>2018-09-04T09:12:00+08:00</updated><id>http://localhost:4000/mpvue2</id><content type="html" xml:base="http://localhost:4000/mpvue2/">&lt;h1 id=&quot;mpvue&quot;&gt;mpvue&lt;/h1&gt;
+&lt;p&gt;运行这个小程序，能看到如下的样子：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/2c363ea29cda&quot;&gt;转载自简书大神’一斤代码’的博文&lt;/a&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Wechat" /><category term="mpvue" /><summary type="html">mpvue 如何在mpvue中正确的引用小程序的原生自定义组件</summary></entry><entry><title type="html">mpvue (二)</title><link href="http://localhost:4000/mpvue2/" rel="alternate" type="text/html" title="mpvue (二)" /><published>2018-09-04T09:12:00+08:00</published><updated>2018-09-04T09:12:00+08:00</updated><id>http://localhost:4000/mpvue2</id><content type="html" xml:base="http://localhost:4000/mpvue2/">&lt;h1 id=&quot;mpvue&quot;&gt;mpvue&lt;/h1&gt;
 
 &lt;p&gt;由于mpvue采用的是Vue框架的基础设施，所以大部分的功能都是和Vue一致的。但是，mpvue的代码毕竟最终还是要转译成小程序原生框架下的代码的，由于小程序框架本身存在的一些功能限制，导致有些功能不能被翻译过去，也就是说有些标准的Vue功能在mpvue下是不可以使用或有特殊限制的。&lt;/p&gt;
 
