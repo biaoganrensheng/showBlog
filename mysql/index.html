@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>mysql 介绍 - Blog - 努力的人生</title>
+	<title>mysql 学习 - Blog - 努力的人生</title>
 	<meta name="description" content="mysql 命令介绍">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">
-	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href="/assets/img/blog.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/blog.ico">
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#311e3e">
 	<!-- Windows Phone -->
@@ -109,7 +109,7 @@
 
        
        
-			 <li><a  href="/"  data-hover="所有">所有(67)</a></li>
+			 <li><a  href="/"  data-hover="所有">所有(78)</a></li>
 		 
 			 
 			 
@@ -171,7 +171,7 @@
 
        
        
-			 <li><a  href="/blog/essays"  data-hover="随笔">随笔(3)</a></li>
+			 <li><a  href="/blog/essays"  data-hover="随笔">随笔(6)</a></li>
 		 
 			 
 			 
@@ -233,7 +233,7 @@
 
        
        
-			 <li><a  href="/blog/vue"  data-hover="Vue">Vue(3)</a></li>
+			 <li><a  href="/blog/vue"  data-hover="Vue">Vue(4)</a></li>
 		 
 			 
 			 
@@ -326,7 +326,7 @@
 
        
        
-			 <li><a  href="/blog/youman"  data-hover="构建工具">构建工具(1)</a></li>
+			 <li><a  href="/blog/youman"  data-hover="构建工具">构建工具(7)</a></li>
 		 
 			 
 			 
@@ -450,7 +450,7 @@
 
        
        
-			 <li><a  href="/blog/aboutweb"  data-hover="前端相关">前端相关(15)</a></li>
+			 <li><a  href="/blog/aboutweb"  data-hover="前端相关">前端相关(16)</a></li>
 		 
 			 
 			 
@@ -565,162 +565,149 @@
 
   <article class="article-page">
     <div class="page-image">
-      <div class="cover-image" style="background: url(/assets/img/lpf-9.jpg) center no-repeat; background-size: cover;"></div>
+      <div class="cover-image" style="background: url(/assets/img/lpf-10.jpg) center no-repeat; background-size: cover;"></div>
     </div>
     <div class="wrapper">
       <div class="page-content">
         <div class="header-page">
-          <h1 class="page-title">mysql 介绍</h1>
-          <div class="page-date"><time datetime="2018-09-18 08:25:00 +0800">2018, Sep 18</time>
+          <h1 class="page-title">mysql 学习</h1>
+          <div class="page-date"><time datetime="2018-10-04 08:25:00 +0800">2018, Oct 04</time>
 		  <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
 		  </div>
         </div>
         <h1 id="mysql">mysql</h1>
 
-<h4 id="yingxiong为表名"><strong>yingxiong</strong>为表名</h4>
+<hr />
 
 <blockquote>
-  <p>1.查询所有</p>
+  <p>给表区别名  <code class="highlighter-rouge">select s.name from students s</code></p>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">yingxiong</span>
+<h4 id="一-添加数据">一 添加数据</h4>
 
+<ol>
+  <li>往指定表中添加数据 insert into 表名（字段1，字段2….）values(值1，值2)</li>
+</ol>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">insert</span> <span class="k">into</span> <span class="nv">`java表`</span><span class="p">(</span><span class="err">姓名</span><span class="p">,</span><span class="err">班级</span><span class="p">,</span><span class="n">java</span><span class="err">成绩</span><span class="p">)</span> <span class="k">values</span><span class="p">(</span><span class="s1">'张三'</span><span class="p">,</span><span class="s1">'三十三班'</span><span class="p">,</span><span class="mi">98</span><span class="p">.</span><span class="mi">5</span><span class="p">)</span>
 </code></pre></div></div>
 
-<blockquote>
-  <p>2.查询单个字段</p>
-</blockquote>
+<ol>
+  <li>插入数据的第二种语法  insert into 表名 set 字段名1=字段值1,字段名2=字段值2….</li>
+</ol>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">y_name</span><span class="p">,</span><span class="n">y_age</span> <span class="k">from</span> <span class="n">yingxiong</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">insert</span> <span class="k">into</span> <span class="nv">`java表`</span> <span class="k">set</span> <span class="err">姓名</span><span class="o">=</span><span class="s1">'李四'</span><span class="p">,</span><span class="err">班级</span><span class="o">=</span><span class="s1">'53班'</span>
 </code></pre></div></div>
-<blockquote>
-  <p>3.条件查询</p>
-</blockquote>
+<ol>
+  <li>可以省略 (姓名,班级,java成绩) ，但必须写全部字段</li>
+</ol>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">yingxiong</span> <span class="k">where</span> <span class="n">y_age</span><span class="o">&lt;</span><span class="s1">'30'</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">insert</span> <span class="k">into</span> <span class="nv">`java表`</span> <span class="k">values</span><span class="p">(</span><span class="s1">'张三'</span><span class="p">,</span><span class="s1">'三十三班'</span><span class="p">,</span><span class="mi">98</span><span class="p">.</span><span class="mi">5</span><span class="p">)</span>
 </code></pre></div></div>
+<ol>
+  <li>插入多条数据</li>
+</ol>
 
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fvenfdxliuj30q40k248l.jpg" alt="" /></p>
-
-<blockquote>
-  <p>4.多条件查询</p>
-</blockquote>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">yingxiong</span> <span class="k">where</span> <span class="n">y_age</span><span class="o">&lt;</span><span class="s1">'30'</span> <span class="k">and</span> <span class="n">y_sex</span><span class="o">=</span><span class="s1">'男'</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">insert</span> <span class="k">into</span> <span class="nv">`java表`</span><span class="p">(</span><span class="err">姓名</span><span class="p">,</span><span class="err">班级</span><span class="p">,</span><span class="n">java</span><span class="err">成绩</span><span class="p">)</span> <span class="k">values</span><span class="p">(</span><span class="s1">'张三'</span><span class="p">,</span><span class="s1">'三十三班'</span><span class="p">,</span><span class="mi">98</span><span class="p">.</span><span class="mi">5</span><span class="p">),(</span><span class="s1">'周六'</span><span class="p">,</span><span class="s1">'45班'</span><span class="p">,</span><span class="mi">90</span><span class="p">.</span><span class="mi">4</span><span class="p">)</span>
 </code></pre></div></div>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">yingxiong</span> <span class="k">where</span> <span class="n">y_age</span><span class="o">&lt;</span><span class="s1">'30'</span> <span class="k">or</span> <span class="n">y_sex</span><span class="o">=</span><span class="s1">'男'</span>
-</code></pre></div></div>
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fvenhs93fqj30rc0ep7aj.jpg" alt="" /></p>
+<h4 id="二-删除数据">二 删除数据</h4>
 
-<blockquote>
-  <p>5.区间查询</p>
-</blockquote>
+<ol>
+  <li>删除数据的语法   delete from 表名 where 条件</li>
+</ol>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">yingxiong</span> <span class="k">where</span> <span class="n">y_age</span> <span class="k">between</span> <span class="s1">'18'</span> <span class="k">and</span> <span class="s1">'30'</span>
-</code></pre></div></div>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">yingxiong</span> <span class="k">where</span> <span class="n">y_age</span> <span class="k">in</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">delete</span> <span class="k">from</span> <span class="nv">`java表`</span> <span class="k">where</span> <span class="err">姓名</span><span class="o">=</span><span class="s1">'李四'</span>
 </code></pre></div></div>
 
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fvenk4jx5zj30qd0ic7d8.jpg" alt="" /></p>
+<ol>
+  <li>删除全部数据</li>
+</ol>
 
-<blockquote>
-  <p>6.排序</p>
-</blockquote>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">yingxiong</span> <span class="k">order</span> <span class="k">by</span> <span class="n">y_age</span> <span class="k">asc</span><span class="o">/</span><span class="k">desc</span>
-</code></pre></div></div>
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fvenm8jbv5j30j105n75u.jpg" alt="" /></p>
-
-<blockquote>
-  <p>7.模糊查询</p>
-</blockquote>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">yingxiong</span> <span class="k">where</span> <span class="n">y_name</span> <span class="k">like</span> <span class="s1">'%李%'</span>
-</code></pre></div></div>
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fvennwyi13j30nn0epwlq.jpg" alt="" /></p>
-
-<blockquote>
-  <p>8.分页查询</p>
-</blockquote>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">yingxiong</span> <span class="k">limit</span> <span class="mi">0</span><span class="p">,</span><span class="mi">4</span>
-</code></pre></div></div>
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fvenpcn9qpj30jk0c0wiz.jpg" alt="" /></p>
-
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fvenps6ukgj30ua02tq47.jpg" alt="" /></p>
-
-<blockquote>
-  <p>9.别名</p>
-</blockquote>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">y_name</span> <span class="k">as</span> <span class="n">name</span> <span class="k">from</span> <span class="n">yingxiong</span> 
-</code></pre></div></div>
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fvenr81emxj30n009fgp5.jpg" alt="" /></p>
-
-<blockquote>
-  <p>10.聚合函数</p>
-</blockquote>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="k">max</span><span class="p">(</span><span class="n">y_age</span><span class="p">)</span> <span class="k">from</span> <span class="n">yingxiong</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">delete</span> <span class="k">from</span> <span class="nv">`students`</span> <span class="k">where</span> <span class="mi">1</span><span class="o">=</span><span class="mi">1</span>
 </code></pre></div></div>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="k">min</span><span class="p">(</span><span class="n">y_age</span><span class="p">)</span> <span class="k">from</span> <span class="n">yingxiong</span>
+<h4 id="三-修改数据">三 修改数据</h4>
+
+<p>1.修改语法  update 表名 set 字段名=值,…. where 条件</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">update</span> <span class="n">students</span> <span class="k">set</span> <span class="n">name</span><span class="o">=</span><span class="s1">'李四'</span> <span class="k">where</span> <span class="n">id</span><span class="o">=</span><span class="mi">1</span>
 </code></pre></div></div>
+<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fvwm61cpy7j312u0hv7at.jpg" alt="" /></p>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="k">avg</span><span class="p">(</span><span class="n">y_age</span><span class="p">)</span> <span class="k">from</span> <span class="n">yingxiong</span>
-</code></pre></div></div>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">y_age</span><span class="p">)</span> <span class="k">from</span> <span class="n">yingxiong</span>
-</code></pre></div></div>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="k">count</span><span class="p">(</span><span class="n">y_age</span><span class="p">)</span> <span class="k">from</span> <span class="n">yingxiong</span>
-</code></pre></div></div>
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fventhg30oj30lm0dhdm8.jpg" alt="" /></p>
+<h2 id="ddl-操作数据库">DDL 操作数据库</h2>
 
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fventztpbaj30n30fh46h.jpg" alt="" /></p>
+<ol>
+  <li>
+    <p>添加数据库  create database 库名 [character set utf8]</p>
+  </li>
+  <li>
+    <p>删除指定的数据库 drop database 库名</p>
+  </li>
+  <li>
+    <p>查询指定库的详细信息</p>
 
-<blockquote>
-  <p>11.自条件查询</p>
-</blockquote>
+    <p>1.） show create database 库名 ：查看某个数据库的详细信息</p>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">yingxiong</span> <span class="k">where</span> <span class="n">y_age</span><span class="o">=</span><span class="k">select</span> <span class="k">max</span><span class="p">(</span><span class="n">y_age</span><span class="p">)</span> <span class="k">from</span> <span class="n">yingxiong</span>
-</code></pre></div></div>
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fvenvl1vouj30mn09i41r.jpg" alt="" /></p>
+    <p>2.） show databases 查看所有的库</p>
 
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fvenw83hn6j30xd021tay.jpg" alt="" /></p>
+    <p>3.） select database(); 查看当前的用户连接的是哪个数据库</p>
 
-<blockquote>
-  <p>12.分组函数</p>
-</blockquote>
+    <p>4.） show tablels  查看指定数据库下有哪些表</p>
+  </li>
+  <li>
+    <p>修改指定库的编码 alter  database 库名 character set 新编码</p>
+  </li>
+</ol>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">y_type</span><span class="p">,</span><span class="k">sum</span><span class="p">(</span><span class="n">y_age</span><span class="p">)</span> <span class="k">from</span> <span class="n">yingxiong</span> <span class="k">group</span> <span class="k">by</span> <span class="n">y_type</span>
-</code></pre></div></div>
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fveny2pu0mj30o703qjsl.jpg" alt="" /></p>
+<h2 id="ddl-操作表">DDL 操作表</h2>
 
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fvenyfopfaj30nm06m76w.jpg" alt="" /></p>
+<ol>
+  <li>
+    <p>创建表 create table 表名（字段1…..）</p>
+  </li>
+  <li>
+    <p>删除表 drop table 表名</p>
+  </li>
+  <li>
+    <p>查询</p>
 
-<blockquote>
-  <p>13.分组加条件查询</p>
-</blockquote>
+    <p>1.）查询一张表的结构  desc 表名</p>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">y_type</span><span class="p">,</span><span class="k">sum</span><span class="p">(</span><span class="n">y_age</span><span class="p">)</span> <span class="k">as</span> <span class="n">ageHe</span> <span class="k">from</span> <span class="n">yingxiong</span> <span class="k">group</span> <span class="k">by</span> <span class="n">y_type</span> <span class="k">having</span> <span class="n">ageHe</span><span class="o">&gt;</span><span class="s1">'60'</span>
-</code></pre></div></div>
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fveo14hbh8j30mf07mwic.jpg" alt="" /></p>
+    <p>2.）或者  show create table 表名</p>
+  </li>
+  <li>
+    <p>修改</p>
 
-<blockquote>
-  <p>14.多表联合查询</p>
-</blockquote>
+    <p>1.）重命名  rename table 旧表名 to 新表名</p>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">wanjia</span><span class="p">,</span><span class="n">yingxiong</span>
-</code></pre></div></div>
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fveo2ddtoxj30po07s434.jpg" alt="" /></p>
+    <p>2.）添加新字段  alter table  表名 add 字段名 数据类型</p>
 
-<blockquote>
-  <p>15.多表联合查询加条件过滤</p>
-</blockquote>
+    <p>3.）删除字段   alter table 表名 drop 字段名</p>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">wanjia</span><span class="p">,</span><span class="n">yingxiong</span> <span class="k">where</span> <span class="n">wanjia</span><span class="p">.</span><span class="n">w_shouxuan</span><span class="o">=</span><span class="n">yingxiong</span><span class="p">.</span><span class="n">y_type</span>
-</code></pre></div></div>
-<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fveo4nbsq5j30n106zdjh.jpg" alt="" /></p>
+    <p>4.）字段重命名  alter table 表名 change 旧字段名 新字段名 新字段名数据类型</p>
+
+    <p><code class="highlighter-rouge">alter table bank change username name varchar(40)</code></p>
+
+    <p>5.) 修改字段类型的长度 alert table 表名 旧字段名 新字段名 新字段名的数据类型</p>
+
+    <p><code class="highlighter-rouge">alter table bank change username username varchar(100)</code></p>
+
+    <h2 id="数据库的备份">数据库的备份</h2>
+
+    <ol>
+      <li>
+        <p>命令行  备份：mysqldump -uroot -p dt_bank&gt;C:\dt_bank_back.sql</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    还原：进入mysql 环境 =》创建库=》在库下还原数据 source  C:\dt_bank_back.sql
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>sqlyog工具  选中要备份的数据库 =》 右键 =》 备份导出 =》 转存到sql</p>
+      </li>
+    </ol>
+  </li>
+</ol>
 
         <div class="page-footer">
           <div class="page-tag">
@@ -733,7 +720,7 @@
           </div><!-- End Tags -->
           <div class="page-share">
             <span>Share:</span>
-            <a href="https://twitter.com/intent/tweet?text=mysql 介绍&url=http://localhost:4000/mysql/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/intent/tweet?text=mysql 学习&url=http://localhost:4000/mysql/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="https://facebook.com/sharer.php?u=http://localhost:4000/mysql/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="https://plus.google.com/share?url=http://localhost:4000/mysql/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
 						
@@ -821,7 +808,7 @@
 	    
         
         <li class="next">
-            <a href="/mondb2/" data-toggle="tooltip" data-placement="top" title="mongoDB数据库的方法二">下一篇：  <span>mongoDB数据库的方法二</span>
+            <a href="/uniapp6/" data-toggle="tooltip" data-placement="top" title="uni-app 的总结(echarts)">下一篇：  <span>uni-app 的总结(echarts)</span>
             </a>
         </li>
         
@@ -858,19 +845,19 @@
   <div class="recent-list">
     
       
-        <a href="/mysql/" class="recent-item" style="background: url(/assets/img/lpf-9.jpg) center no-repeat; background-size: cover;"><span>mysql 介绍</span></a>
+        <a href="/mysql/" class="recent-item" style="background: url(/assets/img/lpf-10.jpg) center no-repeat; background-size: cover;"><span>mysql 学习</span></a>
       
     
       
-        <a href="/mondb2/" class="recent-item" style="background: url(/assets/img/lpf-8.jpg) center no-repeat; background-size: cover;"><span>mongoDB数据库的方法二</span></a>
+        <a href="/uniapp6/" class="recent-item" style="background: url(/assets/img/lpf-50.jpg) center no-repeat; background-size: cover;"><span>uni-app 的总结(echarts)</span></a>
       
     
       
-        <a href="/mondb/" class="recent-item" style="background: url(/assets/img/lpf-7.jpg) center no-repeat; background-size: cover;"><span>mongoDB数据库的方法</span></a>
+        <a href="/work/" class="recent-item" style="background: url(/assets/img/wch6.jpg) center no-repeat; background-size: cover;"><span>入职的第二周</span></a>
       
     
       
-        <a href="/promise/" class="recent-item" style="background: url(/assets/img/lpf-6.jpg) center no-repeat; background-size: cover;"><span>promise</span></a>
+        <a href="/arr/" class="recent-item" style="background: url(/assets/img/wch4.jpg) center no-repeat; background-size: cover;"><span>JavaScript 数组去重</span></a>
       
     
   </div>

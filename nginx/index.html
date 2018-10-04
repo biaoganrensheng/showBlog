@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Flutter 创建第一个应用程序 - Blog - 努力的人生</title>
-	<meta name="description" content="Flutter 创建第一个应用程序">
+	<title>nginx学习之旅 - Blog - 努力的人生</title>
+	<meta name="description" content="nginx学习之旅">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">
-	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href="/assets/img/blog.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/blog.ico">
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#311e3e">
 	<!-- Windows Phone -->
@@ -109,7 +109,7 @@
 
        
        
-			 <li><a  href="/"  data-hover="所有">所有(67)</a></li>
+			 <li><a  href="/"  data-hover="所有">所有(78)</a></li>
 		 
 			 
 			 
@@ -171,7 +171,7 @@
 
        
        
-			 <li><a  href="/blog/essays"  data-hover="随笔">随笔(3)</a></li>
+			 <li><a  href="/blog/essays"  data-hover="随笔">随笔(6)</a></li>
 		 
 			 
 			 
@@ -233,7 +233,7 @@
 
        
        
-			 <li><a  href="/blog/vue"  data-hover="Vue">Vue(3)</a></li>
+			 <li><a  href="/blog/vue"  data-hover="Vue">Vue(4)</a></li>
 		 
 			 
 			 
@@ -326,7 +326,7 @@
 
        
        
-			 <li><a  href="/blog/youman"  data-hover="构建工具">构建工具(1)</a></li>
+			 <li><a  href="/blog/youman"  data-hover="构建工具">构建工具(7)</a></li>
 		 
 			 
 			 
@@ -450,7 +450,7 @@
 
        
        
-			 <li><a  href="/blog/aboutweb"  data-hover="前端相关">前端相关(15)</a></li>
+			 <li><a  href="/blog/aboutweb"  data-hover="前端相关">前端相关(16)</a></li>
 		 
 			 
 			 
@@ -570,14 +570,185 @@
     <div class="wrapper">
       <div class="page-content">
         <div class="header-page">
-          <h1 class="page-title">Flutter 创建第一个应用程序</h1>
+          <h1 class="page-title">nginx学习之旅</h1>
           <div class="page-date"><time datetime="2018-06-25 15:49:00 +0800">2018, Jun 25</time>
 		  <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
 		  </div>
         </div>
-        <p>学习是成长的过程</p>
+        <h2 id="nginx简单理解">Nginx简单理解</h2>
 
-<h2 id="anglur">anglur</h2>
+<p>1、静态HTTP服务器</p>
+
+<p>首先，Nginx是一个HTTP服务器，可以将服务器上的静态文件（如HTML、图片）通过HTTP协议展现给客户端。</p>
+
+<p>配置：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nx">server</span> <span class="p">{</span>
+
+<span class="err">    </span><span class="nx">listen80</span><span class="p">;</span> <span class="err">#</span> <span class="err">端口号</span>
+
+<span class="err">    </span><span class="nx">location</span> <span class="o">/</span> <span class="p">{</span>
+
+<span class="err">        </span><span class="nx">root</span> <span class="o">/</span><span class="nx">usr</span><span class="o">/</span><span class="nx">share</span><span class="o">/</span><span class="nx">nginx</span><span class="o">/</span><span class="nx">html</span><span class="p">;</span> <span class="err">#</span> <span class="err">静态文件路径</span>
+
+<span class="err">    </span><span class="p">}</span>
+
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>2、反向代理服务器
+什么是反向代理？</p>
+
+<p>客户端本来可以直接通过HTTP协议访问某网站应用服务器，网站管理员可以在中间加上一个Nginx，客户端请求Nginx，Nginx请求应用服务器，然后将结果返回给客户端，此时Nginx就是反向代理服务器。</p>
+
+<p><img src="http://www.2cto.com/uploadfile/Collfiles/20150518/201505180932501.png" alt="" /></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">server</span> <span class="p">{</span>
+
+    <span class="nx">listen80</span><span class="p">;</span>
+
+    <span class="nx">location</span> <span class="o">/</span> <span class="p">{</span>
+
+        <span class="nx">proxy_pass</span> <span class="na">http</span><span class="p">:</span><span class="c1">//192.168.20.1:8080; # 应用服务器HTTP地址</span>
+
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>既然服务器可以直接HTTP访问，为什么要在中间加上一个反向代理，不是多此一举吗？反向代理有什么作用？继续往下看，下面的负载均衡、虚拟主机等，都基于反向代理实现，当然反向代理的功能也不仅仅是这些。</p>
+
+<p>3、负载均衡</p>
+
+<p>当网站访问量非常大，网站站长开心赚钱的同时，也摊上事儿了。因为网站越来越慢，一台服务器已经不够用了。于是将同一个应用部署在多台服务器上，将大量用户的请求分配给多台机器处理。同时带来的好处是，其中一台服务器万一挂了，只要还有其他服务器正常运行，就不会影响用户使用。</p>
+
+<p>Nginx可以通过反向代理来实现负载均衡。</p>
+
+<p><img src="http://www.2cto.com/uploadfile/Collfiles/20150518/201505180932502.jpg" alt="" /></p>
+
+<p>配置：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">upstream</span> <span class="nx">myapp</span> <span class="p">{</span>
+
+    <span class="nx">server192</span><span class="p">.</span><span class="mf">168.20</span><span class="p">.</span><span class="mi">1</span><span class="p">:</span><span class="mi">8080</span><span class="p">;</span> <span class="err">#</span> <span class="err">应用服务器</span><span class="mi">1</span>
+
+    <span class="nx">server192</span><span class="p">.</span><span class="mf">168.20</span><span class="p">.</span><span class="mi">2</span><span class="p">:</span><span class="mi">8080</span><span class="p">;</span> <span class="err">#</span> <span class="err">应用服务器</span><span class="mi">2</span>
+
+<span class="p">}</span>
+
+<span class="nx">server</span> <span class="p">{</span>
+
+    <span class="nx">listen80</span><span class="p">;</span>
+
+    <span class="nx">location</span> <span class="o">/</span> <span class="p">{</span>
+
+        <span class="nx">proxy_pass</span> <span class="na">http</span><span class="p">:</span><span class="c1">//myapp;</span>
+
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>以上配置会将请求轮询分配到应用服务器，也就是一个客户端的多次请求，有可能会由多台不同的服务器处理。可以通过ip-hash的方式，根据客户端ip地址的hash值将请求分配给固定的某一个服务器处理。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nx">upstream</span> <span class="nx">myapp</span> <span class="p">{</span>
+
+    <span class="nx">ip_hash</span><span class="p">;</span> <span class="err">#</span> <span class="err">根据客户端</span><span class="nx">IP</span><span class="err">地址</span><span class="nx">Hash</span><span class="err">值将请求分配给固定的一个服务器处理</span>
+
+    <span class="nx">server192</span><span class="p">.</span><span class="mf">168.20</span><span class="p">.</span><span class="mi">1</span><span class="p">:</span><span class="mi">8080</span><span class="p">;</span>
+
+    <span class="nx">server192</span><span class="p">.</span><span class="mf">168.20</span><span class="p">.</span><span class="mi">2</span><span class="p">:</span><span class="mi">8080</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="nx">server</span> <span class="p">{</span>
+
+    <span class="nx">listen80</span><span class="p">;</span>
+
+    <span class="nx">location</span> <span class="o">/</span> <span class="p">{</span>
+
+        <span class="nx">proxy_pass</span> <span class="na">http</span><span class="p">:</span><span class="c1">//myapp;</span>
+
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>另外，服务器的硬件配置可能有好有差，想把大部分请求分配给好的服务器，把少量请求分配给差的服务器，可以通过weight来控制。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">upstream</span> <span class="nx">myapp</span> <span class="p">{</span>
+
+    <span class="nx">server192</span><span class="p">.</span><span class="mf">168.20</span><span class="p">.</span><span class="mi">1</span><span class="p">:</span><span class="mi">8080</span><span class="nx">weight</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span> <span class="err">#</span> <span class="err">该服务器处理</span><span class="mi">3</span><span class="o">/</span><span class="mi">4</span><span class="err">请求</span>
+
+    <span class="nx">server192</span><span class="p">.</span><span class="mf">168.20</span><span class="p">.</span><span class="mi">2</span><span class="p">:</span><span class="mi">8080</span><span class="p">;</span> <span class="err">#</span> <span class="nx">weight</span><span class="err">默认为</span><span class="mi">1</span><span class="err">，该服务器处理</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="err">请求</span>
+
+<span class="p">}</span>
+
+<span class="nx">server</span> <span class="p">{</span>
+
+    <span class="nx">listen80</span><span class="p">;</span>
+
+    <span class="nx">location</span> <span class="o">/</span> <span class="p">{</span>
+
+        <span class="nx">proxy_pass</span> <span class="na">http</span><span class="p">:</span><span class="c1">//myapp;</span>
+
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>4、虚拟主机</p>
+
+<p>有的网站访问量大，需要负载均衡。然而并不是所有网站都如此出色，有的网站，由于访问量太小，需要节省成本，将多个网站部署在同一台服务器上。</p>
+
+<p>例如将www.aaa.com和www.bbb.com两个网站部署在同一台服务器上，两个域名解析到同一个IP地址，但是用户通过两个域名却可以打开两个完全不同的网站，互相不影响，就像访问两个服务器一样，所以叫两个虚拟主机。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">server</span> <span class="p">{</span>
+
+    <span class="nx">listen80default_server</span><span class="p">;</span>
+
+    <span class="nx">server_name</span> <span class="nx">_</span><span class="p">;</span>
+
+    <span class="nx">return444</span><span class="p">;</span> <span class="err">#</span> <span class="err">过滤其他域名的请求，返回</span><span class="mi">444</span><span class="err">状态码</span>
+
+<span class="p">}</span>
+
+<span class="nx">server</span> <span class="p">{</span>
+
+    <span class="nx">listen80</span><span class="p">;</span>
+
+    <span class="nx">server_name</span> <span class="nx">www</span><span class="p">.</span><span class="nx">aaa</span><span class="p">.</span><span class="nx">com</span><span class="p">;</span> <span class="err">#</span> <span class="nx">www</span><span class="p">.</span><span class="nx">aaa</span><span class="p">.</span><span class="nx">com</span><span class="err">域名</span>
+
+    <span class="nx">location</span> <span class="o">/</span> <span class="p">{</span>
+
+        <span class="nx">proxy_pass</span> <span class="na">http</span><span class="p">:</span><span class="c1">//localhost:8080; # 对应端口号8080</span>
+
+    <span class="p">}</span>
+
+<span class="p">}</span>
+
+<span class="nx">server</span> <span class="p">{</span>
+
+    <span class="nx">listen80</span><span class="p">;</span>
+
+    <span class="nx">server_name</span> <span class="nx">www</span><span class="p">.</span><span class="nx">bbb</span><span class="p">.</span><span class="nx">com</span><span class="p">;</span> <span class="err">#</span> <span class="nx">www</span><span class="p">.</span><span class="nx">bbb</span><span class="p">.</span><span class="nx">com</span><span class="err">域名</span>
+
+    <span class="nx">location</span> <span class="o">/</span> <span class="p">{</span>
+
+        <span class="nx">proxy_pass</span> <span class="na">http</span><span class="p">:</span><span class="c1">//localhost:8081; # 对应端口号8081</span>
+
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>在服务器8080和8081分别开了一个应用，客户端通过不同的域名访问，根据server_name可以反向代理到对应的应用服务器。</p>
+
+<p>虚拟主机的原理是通过HTTP请求头中的Host是否匹配server_name来实现的，有兴趣的同学可以研究一下HTTP协议。
+另外，server_name配置还可以过滤有人恶意将某些域名指向你的主机服务器。</p>
 
         <div class="page-footer">
           <div class="page-tag">
@@ -588,7 +759,7 @@
           </div><!-- End Tags -->
           <div class="page-share">
             <span>Share:</span>
-            <a href="https://twitter.com/intent/tweet?text=Flutter 创建第一个应用程序&url=http://localhost:4000/nginx/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/intent/tweet?text=nginx学习之旅&url=http://localhost:4000/nginx/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="https://facebook.com/sharer.php?u=http://localhost:4000/nginx/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="https://plus.google.com/share?url=http://localhost:4000/nginx/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
 						
@@ -721,19 +892,19 @@
   <div class="recent-list">
     
       
-        <a href="/mysql/" class="recent-item" style="background: url(/assets/img/lpf-9.jpg) center no-repeat; background-size: cover;"><span>mysql 介绍</span></a>
+        <a href="/mysql/" class="recent-item" style="background: url(/assets/img/lpf-10.jpg) center no-repeat; background-size: cover;"><span>mysql 学习</span></a>
       
     
       
-        <a href="/mondb2/" class="recent-item" style="background: url(/assets/img/lpf-8.jpg) center no-repeat; background-size: cover;"><span>mongoDB数据库的方法二</span></a>
+        <a href="/uniapp6/" class="recent-item" style="background: url(/assets/img/lpf-50.jpg) center no-repeat; background-size: cover;"><span>uni-app 的总结(echarts)</span></a>
       
     
       
-        <a href="/mondb/" class="recent-item" style="background: url(/assets/img/lpf-7.jpg) center no-repeat; background-size: cover;"><span>mongoDB数据库的方法</span></a>
+        <a href="/work/" class="recent-item" style="background: url(/assets/img/wch6.jpg) center no-repeat; background-size: cover;"><span>入职的第二周</span></a>
       
     
       
-        <a href="/promise/" class="recent-item" style="background: url(/assets/img/lpf-6.jpg) center no-repeat; background-size: cover;"><span>promise</span></a>
+        <a href="/arr/" class="recent-item" style="background: url(/assets/img/wch4.jpg) center no-repeat; background-size: cover;"><span>JavaScript 数组去重</span></a>
       
     
   </div>

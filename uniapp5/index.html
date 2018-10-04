@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>uni-app 的总结(分享) - Blog - 努力的人生</title>
+	<meta name="description" content="uni-app 的总结">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/blog.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/blog.ico">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	
+	
+	
+	
+	<!-- Google Fonts 1
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">-->
+	
+	
+	
+	
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>  
+	
+	
+	<!--百度统计-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?660ee541ef48f4a94f8a59dd0f9e64ae";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	<!--谷歌统计-->
+	<!-- Global site tag (gtag.js) - Google Analytics 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113644888-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-113644888-1');
+	</script>-->
+
+</head>
+
+<body>
+  <div class="flex-container">
+  <header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <!--<ul style="height:800px;overflow-y:scroll;overflow-y:auto;"> -->
+        <ul>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/"  data-hover="所有">所有(78)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/markdown"  data-hover="Markdown">Markdown(4)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/essays"  data-hover="随笔">随笔(6)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/jekyll"  data-hover="Jekyll">Jekyll(1)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/vue"  data-hover="Vue">Vue(4)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/react"  data-hover="React">React(2)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/anglur"  data-hover="Anglur">Anglur(1)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/youman"  data-hover="构建工具">构建工具(7)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/nginx2"  data-hover="Nginx2">Nginx2(1)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/python"  data-hover="Python">Python(2)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/abouttest"  data-hover="测试相关">测试相关(6)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/aboutweb"  data-hover="前端相关">前端相关(16)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/wechat"  data-hover="Wechat">Wechat(21)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/other"  data-hover="其它">其它(7)</a></li>
+		 
+          <!--<li style="margin-bottom:200px;"><a href="/about">About(7)</a></li>-->
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">nldrs</a></p>
+
+
+		<div class="navbar-container">
+
+		<div class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></div>
+
+			<div class="navbar-menu">
+			   
+				<a href="/"  data-hover="Home">Home</a>  <!--title="访问 Home"-->
+				<!--<a href="/">Home</a>-->
+					
+				<a href="/about"  data-hover="About">About</a>  <!--title="访问 About"-->
+				<!--<a href="/about">About</a>-->
+					
+			</div>
+
+
+			<div class="navbar-mobile-menu" onclick="">
+				<span class="icon-menu cross"><span class="middle"></span></span>
+				<ul>
+				   
+					 <li><a href="/"data-hover="Home">Home</a></li>  <!--title="访问 Home"-->
+					 <!--<li><a href="/">Home</a></li>-->
+				   
+					 <li><a href="/about"data-hover="About">About</a></li>  <!--title="访问 About"-->
+					 <!--<li><a href="/about">About</a></li>-->
+				   
+				</ul>
+			</div>
+
+
+
+		</div>
+
+    <!--  <div class="search-icon-container">
+	    <a href="/" style="text-decoration: none; color: inherit;margin-right:20px;">Home</a>
+		<a href="/about" style=" text-decoration: none; color: inherit;margin-right:20px;">About</a>
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div> -->
+
+
+    </div>
+  </div>
+</header> <!-- End Header -->
+
+  <article class="article-page">
+    <div class="page-image">
+      <div class="cover-image" style="background: url(/assets/img/lpf-49.jpg) center no-repeat; background-size: cover;"></div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <div class="header-page">
+          <h1 class="page-title">uni-app 的总结(分享)</h1>
+          <div class="page-date"><time datetime="2018-09-07 20:16:00 +0800">2018, Sep 07</time>
+		  <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+		  </div>
+        </div>
+        <h2 id="uni-app-的总结开始的项目中可能用到的模块">uni-app 的总结(开始的项目中可能用到的模块)</h2>
+
+<h1 id="分享">分享</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">参数名</th>
+      <th style="text-align: left">类型</th>
+      <th style="text-align: left">必填</th>
+      <th style="text-align: left">说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">provider</td>
+      <td style="text-align: left">String</td>
+      <td style="text-align: left">是</td>
+      <td style="text-align: left">分享服务提供商，通过 uni.getProvider 获取，如果不设置则弹出分享列表选择界</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">面。</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">type</td>
+      <td style="text-align: left">Number</td>
+      <td style="text-align: left">否</td>
+      <td style="text-align: left">分享类型。默认图文 0，更多值参考下面说明。</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">title</td>
+      <td style="text-align: left">String</td>
+      <td style="text-align: left">否</td>
+      <td style="text-align: left">标题</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">scene</td>
+      <td style="text-align: left">String</td>
+      <td style="text-align: left">provider 为 weixin 时必选</td>
+      <td style="text-align: left">场景，可取值参考下面说明。</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">summary</td>
+      <td style="text-align: left">String</td>
+      <td style="text-align: left">type 为 1 时必选</td>
+      <td style="text-align: left">摘要</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">href</td>
+      <td style="text-align: left">String</td>
+      <td style="text-align: left">type 为 0 时必选</td>
+      <td style="text-align: left">跳转链接</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">imageUrl</td>
+      <td style="text-align: left">String</td>
+      <td style="text-align: left">type 为 0、2、5 时必选</td>
+      <td style="text-align: left">图片地址，type为0时，图片大小于 20Kb</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">mediaUrl</td>
+      <td style="text-align: left">String</td>
+      <td style="text-align: left">type 为 3、4 时必选</td>
+      <td style="text-align: left">音视频地址</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">miniProgram</td>
+      <td style="text-align: left">Object</td>
+      <td style="text-align: left">type 为 5 时必选</td>
+      <td style="text-align: left">分享小程序必要参数</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">success</td>
+      <td style="text-align: left">Function</td>
+      <td style="text-align: left">否</td>
+      <td style="text-align: left">接口调用成功的回调</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">fail</td>
+      <td style="text-align: left">Function</td>
+      <td style="text-align: left">否</td>
+      <td style="text-align: left">接口调用失败的回调函数</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">complete</td>
+      <td style="text-align: left">Function</td>
+      <td style="text-align: left">否</td>
+      <td style="text-align: left">接口调用结束的回调函数（调用成功、失败都会执行）</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="type-值说明">type 值说明</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">值</th>
+      <th style="text-align: left">说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">图文</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">纯文字</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">纯图片</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">音乐</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">视频</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">小程序</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="scene-值说明">scene 值说明</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">值</th>
+      <th style="text-align: left">说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">WXSceneSession</td>
+      <td style="text-align: left">分享到聊天界面</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WXSenceTimeline</td>
+      <td style="text-align: left">分享到朋友圈</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WXSceneFavorite</td>
+      <td style="text-align: left">分享到微信收藏</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="miniprogram-值说明">miniProgram 值说明</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">值</th>
+      <th style="text-align: left">类型</th>
+      <th style="text-align: left">说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">id</td>
+      <td style="text-align: left">String</td>
+      <td style="text-align: left">微信小程序原始id</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">path</td>
+      <td style="text-align: left">String</td>
+      <td style="text-align: left">点击链接进入的页面</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">type</td>
+      <td style="text-align: left">Number</td>
+      <td style="text-align: left">微信小程序版本类型，可取值： 0-正式版； 1-测试版； 2-体验版。 默认值为0。</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">webUrl</td>
+      <td style="text-align: left">String</td>
+      <td style="text-align: left">兼容低版本的网页链接</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tips:</p>
+
+<p>仅支持分享小程序到微信聊天界面
+分享到QQ必须含有href链接
+分享文字到QQ时，title必选
+新浪微博仅支持分享本地音视频
+在ios端，若未安装微博客户端，则不能分享图片
+分享新浪微博不会返回正确的成功回调
+分享到微信聊天界面</p>
+
+<h2 id="分享到微信聊天界面">分享到微信聊天界面</h2>
+
+<p>1.分享文字</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">uni</span><span class="p">.</span><span class="nx">share</span><span class="p">({</span>
+    <span class="na">provider</span><span class="p">:</span> <span class="s2">"weixin"</span><span class="p">,</span>
+    <span class="na">scene</span><span class="p">:</span> <span class="s2">"WXSceneSession"</span><span class="p">,</span>
+    <span class="na">type</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="na">summary</span><span class="p">:</span> <span class="s2">"我正在使用HBuilderX开发uni-app，赶紧跟我一起来体验！"</span><span class="p">,</span>
+    <span class="na">success</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"success:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">res</span><span class="p">));</span>
+    <span class="p">},</span>
+    <span class="na">fail</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"fail:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">err</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>2.分享图片</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">uni</span><span class="p">.</span><span class="nx">share</span><span class="p">({</span>
+    <span class="na">provider</span><span class="p">:</span> <span class="s2">"weixin"</span><span class="p">,</span>
+    <span class="na">scene</span><span class="p">:</span> <span class="s2">"WXSceneSession"</span><span class="p">,</span>
+    <span class="na">type</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="na">imageUrl</span><span class="p">:</span> <span class="s2">"https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/uni@2x.png"</span><span class="p">,</span>
+    <span class="na">success</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"success:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">res</span><span class="p">));</span>
+    <span class="p">},</span>
+    <span class="na">fail</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"fail:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">err</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>3.分享图文</p>
+
+<p>href、imageUrl 为必选参数，title/summary 二选一，最好将这四个参数都选上。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">uni</span><span class="p">.</span><span class="nx">share</span><span class="p">({</span>
+    <span class="na">provider</span><span class="p">:</span> <span class="s2">"weixin"</span><span class="p">,</span>
+    <span class="na">scene</span><span class="p">:</span> <span class="s2">"WXSceneSession"</span><span class="p">,</span>
+    <span class="na">type</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="na">href</span><span class="p">:</span> <span class="s2">"http://uniapp.dcloud.io/"</span><span class="p">,</span>
+    <span class="na">title</span><span class="p">:</span> <span class="s2">"uni-app分享"</span><span class="p">,</span>
+    <span class="na">summary</span><span class="p">:</span> <span class="s2">"我正在使用HBuilderX开发uni-app，赶紧跟我一起来体验！"</span><span class="p">,</span>
+    <span class="na">imageUrl</span><span class="p">:</span> <span class="s2">"https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/uni@2x.png"</span><span class="p">,</span>
+    <span class="na">success</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"success:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">res</span><span class="p">));</span>
+    <span class="p">},</span>
+    <span class="na">fail</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"fail:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">err</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="分享到微信朋友圈">分享到微信朋友圈</h2>
+
+<p>1.分享文字</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">uni</span><span class="p">.</span><span class="nx">share</span><span class="p">({</span>
+    <span class="na">provider</span><span class="p">:</span> <span class="s2">"weixin"</span><span class="p">,</span>
+    <span class="na">scene</span><span class="p">:</span> <span class="s2">"WXSenceTimeline"</span><span class="p">,</span>
+    <span class="na">type</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="na">summary</span><span class="p">:</span> <span class="s2">"我正在使用HBuilderX开发uni-app，赶紧跟我一起来体验！"</span><span class="p">,</span>
+    <span class="na">success</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"success:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">res</span><span class="p">));</span>
+    <span class="p">},</span>
+    <span class="na">fail</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"fail:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">err</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+<p>2.分享图片</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nx">ni</span><span class="p">.</span><span class="nx">share</span><span class="p">({</span>
+    <span class="na">provider</span><span class="p">:</span> <span class="s2">"weixin"</span><span class="p">,</span>
+    <span class="na">scene</span><span class="p">:</span> <span class="s2">"WXSenceTimeline"</span><span class="p">,</span>
+    <span class="na">type</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="na">imageUrl</span><span class="p">:</span> <span class="s2">"https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/uni@2x.png"</span><span class="p">,</span>
+    <span class="na">success</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"success:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">res</span><span class="p">));</span>
+    <span class="p">},</span>
+    <span class="na">fail</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"fail:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">err</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>3.分享图文</p>
+
+<p>href、imageUrl 为必选参数，title、summary 至少有一项。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">uni</span><span class="p">.</span><span class="nx">share</span><span class="p">({</span>
+    <span class="na">provider</span><span class="p">:</span> <span class="s2">"weixin"</span><span class="p">,</span>
+    <span class="na">scene</span><span class="p">:</span> <span class="s2">"WXSenceTimeline"</span><span class="p">,</span>
+    <span class="na">type</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="na">href</span><span class="p">:</span> <span class="s2">"http://uniapp.dcloud.io/"</span><span class="p">,</span>
+    <span class="na">title</span><span class="p">:</span> <span class="s2">"uni-app分享"</span><span class="p">,</span>
+    <span class="na">summary</span><span class="p">:</span> <span class="s2">"我正在使用HBuilderX开发uni-app，赶紧跟我一起来体验！"</span><span class="p">,</span>
+    <span class="na">imageUrl</span><span class="p">:</span> <span class="s2">"https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/uni@2x.png"</span><span class="p">,</span>
+    <span class="na">success</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"success:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">res</span><span class="p">));</span>
+    <span class="p">},</span>
+    <span class="na">fail</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"fail:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">err</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>4.分享到小程序</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">uni</span><span class="p">.</span><span class="nx">share</span><span class="p">({</span>
+    <span class="na">provider</span><span class="p">:</span> <span class="s1">'weixin'</span><span class="p">,</span>
+    <span class="na">type</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="na">imageUrl</span><span class="p">:</span> <span class="s1">'https://img-cdn-qiniu.dcloud.net.cn/uniapp/app/share-logo@3.png'</span><span class="p">,</span>
+    <span class="na">title</span><span class="p">:</span> <span class="s1">'欢迎体验uniapp'</span><span class="p">,</span>
+    <span class="na">miniProgram</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">id</span><span class="p">:</span> <span class="s1">'gh_abcdefg'</span><span class="p">,</span>
+        <span class="na">path</span><span class="p">:</span> <span class="s1">'pages/index/index'</span><span class="p">,</span>
+        <span class="na">type</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="na">webUrl</span><span class="p">:</span> <span class="s1">'http://uniapp.dcloud.io'</span>
+    <span class="p">},</span>
+    <span class="na">success</span><span class="p">:</span> <span class="nx">ret</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">ret</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="官方实例">官方实例</h2>
+
+<hr />
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;template&gt;</span>
+	<span class="nt">&lt;view&gt;</span>
+		<span class="nt">&lt;page-head</span> <span class="na">:title=</span><span class="s">"title"</span><span class="nt">&gt;&lt;/page-head&gt;</span>
+		<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"page-body"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"page-section-title"</span><span class="nt">&gt;</span>分享内容<span class="nt">&lt;/view&gt;</span>
+			<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"page-section"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"textarea-wrp"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"textarea"</span> <span class="na">v-model=</span><span class="s">"shareText"</span> <span class="nt">/&gt;</span>
+				<span class="nt">&lt;/view&gt;</span>
+			<span class="nt">&lt;/view&gt;</span>
+			<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"page-section-title"</span><span class="nt">&gt;</span>分享图片：<span class="nt">&lt;/view&gt;</span>
+			<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"page-section"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"uni-uploader-body"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"uni-uploader__input-box"</span> <span class="na">v-if=</span><span class="s">"!image"</span> <span class="err">@</span><span class="na">tap=</span><span class="s">"chooseImage"</span><span class="nt">&gt;&lt;/view&gt;</span>
+					<span class="nt">&lt;image</span> <span class="na">class=</span><span class="s">"uni-uploader__img"</span> <span class="na">v-if=</span><span class="s">"image"</span> <span class="na">:src=</span><span class="s">"image"</span><span class="nt">&gt;&lt;/image&gt;</span>
+				<span class="nt">&lt;/view&gt;</span>
+			<span class="nt">&lt;/view&gt;</span>
+			<span class="c">&lt;!-- #ifdef APP-PLUS --&gt;</span>
+			<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"page-section-title"</span><span class="nt">&gt;</span>分享类型：<span class="nt">&lt;/view&gt;</span>
+			<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"page-section"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"uni-uploader-body"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;radio-group</span> <span class="err">@</span><span class="na">change=</span><span class="s">"radioChange"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;radio</span> <span class="na">value=</span><span class="s">"1"</span> <span class="na">checked=</span><span class="s">"true"</span><span class="nt">/&gt;</span>文字
+						<span class="nt">&lt;/label&gt;</span>
+						<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;radio</span> <span class="na">value=</span><span class="s">"2"</span> <span class="nt">/&gt;</span>图片
+						<span class="nt">&lt;/label&gt;</span>
+						<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;radio</span> <span class="na">value=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>图文
+						<span class="nt">&lt;/label&gt;</span>
+						<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;radio</span> <span class="na">value=</span><span class="s">"5"</span> <span class="nt">/&gt;</span>小程序
+						<span class="nt">&lt;/label&gt;</span>
+					<span class="nt">&lt;/radio-group&gt;</span>
+				<span class="nt">&lt;/view&gt;</span>
+			<span class="nt">&lt;/view&gt;</span>
+			<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"btn-area"</span> <span class="na">v-if=</span><span class="s">"providerList.length &gt; 0"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;block</span> <span class="na">v-for=</span><span class="s">"(value,index) in providerList"</span> <span class="na">:key=</span><span class="s">"index"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"primary"</span> <span class="na">v-if=</span><span class="s">"value"</span> <span class="na">:disabled=</span><span class="s">"shareType === 5 &amp;&amp; value.name !== '分享到微信好友'"</span> <span class="err">@</span><span class="na">tap=</span><span class="s">"share(value)"</span><span class="nt">&gt;&lt;/button&gt;</span>
+				<span class="nt">&lt;/block&gt;</span>
+			<span class="nt">&lt;/view&gt;</span>
+			<span class="c">&lt;!-- #endif --&gt;</span>
+			<span class="c">&lt;!-- #ifdef MP-WEIXIN --&gt;</span>
+			<span class="nt">&lt;view</span> <span class="na">class=</span><span class="s">"btn-area"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"primary"</span> <span class="na">open-type=</span><span class="s">"share"</span><span class="nt">&gt;</span>分享<span class="nt">&lt;/button&gt;</span>
+			<span class="nt">&lt;/view&gt;</span>
+			<span class="c">&lt;!-- #endif --&gt;</span>
+		<span class="nt">&lt;/view&gt;</span>
+
+	<span class="nt">&lt;/view&gt;</span>
+<span class="nt">&lt;/template&gt;</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="p">{</span>
+		<span class="nx">data</span><span class="p">()</span> <span class="p">{</span>
+			<span class="k">return</span> <span class="p">{</span>
+				<span class="na">title</span><span class="p">:</span> <span class="s1">'share'</span><span class="p">,</span>
+				<span class="na">shareText</span><span class="p">:</span> <span class="s1">'uni-app可以同时发布成原生App、微信小程序，邀请你一起体验！'</span><span class="p">,</span>
+				<span class="na">href</span><span class="p">:</span><span class="s2">"https://uniapp.dcloud.io"</span><span class="p">,</span>
+				<span class="na">image</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
+				<span class="na">shareType</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+				<span class="na">providerList</span><span class="p">:</span> <span class="p">[]</span>
+			<span class="p">}</span>
+		<span class="p">},</span>
+		<span class="nx">onShareAppMessage</span><span class="p">()</span> <span class="p">{</span>
+			<span class="k">return</span> <span class="p">{</span>
+				<span class="na">title</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">shareText</span> <span class="p">?</span> <span class="k">this</span><span class="p">.</span><span class="nx">shareText</span> <span class="p">:</span> <span class="s2">"欢迎体验uni-app"</span><span class="p">,</span>
+				<span class="na">path</span><span class="p">:</span> <span class="s1">'/pages/component/mpcoonent'</span><span class="p">,</span>
+				<span class="na">imageUrl</span><span class="p">:</span><span class="k">this</span><span class="p">.</span><span class="nx">image</span> <span class="p">?</span> <span class="k">this</span><span class="p">.</span><span class="nx">image</span> <span class="p">:</span> <span class="s1">'https://img-cdn-qiniu.dcloud.net.cn/uniapp/app/share-logo@3.png'</span>
+			<span class="p">}</span>
+		<span class="p">},</span>
+		<span class="na">onUnload</span><span class="p">:</span><span class="kd">function</span><span class="p">(){</span>
+			<span class="k">this</span><span class="p">.</span><span class="nx">shareText</span><span class="o">=</span><span class="s1">'uni-app可以同时发布成原生App、微信小程序，邀请你一起体验！'</span><span class="p">,</span>
+			<span class="k">this</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="s2">"https://uniapp.dcloud.io"</span><span class="p">,</span>
+			<span class="k">this</span><span class="p">.</span><span class="nx">image</span><span class="o">=</span><span class="s1">''</span><span class="p">;</span>
+		<span class="p">},</span>
+		<span class="na">onLoad</span><span class="p">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+			<span class="nx">uni</span><span class="p">.</span><span class="nx">getProvider</span><span class="p">({</span>
+				<span class="na">service</span><span class="p">:</span> <span class="s2">"share"</span><span class="p">,</span>
+				<span class="na">success</span><span class="p">:</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+					<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"success"</span><span class="p">,</span> <span class="nx">e</span><span class="p">);</span>
+					<span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[]</span>
+					<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">e</span><span class="p">.</span><span class="nx">provider</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+						<span class="k">switch</span> <span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">provider</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span> <span class="p">{</span>
+							<span class="k">case</span> <span class="s1">'weixin'</span><span class="p">:</span>
+								<span class="nx">data</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+									<span class="na">name</span><span class="p">:</span> <span class="s1">'分享到微信好友'</span><span class="p">,</span>
+									<span class="na">id</span><span class="p">:</span> <span class="s1">'weixin'</span><span class="p">,</span>
+									<span class="na">sort</span><span class="p">:</span><span class="mi">0</span>
+								<span class="p">})</span>
+								<span class="nx">data</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+									<span class="na">name</span><span class="p">:</span> <span class="s1">'分享到微信朋友圈'</span><span class="p">,</span>
+									<span class="na">id</span><span class="p">:</span> <span class="s1">'weixin'</span><span class="p">,</span>
+									<span class="na">type</span><span class="p">:</span><span class="s1">'WXSenceTimeline'</span><span class="p">,</span>
+									<span class="na">sort</span><span class="p">:</span><span class="mi">1</span>
+								<span class="p">})</span>
+								<span class="k">break</span><span class="p">;</span>
+							<span class="k">case</span> <span class="s1">'sinaweibo'</span><span class="p">:</span>
+								<span class="nx">data</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+									<span class="na">name</span><span class="p">:</span> <span class="s1">'分享到新浪微博'</span><span class="p">,</span>
+									<span class="na">id</span><span class="p">:</span> <span class="s1">'sinaweibo'</span><span class="p">,</span>
+									<span class="na">sort</span><span class="p">:</span><span class="mi">2</span>
+								<span class="p">})</span>
+								<span class="k">break</span><span class="p">;</span>
+							<span class="k">case</span> <span class="s1">'qq'</span><span class="p">:</span>
+								<span class="nx">data</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+									<span class="na">name</span><span class="p">:</span> <span class="s1">'分享到QQ'</span><span class="p">,</span>
+									<span class="na">id</span><span class="p">:</span> <span class="s1">'qq'</span><span class="p">,</span>
+									<span class="na">sort</span><span class="p">:</span><span class="mi">3</span>
+								<span class="p">})</span>
+								<span class="k">break</span><span class="p">;</span>
+							<span class="nl">default</span><span class="p">:</span>
+								<span class="k">break</span><span class="p">;</span>
+						<span class="p">}</span>
+					<span class="p">}</span>
+					<span class="k">this</span><span class="p">.</span><span class="nx">providerList</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">sort</span><span class="p">((</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+						<span class="k">return</span> <span class="nx">x</span><span class="p">.</span><span class="nx">sort</span> <span class="o">-</span> <span class="nx">y</span><span class="p">.</span><span class="nx">sort</span>
+					<span class="p">});</span>
+				<span class="p">},</span>
+				<span class="na">fail</span><span class="p">:</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+					<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"获取登录通道失败"</span><span class="p">,</span> <span class="nx">e</span><span class="p">);</span>
+					<span class="nx">uni</span><span class="p">.</span><span class="nx">showModal</span><span class="p">({</span>
+						<span class="na">content</span><span class="p">:</span><span class="s2">"获取登录通道失败"</span><span class="p">,</span>
+						<span class="na">showCancel</span><span class="p">:</span><span class="kc">false</span>
+					<span class="p">})</span>
+				<span class="p">}</span>
+			<span class="p">});</span>
+		<span class="p">},</span>
+		<span class="na">methods</span><span class="p">:</span> <span class="p">{</span>
+			<span class="k">async</span> <span class="nx">share</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+				<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"分享通道:"</span><span class="o">+</span> <span class="nx">e</span><span class="p">.</span><span class="nx">id</span> <span class="o">+</span><span class="s2">"； 分享类型:"</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">shareType</span><span class="p">);</span>
+				
+				<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">shareText</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">shareType</span> <span class="o">===</span> <span class="mi">1</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nx">shareType</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)){</span>
+					<span class="nx">uni</span><span class="p">.</span><span class="nx">showModal</span><span class="p">({</span>
+						<span class="na">content</span><span class="p">:</span><span class="s2">"分享内容不能为空"</span><span class="p">,</span>
+						<span class="na">showCancel</span><span class="p">:</span><span class="kc">false</span>
+					<span class="p">})</span>
+					<span class="k">return</span><span class="p">;</span>
+				<span class="p">}</span>
+				
+				<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">image</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">shareType</span> <span class="o">===</span> <span class="mi">2</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nx">shareType</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)){</span>
+					<span class="nx">uni</span><span class="p">.</span><span class="nx">showModal</span><span class="p">({</span>
+						<span class="na">content</span><span class="p">:</span><span class="s2">"分享图片不能为空"</span><span class="p">,</span>
+						<span class="na">showCancel</span><span class="p">:</span><span class="kc">false</span>
+					<span class="p">})</span>
+					<span class="k">return</span><span class="p">;</span>
+				<span class="p">}</span>
+				
+				<span class="kd">let</span> <span class="nx">shareOPtions</span> <span class="o">=</span> <span class="p">{</span>
+					<span class="na">provider</span><span class="p">:</span> <span class="nx">e</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span>
+					<span class="na">scene</span><span class="p">:</span> <span class="nx">e</span><span class="p">.</span><span class="nx">type</span> <span class="o">&amp;&amp;</span> <span class="nx">e</span><span class="p">.</span><span class="nx">type</span> <span class="o">===</span> <span class="s1">'WXSenceTimeline'</span> <span class="p">?</span> <span class="s1">'WXSenceTimeline'</span> <span class="p">:</span> <span class="s2">"WXSceneSession"</span><span class="p">,</span> <span class="c1">//WXSceneSession”分享到聊天界面，“WXSenceTimeline”分享到朋友圈，“WXSceneFavorite”分享到微信收藏     </span>
+					<span class="na">type</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">shareType</span><span class="p">,</span>
+					<span class="na">success</span><span class="p">:</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+						<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"success"</span><span class="p">,</span> <span class="nx">e</span><span class="p">);</span>
+						<span class="nx">uni</span><span class="p">.</span><span class="nx">showModal</span><span class="p">({</span>
+							<span class="na">content</span><span class="p">:</span> <span class="s2">"分享成功"</span><span class="p">,</span>
+							<span class="na">showCancel</span><span class="p">:</span><span class="kc">false</span>
+						<span class="p">})</span>
+					<span class="p">},</span>
+					<span class="na">fail</span><span class="p">:</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+						<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"fail"</span><span class="p">,</span> <span class="nx">e</span><span class="p">)</span>
+						<span class="nx">uni</span><span class="p">.</span><span class="nx">showModal</span><span class="p">({</span>
+							<span class="na">content</span><span class="p">:</span> <span class="nx">e</span><span class="p">.</span><span class="nx">errMsg</span><span class="p">,</span>
+							<span class="na">showCancel</span><span class="p">:</span><span class="kc">false</span>
+						<span class="p">})</span>
+					<span class="p">},</span>
+					<span class="na">complete</span><span class="p">:</span><span class="kd">function</span><span class="p">(){</span>
+						<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"分享操作结束!"</span><span class="p">)</span>
+					<span class="p">}</span>
+				<span class="p">}</span>
+				
+				<span class="k">switch</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">shareType</span><span class="p">){</span>
+					<span class="k">case</span> <span class="mi">0</span><span class="p">:</span>
+						<span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">summary</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">shareText</span><span class="p">;</span>
+						<span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">imageUrl</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">image</span><span class="p">;</span>
+						<span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">title</span> <span class="o">=</span> <span class="s2">"欢迎体验uniapp"</span><span class="p">;</span>
+						<span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="s2">"http://uniapp.dcloud.io"</span><span class="p">;</span>
+						<span class="k">break</span><span class="p">;</span>
+					<span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
+						<span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">summary</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">shareText</span><span class="p">;</span>
+						<span class="k">break</span><span class="p">;</span>
+					<span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
+						<span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">imageUrl</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">image</span><span class="p">;</span>
+						<span class="k">break</span><span class="p">;</span>
+					<span class="k">case</span> <span class="mi">5</span><span class="p">:</span>
+						<span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">imageUrl</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">image</span> <span class="p">?</span> <span class="k">this</span><span class="p">.</span><span class="nx">image</span> <span class="p">:</span> <span class="s1">'https://img-cdn-qiniu.dcloud.net.cn/uniapp/app/share-logo@3.png'</span>
+						<span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">title</span> <span class="o">=</span> <span class="s2">"欢迎体验uniapp"</span><span class="p">;</span>
+						<span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">miniProgram</span> <span class="o">=</span> <span class="p">{</span>
+							<span class="na">id</span><span class="p">:</span><span class="s2">"gh_33446d7f7a26"</span><span class="p">,</span>
+							<span class="na">path</span><span class="p">:</span><span class="s2">"/pages/component/component"</span><span class="p">,</span>
+							<span class="na">webUrl</span><span class="p">:</span><span class="s2">"http://uniapp.dcloud.io"</span><span class="p">,</span>
+							<span class="na">type</span><span class="p">:</span><span class="mi">0</span>
+						<span class="p">};</span>
+						<span class="k">break</span><span class="p">;</span>
+					<span class="nl">default</span><span class="p">:</span>
+						<span class="k">break</span><span class="p">;</span>
+				<span class="p">}</span>
+				
+				<span class="k">if</span><span class="p">(</span><span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">type</span> <span class="o">===</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">plus</span><span class="p">.</span><span class="nx">os</span><span class="p">.</span><span class="nx">name</span> <span class="o">===</span> <span class="s1">'iOS'</span><span class="p">){</span><span class="c1">//如果是图文分享，且是ios平台，则压缩图片 </span>
+					<span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">imageUrl</span> <span class="o">=</span> <span class="kr">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">compress</span><span class="p">();</span>
+				<span class="p">}</span>
+				<span class="k">if</span><span class="p">(</span><span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">type</span> <span class="o">===</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">provider</span> <span class="o">===</span> <span class="s1">'qq'</span><span class="p">){</span><span class="c1">//如果是分享文字到qq，则必须加上href和title</span>
+					<span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="s2">"http://uniapp.dcloud.io"</span><span class="p">;</span>
+					<span class="nx">shareOPtions</span><span class="p">.</span><span class="nx">title</span> <span class="o">=</span> <span class="s2">"欢迎体验uniapp"</span><span class="p">;</span>
+				<span class="p">}</span>
+				<span class="nx">uni</span><span class="p">.</span><span class="nx">share</span><span class="p">(</span><span class="nx">shareOPtions</span><span class="p">);</span>
+			<span class="p">},</span>
+			<span class="nx">radioChange</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+				<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"type:"</span> <span class="o">+</span> <span class="nx">e</span><span class="p">.</span><span class="nx">detail</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+				<span class="k">this</span><span class="p">.</span><span class="nx">shareType</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">detail</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+			<span class="p">},</span>
+			<span class="nx">chooseImage</span><span class="p">()</span> <span class="p">{</span>
+				<span class="nx">uni</span><span class="p">.</span><span class="nx">chooseImage</span><span class="p">({</span>
+					<span class="na">count</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+					<span class="na">sourceType</span><span class="p">:</span> <span class="p">[</span><span class="s1">'album'</span><span class="p">,</span> <span class="s1">'camera'</span><span class="p">],</span>
+					<span class="na">sizeType</span><span class="p">:</span> <span class="p">[</span><span class="s1">'compressed'</span><span class="p">,</span> <span class="s1">'original'</span><span class="p">],</span>
+					<span class="na">success</span><span class="p">:</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+						<span class="k">this</span><span class="p">.</span><span class="nx">image</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">tempFilePaths</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+					<span class="p">}</span>
+				<span class="p">})</span>
+			<span class="p">},</span>
+			<span class="nx">compress</span><span class="p">(){</span><span class="c1">//压缩图片 图文分享要求分享图片大小不能超过20Kb</span>
+				<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"开始压缩"</span><span class="p">);</span>
+				<span class="kd">let</span> <span class="nx">img</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">image</span><span class="p">;</span>
+				<span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+					<span class="kd">var</span> <span class="nx">localPath</span> <span class="o">=</span> <span class="nx">plus</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">convertAbsoluteFileSystem</span><span class="p">(</span><span class="nx">img</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s1">'file://'</span><span class="p">,</span> <span class="s1">''</span><span class="p">));</span>
+					<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'after'</span> <span class="o">+</span> <span class="nx">localPath</span><span class="p">);</span>
+					<span class="c1">// 压缩size</span>
+					<span class="nx">plus</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">resolveLocalFileSystemURL</span><span class="p">(</span><span class="nx">localPath</span><span class="p">,</span> <span class="p">(</span><span class="nx">entry</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+						<span class="nx">entry</span><span class="p">.</span><span class="nx">file</span><span class="p">((</span><span class="nx">file</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="c1">// 可通过entry对象操作图片 </span>
+							<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"getFile:"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">file</span><span class="p">));</span>
+							<span class="k">if</span><span class="p">(</span><span class="nx">file</span><span class="p">.</span><span class="nx">size</span> <span class="o">&gt;</span> <span class="mi">20480</span><span class="p">)</span> <span class="p">{</span><span class="c1">// 压缩后size 大于20Kb</span>
+								<span class="nx">plus</span><span class="p">.</span><span class="nx">zip</span><span class="p">.</span><span class="nx">compressImage</span><span class="p">({</span>
+									<span class="na">src</span><span class="p">:</span> <span class="nx">img</span><span class="p">,</span>
+									<span class="na">dst</span><span class="p">:</span> <span class="nx">img</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s1">'.jpg'</span><span class="p">,</span> <span class="s1">'2222.jpg'</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="s1">'.JPG'</span><span class="p">,</span> <span class="s1">'2222.JPG'</span><span class="p">),</span>
+									<span class="na">width</span><span class="p">:</span> <span class="s1">'10%'</span><span class="p">,</span>
+									<span class="na">height</span><span class="p">:</span> <span class="s1">'10%'</span><span class="p">,</span>
+									<span class="na">quality</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+									<span class="na">overwrite</span><span class="p">:</span> <span class="kc">true</span>
+								<span class="p">},</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+									<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'success zip****'</span> <span class="o">+</span> <span class="nx">event</span><span class="p">.</span><span class="nx">size</span><span class="p">);</span>
+									<span class="kd">let</span> <span class="nx">newImg</span> <span class="o">=</span> <span class="nx">img</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s1">'.jpg'</span><span class="p">,</span> <span class="s1">'2222.jpg'</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="s1">'.JPG'</span><span class="p">,</span> <span class="s1">'2222.JPG'</span><span class="p">);</span>
+									<span class="nx">res</span><span class="p">(</span><span class="nx">newImg</span><span class="p">);</span>
+								<span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+									<span class="nx">uni</span><span class="p">.</span><span class="nx">showModal</span><span class="p">({</span>
+										<span class="na">content</span><span class="p">:</span><span class="s2">"分享图片太大,需要请重新选择图片!"</span><span class="p">,</span>
+										<span class="na">showCancel</span><span class="p">:</span><span class="kc">false</span>
+									<span class="p">})</span>
+								<span class="p">});</span>
+							<span class="p">}</span>
+						<span class="p">});</span>
+					<span class="p">},</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+						<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Resolve file URL failed: "</span> <span class="o">+</span> <span class="nx">e</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+						<span class="nx">uni</span><span class="p">.</span><span class="nx">showModal</span><span class="p">({</span>
+							<span class="na">content</span><span class="p">:</span><span class="s2">"分享图片太大,需要请重新选择图片!"</span><span class="p">,</span>
+							<span class="na">showCancel</span><span class="p">:</span><span class="kc">false</span>
+						<span class="p">})</span>
+					<span class="p">});</span>
+				<span class="p">})</span>
+			<span class="p">}</span>
+		<span class="p">},</span>
+		<span class="na">components</span><span class="p">:</span> <span class="p">{</span>
+			<span class="nx">pageHead</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+</code></pre></div></div>
+
+        <div class="page-footer">
+          <div class="page-tag">
+            <span>Tags:</span>
+            
+            <a href="/tags#构建工具" class="tag">| 构建工具</a>
+            
+            <a href="/tags#uniapp" class="tag">| uniapp</a>
+            
+          </div><!-- End Tags -->
+          <div class="page-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=uni-app 的总结(分享)&url=http://localhost:4000/uniapp5/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/uniapp5/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/uniapp5/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+						
+			<!-- JiaThis Button BEGIN -->
+			<div class="jiathis_style_32x32">
+				<a class="jiathis_button_weixin"></a>
+				<a class="jiathis_button_tsina"></a>
+				<!--<a class="jiathis_button_tqq"></a>
+				<a class="jiathis_button_qzone"></a>
+				<a class="jiathis_button_renren"></a>-->
+				<a href="http://www.jiathis.com/share?uid=2157296" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+				<a class="jiathis_counter_style"></a>
+			</div>
+			<script type="text/javascript">var jiathis_config = {data_track_clickback:'true'};</script>
+			<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2157296" charset="utf-8"></script>
+			<!-- JiaThis Button END -->
+          </div><!-- End Share -->
+		  
+		
+		  
+		  <section>
+			<!--<div style="background:#000;border-bottom: 1px solid #d9d9d9;"></div> -->
+
+            <div class="content-play">
+              <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一下呗</a></p>
+              <div class="hide_box-play"></div>
+              <div class="shang_box-play">
+                <a class="shang_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/img/close.jpg" alt="取消" /></a>
+                <div class="shang_tit-play">
+                  <p>对你有帮助，那就打赏一下吧</p>
+                </div>
+				
+				<div class="shang_payimg">    
+                    <img src="/assets/img/wechatimg.jpg" alt="扫码支持" title="扫一扫"/>
+                </div>
+				
+				 <div class="pay_item" data-id="weipay">
+                    <span class="pay_logo"><img src="/assets/img/wechat.jpg" alt="微信" /></span>
+                  </div>
+				
+                <div class="shang_payimg">
+                    <img src="/assets/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+				
+				 <div class="pay_item checked" data-id="alipay">
+                    <span class="pay_logo"><img src="/assets/img/alipay.jpg" alt="支付宝" /></span>
+                  </div>
+				
+                <div class="pay_explain">扫码打赏,金额随意</div>
+               
+              </div>
+            </div>
+            <script type="text/javascript">
+            function dashangToggle(){
+              $(".hide_box-play").fadeToggle();
+              $(".shang_box-play").fadeToggle();
+            }
+            </script>
+
+            <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+
+            <style type="text/css">
+              .content-play{width:100%;margin-top: 20px;margin-bottom: 10px;height:40px;text-align:center;}
+              .hide_box-play{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
+              .shang_box-play{width:100%;height:540px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:0%;top:50%;margin-left:0px;margin-top:-280px;border:1px dotted #dedede;display:none;}
+              .shang_box-play img{border:none;border-width:0;}
+              .dashang{width:100px;margin:5px auto;height:25px;line-height:25px;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;}
+              .dashang:hover{opacity:0.8;padding:15px;font-size:18px;}
+              .shang_close-play{float:right;display:inline-block;
+                margin-right: 10px;margin-top: 20px;
+              }
+              .shang_logo{display:block;text-align:center;margin:20px auto;}
+              .shang_tit-play{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url('/images/payimg/cy-reward-title-bg.jpg');font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
+              .shang_tit-play p{color:#a3a3a3;text-align:center;font-size:16px;}
+              .shang_payimg{padding:10px;/*border:6px solid #EA5F00;**/margin:0 auto;border-radius:3px;height:140px;display:inline-block;}
+              .shang_payimg img{display:inline-block;margin-right:10px;float:left;text-align:center;width:140px;height:140px; }
+              .pay_explain{text-align:center;margin:10px auto;font-size:12px;color:#545454;}
+              .shang_payselect{text-align:center;margin:0 auto;margin-top:40px;cursor:pointer;height:60px;width:500px;margin-left:110px;}
+              .shang_payselect .pay_item{display:inline-block;margin-right:140px;float:left;}
+              .shang_info-play{clear:both;}
+              .shang_info-play p,.shang_info-play a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
+            </style>
+
+       <ul class="pager">
+	    
+        <li class="previous">
+            <a href="/uniapp3/" data-toggle="tooltip" data-placement="top" title="uni-app 的总结(地图)">上一篇：  <span>uni-app 的总结(地图)</span>
+            </a>
+        </li>
+		
+		<br><br>
+		
+        
+        
+        <li class="next">
+            <a href="/uniapp/" data-toggle="tooltip" data-placement="top" title="uni-app 的总结(登录)">下一篇：  <span>uni-app 的总结(登录)</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+        </div>
+		
+		
+        <section class="author-box">
+  <img src="/assets/img/leach-face.jpg" alt="nldrs" class="author-img">
+  <div class="author-desc">
+    <h2>nldrs</h2>
+    <p>码农，嘿说你呢！！？</p>
+    <ul>
+      
+        <li class="email"><a href="mailto:lpfwch777@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      
+      
+        <li class="phone"><a href="tel:0"><i class="fa fa-phone"></i></a></li>
+      
+      <!--
+        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      -->
+    </ul>
+  </div>
+</section>
+
+        <div class="recent-box">
+  <h2 class="recent-title">Recent post</h2>
+  <div class="recent-list">
+    
+      
+        <a href="/mysql/" class="recent-item" style="background: url(/assets/img/lpf-10.jpg) center no-repeat; background-size: cover;"><span>mysql 学习</span></a>
+      
+    
+      
+        <a href="/uniapp6/" class="recent-item" style="background: url(/assets/img/lpf-50.jpg) center no-repeat; background-size: cover;"><span>uni-app 的总结(echarts)</span></a>
+      
+    
+      
+        <a href="/work/" class="recent-item" style="background: url(/assets/img/wch6.jpg) center no-repeat; background-size: cover;"><span>入职的第二周</span></a>
+      
+    
+      
+        <a href="/arr/" class="recent-item" style="background: url(/assets/img/wch4.jpg) center no-repeat; background-size: cover;"><span>JavaScript 数组去重</span></a>
+      
+    
+  </div>
+</div> <!-- End Recent-Box -->
+
+        <div class="newsletter" id="mc_embed_signup" style="display:none">
+  <h2 class="newsletter-title">Newsletter</h2>
+  <div class="form-container">
+    <p>Subscribe here to get our latest updates</p>
+    <form action="//" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
+      <div class="newsletter-box" id="mc_embed_signup_scroll">
+        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
+      </div>
+    </form>
+  </div>
+</div> <!-- End Newsletter -->
+
+        <section class="comment-area">
+  <div class="comment-wrapper">
+   
+	  <div id="disqus_thread" class="article-comments"></div>
+	    <script>
+			var idcomments_acct = '8b1583de29c0b1f23510ee43fce7d4e7';
+			var idcomments_post_id;
+			var idcomments_post_url;
+		</script>
+		<span id="IDCommentsPostTitle" style="display:none"></span>
+		<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+	
+  </div>
+</section>
+      </div>
+    </div> <!-- End Wrapper -->
+  </article>
+  <div class="search-box">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" id="search-input" class="search" placeholder="Search">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search"  style="height:400px;overflow-y:scroll;overflow-y:auto;"></ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="main-footer">
+	<div class="footer-social">
+		<div class="footer-container clearfix">
+			<div class="social-list">
+				<a class="social github" target="blank" href="https://github.com/nldrs">GitHub</a>
+				<a class="social github" target="blank" href="https://www.jianshu.com/u/042fe873dc7c">简书</a>
+				<a class="social github" target="blank" href="https://juejin.im/user/5a20a378f265da4311200031/collections">掘金</a>
+				<a class="social github" target="blank" href="http://blog.csdn.net/">Csdn</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<p>2018 &copy; nldrs</p>
+		
+			
+	<div style="font-size:12px;color:#B3B3B3;padding-right:30px;float:right"> 
+		<iframe
+                style="margin-left: 2px; margin-bottom:-5px;"
+                frameborder="0" scrolling="0" width="91px" height="20px"
+                src="https://ghbtns.com/github-btn.html?user=leach-chen&repo=leach-chen.github.io&type=star&count=true" >
+            </iframe>
+		<span id="busuanzi_container_site_pv">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+	</div>
+	</div>
+
+</footer> <!-- End Footer -->
+
+</div>
+
+  
+  
+<div class="top" title="Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div> <!-- End Top Scroll -->
+  <!-- JS -->
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jekyll-search.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+<script src="/assets/js/main.js"></script>
+
+  <!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
