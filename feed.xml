@@ -1,547 +1,187 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-09T20:11:07+08:00</updated><id>http://localhost:4000/</id><title type="html">Blog - 努力的人生</title><subtitle>面向标杆直奔
-</subtitle><author><name>nldrs</name></author><entry><title type="html">mysql 学习视图</title><link href="http://localhost:4000/mysql/" rel="alternate" type="text/html" title="mysql 学习视图" /><published>2018-10-08T08:25:00+08:00</published><updated>2018-10-08T08:25:00+08:00</updated><id>http://localhost:4000/mysql</id><content type="html" xml:base="http://localhost:4000/mysql/">&lt;h1 id=&quot;mysql-视图&quot;&gt;mysql 视图&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-20T20:55:28+08:00</updated><id>http://localhost:4000/</id><title type="html">Blog - 努力的人生</title><subtitle>面向标杆直奔
+</subtitle><author><name>nldrs</name></author><entry><title type="html">linux</title><link href="http://localhost:4000/linux2/" rel="alternate" type="text/html" title="linux" /><published>2018-10-26T15:49:00+08:00</published><updated>2018-10-26T15:49:00+08:00</updated><id>http://localhost:4000/linux2</id><content type="html" xml:base="http://localhost:4000/linux2/">&lt;p&gt;linux学习是成长的过程,暂无内容，敬请期待。。。。。。&lt;/p&gt;</content><author><name>nldrs</name></author><category term="linux" /><summary type="html">linux学习是成长的过程,暂无内容，敬请期待。。。。。。</summary></entry><entry><title type="html">nginx学习之旅（五）</title><link href="http://localhost:4000/nginx/" rel="alternate" type="text/html" title="nginx学习之旅（五）" /><published>2018-10-25T15:49:00+08:00</published><updated>2018-10-25T15:49:00+08:00</updated><id>http://localhost:4000/nginx</id><content type="html" xml:base="http://localhost:4000/nginx/">&lt;h2 id=&quot;nginx&quot;&gt;Nginx&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0u47aj30sd0hl4bm.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0p3p8j30ud0grti3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0p8wzj30v00cs457.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0raqhj30pt0gtais.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0v9rcj30vf0hztlh.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0s6vmj30oo0hzk24.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0m7bij30r70b241j.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0ofruj30x10j9tfw.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0nk9nj30i80jodks.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0of8pj30oq0fk0xp.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Nginx2" /><summary type="html">Nginx</summary></entry><entry><title type="html">linux</title><link href="http://localhost:4000/linux1/" rel="alternate" type="text/html" title="linux" /><published>2018-10-25T15:49:00+08:00</published><updated>2018-10-25T15:49:00+08:00</updated><id>http://localhost:4000/linux1</id><content type="html" xml:base="http://localhost:4000/linux1/">&lt;h3 id=&quot;linux&quot;&gt;linux&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqzct1j30kh0kotfv.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqc6ccj30kh0f3gq6.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqcau3j30i00ebgql.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqk8fej30n00gvjx8.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqlr8nj30ne0es0yj.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkr2zqlj30n10k47be.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkra44hj30nu0gf10t.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqdf6tj30uy0b1792.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqecjhj30of064n20.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkri68oj30r80gz48g.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqe48qj30jo08uq75.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqn98ej30wz0f80yq.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetksdsixj30zn0ifwpf.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetks781ej30yw0a57ep.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkrk01lj30uw0bqdpe.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkr5veoj30t70frthb.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkra1u3j30ix0he7d1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkq81khj30oh06mq5i.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkr6atcj30hw0dj7b6.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqesj6j30ol096gpm.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqfunhj30lm06cjv1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqpajmj30kc0de79t.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkq94juj30iu09kn1d.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqkwbnj30kw0aaaf2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetksuetsj30q00enwp3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqhoo6j30e00b841x.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqpgwmj30n90b3wjs.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkq8mscj30kd09140r.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkq7jomj30rj04n0u9.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkr4xg7j30pg0g4gty.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkq6z6vj30m803amxv.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqqg21j30nw0beafr.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqqs9qj30tc0cu44d.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetksab37j30zv0hugut.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqrburj30l70angqo.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkrb9n9j30yq0jpgsv.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkro9jyj30w10e6ait.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkt3eokj312p0ifkbu.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkt49xej311n0l7tww.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkt1wegj31050gfh2j.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkt7x6mj310v0k7trt.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkrc293j30ye08r10c.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqtos1j30yp0b77a8.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqvc5oj30qz0f57b1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkski4gj30of0eiqdi.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqvccbj30np0avafg.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkrpoljj30wn0a6479.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkreue0j30tq0cjah0.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetks792nj30tt0jvajv.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqkmsvj30t908ejvf.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqim8jj30ma08agpd.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqvodkj30op0efjwx.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkreu83j30o90cbdlk.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkq8mmpj30iq06jwh3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetksdf4bj30wd0dgtk6.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqy6xnj30pb0agtew.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkrkxn8j30xa0hlqbq.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkr7e7xj30gd0ettfp.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="linux" /><summary type="html">linux</summary></entry><entry><title type="html">nginx学习之旅（四）</title><link href="http://localhost:4000/nginx/" rel="alternate" type="text/html" title="nginx学习之旅（四）" /><published>2018-10-24T15:49:00+08:00</published><updated>2018-10-24T15:49:00+08:00</updated><id>http://localhost:4000/nginx</id><content type="html" xml:base="http://localhost:4000/nginx/">&lt;h2 id=&quot;nginx&quot;&gt;Nginx&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju6mefj30wm0hydst.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju5t32j30v50hgtlb.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmljuujexj30vs0hb18k.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmljuol9mj30v10h318g.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju8w2cj30s10ia4bl.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmljudra9j30wb0hsdwj.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju5rx7j30sx0gxdp6.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju51h3j30t40hawoy.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju34qoj30os0947ab.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju1yw9j30s50eztgv.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Nginx2" /><summary type="html">Nginx</summary></entry><entry><title type="html">nginx学习之旅（三）</title><link href="http://localhost:4000/nginx/" rel="alternate" type="text/html" title="nginx学习之旅（三）" /><published>2018-10-23T15:49:00+08:00</published><updated>2018-10-23T15:49:00+08:00</updated><id>http://localhost:4000/nginx</id><content type="html" xml:base="http://localhost:4000/nginx/">&lt;h2 id=&quot;nginx&quot;&gt;Nginx&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhou8t7j30vp0i0qec.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhom90zj30e505vgmk.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhp8d23j30w50hi13w.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhoucqej30rx0hcgw3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhomvodj30e207hq4e.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhoq4wvj30oq0f7grv.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhow6k9j30vl0hywnl.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhotr2dj30u60hqguu.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhowipbj30t20igalf.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhopu0rj30vv0g3n5m.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Nginx2" /><summary type="html">Nginx</summary></entry><entry><title type="html">nginx学习之旅（二）</title><link href="http://localhost:4000/nginx/" rel="alternate" type="text/html" title="nginx学习之旅（二）" /><published>2018-10-22T15:49:00+08:00</published><updated>2018-10-22T15:49:00+08:00</updated><id>http://localhost:4000/nginx</id><content type="html" xml:base="http://localhost:4000/nginx/">&lt;h2 id=&quot;nginx&quot;&gt;Nginx&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmld2yspgj30qc0i3qf9.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmldakn5yj30vv0es4ah.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmldkm741j30w00fp14i.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmldr9q74j30vo0glqeq.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmle3bbybj30ny0gxwkc.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmle3a8tkj30o5080tbz.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmle3bcaoj30zz082n39.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmle3hshkj30uf0inqgd.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmle3f61zj30pv0hhaon.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmle3dl7vj30qh0g2k1k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Nginx2" /><summary type="html">Nginx</summary></entry><entry><title type="html">linux 学习(二)</title><link href="http://localhost:4000/shell/" rel="alternate" type="text/html" title="linux 学习(二)" /><published>2018-10-21T20:16:00+08:00</published><updated>2018-10-21T20:16:00+08:00</updated><id>http://localhost:4000/shell</id><content type="html" xml:base="http://localhost:4000/shell/">&lt;h2 id=&quot;linux-学习&quot;&gt;linux 学习&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml7i382jj30e60e8dhr.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml7m3xo9j30ap0cymyy.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml7rtaayj30qq0f4wj7.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml7woh4rj314s0eik05.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml821x3vj30lo0g5afv.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml8a19tej30jm0kcgo9.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml8hedl3j30jd05pwg4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="构建工具" /><category term="linux" /><summary type="html">linux 学习</summary></entry><entry><title type="html">linux bash 命令</title><link href="http://localhost:4000/linux/" rel="alternate" type="text/html" title="linux bash 命令" /><published>2018-10-21T08:00:00+08:00</published><updated>2018-10-21T08:00:00+08:00</updated><id>http://localhost:4000/linux</id><content type="html" xml:base="http://localhost:4000/linux/">&lt;h1 id=&quot;linux-bash-命令&quot;&gt;linux bash 命令&lt;/h1&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;linux / 目录的结构&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;bin 放置着linux启动程序&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;boot 放置linux的内核&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;dev 包含linux 的设备文件&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;etc 放置配置文件&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;home（没创建一个新用户） 家目录&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;lib 动态链接库&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;media、mnt 可移除设备的挂载点&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;proc 进程文件&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fw13gk7egcj30yz08pdnm.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fw13guptfrj30sj042wj0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fw13h59njaj30p40hhdrx.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fw13hek1jvj30n209ljwz.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;mysql-事务和建模&quot;&gt;mysql 事务和建模&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fw28bbfvpmj30vw0bjdl0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fw28bmbgsjj30yc0bxk26.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="前端" /><category term="数据库" /><summary type="html">mysql 视图</summary></entry><entry><title type="html">十一回来上班的第一天</title><link href="http://localhost:4000/work/" rel="alternate" type="text/html" title="十一回来上班的第一天" /><published>2018-10-08T07:15:00+08:00</published><updated>2018-10-08T07:15:00+08:00</updated><id>http://localhost:4000/work</id><content type="html" xml:base="http://localhost:4000/work/">&lt;h2 id=&quot;十一回来上班的第一天&quot;&gt;十一回来上班的第一天&lt;/h2&gt;
-
-&lt;p&gt;想着占用几分钟，写一下十一回来的工作状态和这个星期的目标和任务。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;完成后台框架的搭建&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;完成mysql的学习&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;完成 react 的基础学习&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;准备入手两本书（vue的移动端技术 和 mongoose 数据库）&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;这周做个缓冲周，下周正式开始实战项目！！！！！！！！&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>nldrs</name></author><category term="随笔" /><category term="工作" /><summary type="html">十一回来上班的第一天</summary></entry><entry><title type="html">mysql 学习连表查询</title><link href="http://localhost:4000/mysql/" rel="alternate" type="text/html" title="mysql 学习连表查询" /><published>2018-10-07T08:25:00+08:00</published><updated>2018-10-07T08:25:00+08:00</updated><id>http://localhost:4000/mysql</id><content type="html" xml:base="http://localhost:4000/mysql/">&lt;h1 id=&quot;mysql-连表查询&quot;&gt;mysql 连表查询&lt;/h1&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvyx8ijkqtj30t605vn0q.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvyx99h1upj30xb0a20zv.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr0f0cyzj312n0b342i.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr0nvgcbj30t2091wly.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr0v0dnoj30ue075jwl.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr12tnj5j314p0bk130.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr19bl2gj30yb0a1432.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr1eni6kj30p906twip.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr1ltqvyj30mx04vn00.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr1rgye5j30w40buk1w.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr1wzxbhj30ss05qgqb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr21syh6j30s808wn67.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr27kwryj30t608h457.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr2d18stj30xq07u45m.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvzr2hrbvcj30ru080tfn.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="前端" /><category term="数据库" /><summary type="html">mysql 连表查询</summary></entry><entry><title type="html">mysql 学习</title><link href="http://localhost:4000/mysql/" rel="alternate" type="text/html" title="mysql 学习" /><published>2018-10-06T08:25:00+08:00</published><updated>2018-10-06T08:25:00+08:00</updated><id>http://localhost:4000/mysql</id><content type="html" xml:base="http://localhost:4000/mysql/">&lt;h1 id=&quot;mysql-聚合函数&quot;&gt;mysql 聚合函数&lt;/h1&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvycqrvgcej30xg0bkth4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvyegmw89uj30pu05242s.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvylwn4f4vj30x407bjvi.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvylx11ai1j30kb07fn09.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvymmyfrpxj30vz06naeh.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvymoc94v3j30wr05342a.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvymoqm3lzj30u106879o.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvymp21gdyj30yn096tdx.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvynedsrjij30wo0as7ew.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvyneporjdj30wm053q8w.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvyneporjdj30wm053q8w.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvynf497vzj30xa07r0y2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="前端" /><category term="数据库" /><summary type="html">mysql 聚合函数</summary></entry><entry><title type="html">mysql 学习</title><link href="http://localhost:4000/mysql/" rel="alternate" type="text/html" title="mysql 学习" /><published>2018-10-05T08:25:00+08:00</published><updated>2018-10-05T08:25:00+08:00</updated><id>http://localhost:4000/mysql</id><content type="html" xml:base="http://localhost:4000/mysql/">&lt;h1 id=&quot;mysql-数据类型属性&quot;&gt;mysql 数据类型—属性&lt;/h1&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;mysql 中常见的数据类型 ：varchar(n) float int bigint date datetime text&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;默认值 default ‘默认值’&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;非空 not null 此字段必须填写&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;自主增长 auto_increment 尽量作用在int类型的字段上&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;主键 primary key 不能重复 一张表中只有一个字段可以作为主键&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;唯一健 unique 被unique修饰的数据不能重复&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bigint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;auto_increment&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;primary&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;comment&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'学生编号'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;stuName&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;comment&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'学生姓名'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;gender&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'男'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;comment&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'性别'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;className&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;comment&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'班级'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;iphone&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;unique&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;comment&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'手机号码'&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;注意点：&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;delete&lt;/code&gt; 可以 删除整张表 但是删除后 自增列不会从1开始&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;delete&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;truncate&lt;/code&gt;  可以 删除整张表 但是删除后 自增列从1开始&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;truncate&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvycj3anmzj30yk08kwm3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="前端" /><category term="数据库" /><summary type="html">mysql 数据类型—属性</summary></entry><entry><title type="html">mysql 学习</title><link href="http://localhost:4000/mysql/" rel="alternate" type="text/html" title="mysql 学习" /><published>2018-10-04T08:25:00+08:00</published><updated>2018-10-04T08:25:00+08:00</updated><id>http://localhost:4000/mysql</id><content type="html" xml:base="http://localhost:4000/mysql/">&lt;h1 id=&quot;mysql&quot;&gt;mysql&lt;/h1&gt;
-
-&lt;hr /&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;给表区别名  &lt;code class=&quot;highlighter-rouge&quot;&gt;select s.name from students s&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;一-添加数据&quot;&gt;一 添加数据&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;往指定表中添加数据 insert into 表名（字段1，字段2….）values(值1，值2)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;insert&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;into&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`java表`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;姓名&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;班级&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;成绩&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'张三'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'三十三班'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;98&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;插入数据的第二种语法  insert into 表名 set 字段名1=字段值1,字段名2=字段值2….&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;k&quot;&gt;insert&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;into&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`java表`&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;姓名&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'李四'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;班级&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'53班'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;可以省略 (姓名,班级,java成绩) ，但必须写全部字段&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;insert&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;into&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`java表`&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'张三'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'三十三班'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;98&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;插入多条数据&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;insert&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;into&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`java表`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;姓名&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;班级&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;成绩&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'张三'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'三十三班'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;98&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'周六'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'45班'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;二-删除数据&quot;&gt;二 删除数据&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;删除数据的语法   delete from 表名 where 条件&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;delete&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`java表`&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;姓名&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'李四'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;删除全部数据&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;delete&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`students`&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;三-修改数据&quot;&gt;三 修改数据&lt;/h4&gt;
-
-&lt;p&gt;1.修改语法  update 表名 set 字段名=值,…. where 条件&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'李四'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvwm61cpy7j312u0hv7at.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ddl-操作数据库&quot;&gt;DDL 操作数据库&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;添加数据库  create database 库名 [character set utf8]&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;删除指定的数据库 drop database 库名&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;查询指定库的详细信息&lt;/p&gt;
-
-    &lt;p&gt;1.） show create database 库名 ：查看某个数据库的详细信息&lt;/p&gt;
-
-    &lt;p&gt;2.） show databases 查看所有的库&lt;/p&gt;
-
-    &lt;p&gt;3.） select database(); 查看当前的用户连接的是哪个数据库&lt;/p&gt;
-
-    &lt;p&gt;4.） show tablels  查看指定数据库下有哪些表&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;修改指定库的编码 alter  database 库名 character set 新编码&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;ddl-操作表&quot;&gt;DDL 操作表&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;创建表 create table 表名（字段1…..）&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;删除表 drop table 表名&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;查询&lt;/p&gt;
-
-    &lt;p&gt;1.）查询一张表的结构  desc 表名&lt;/p&gt;
-
-    &lt;p&gt;2.）或者  show create table 表名&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;修改&lt;/p&gt;
-
-    &lt;p&gt;1.）重命名  rename table 旧表名 to 新表名&lt;/p&gt;
-
-    &lt;p&gt;2.）添加新字段  alter table  表名 add 字段名 数据类型&lt;/p&gt;
-
-    &lt;p&gt;3.）删除字段   alter table 表名 drop 字段名&lt;/p&gt;
-
-    &lt;p&gt;4.）字段重命名  alter table 表名 change 旧字段名 新字段名 新字段名数据类型&lt;/p&gt;
-
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alter table bank change username name varchar(40)&lt;/code&gt;&lt;/p&gt;
-
-    &lt;p&gt;5.) 修改字段类型的长度 alert table 表名 旧字段名 新字段名 新字段名的数据类型&lt;/p&gt;
-
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alter table bank change username username varchar(100)&lt;/code&gt;&lt;/p&gt;
-
-    &lt;h2 id=&quot;数据库的备份&quot;&gt;数据库的备份&lt;/h2&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;命令行  备份：mysqldump -uroot -p dt_bank&amp;gt;C:\dt_bank_back.sql&lt;/p&gt;
-
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    还原：进入mysql 环境 =》创建库=》在库下还原数据 source  C:\dt_bank_back.sql
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;sqlyog工具  选中要备份的数据库 =》 右键 =》 备份导出 =》 转存到sql&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>nldrs</name></author><category term="前端" /><category term="数据库" /><summary type="html">mysql</summary></entry><entry><title type="html">uni-app 的总结(echarts)</title><link href="http://localhost:4000/uniapp6/" rel="alternate" type="text/html" title="uni-app 的总结(echarts)" /><published>2018-09-20T20:16:00+08:00</published><updated>2018-09-20T20:16:00+08:00</updated><id>http://localhost:4000/uniapp6</id><content type="html" xml:base="http://localhost:4000/uniapp6/">&lt;h2 id=&quot;uni-app-的总结开始的项目中可能用到的模块&quot;&gt;uni-app 的总结(开始的项目中可能用到的模块)&lt;/h2&gt;
-
-&lt;h1 id=&quot;echarts&quot;&gt;echarts&lt;/h1&gt;
-
-&lt;p&gt;uni-app 的目录结构，不是src、dist并列方式。
-HBuilderX里的uni-app，根目录是相当于src，dist并放到了unpackage目录下。
-src目录下是不能直接 npm install 引入第三方库的。
-你可以在别处install，然后把相关文件copy到src下。&lt;/p&gt;
-
-&lt;p&gt;本文以 echarts 为例讲解 uni-app 如何引用 npm 第三方库。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;下载第三方库
-uni-app 使用了 mpvue 的部分代码，所以我们的 echarts 库使用兼用 mpvue 版本的 mpvue-echarts，同时需要引用百度的 echarts。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;下载流程如下：&lt;/p&gt;
-
-&lt;p&gt;创建一个空的文件夹如：test-echarts。
-进入 test-echarts 打开命令行工具，执行 npm init 一路回车即可。
-下载第三方库：npm install echarts mpvue-echarts –save。
-进入 node_modules 目录，里面的三个目录：echarts、mpvue-echats 、zrender 就是我们需要的第三方库。&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;创建uni-app工程
-在 HBuilderX 里面新建 uni-app，将将刚才下载的三个文件夹拷贝到项目根目录，最终项目截图如下：&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;在uni-app里面使用第三方库
-和一般的 vue 项目引用第三方库的方法一样，如下所示，这样我们就能在工程里面使用 echarts 和 mpvue-echarts 了。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;echarts&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echarts'&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mpvueEcharts&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'mpvue-echarts'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;本示例源码在附件工程里面，下面是部分代码和效果截图：&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;container&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mpvue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;echarts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;echarts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;echarts&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onInit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;onInit&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/template&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;echarts&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echarts'&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mpvueEcharts&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'mpvue-echarts'&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initChart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;......&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nx&quot;&gt;echarts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;na&quot;&gt;onInit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initChart&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;components&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;mpvueEcharts&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/script&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/style&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;//img-cdn-qiniu.dcloud.net.cn/uploads/article/20180802/e6097d69bf13453e5101b8dedb581983.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;官方实例&quot;&gt;官方实例&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;template&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;container&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-		&lt;span class=&quot;nt&quot;&gt;&amp;lt;view&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;canvasView&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-			&lt;span class=&quot;nt&quot;&gt;&amp;lt;view&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;饼图示例&lt;span class=&quot;nt&quot;&gt;&amp;lt;/view&amp;gt;&lt;/span&gt;
-			&lt;span class=&quot;nt&quot;&gt;&amp;lt;mpvue-echarts&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;:echarts=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;echarts&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;:onInit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;pieInit&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;canvasId=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;pie&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-		&lt;span class=&quot;nt&quot;&gt;&amp;lt;/view&amp;gt;&lt;/span&gt;
-		&lt;span class=&quot;nt&quot;&gt;&amp;lt;view&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;canvasView&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-			&lt;span class=&quot;nt&quot;&gt;&amp;lt;view&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;折线图示例&lt;span class=&quot;nt&quot;&gt;&amp;lt;/view&amp;gt;&lt;/span&gt;
-			&lt;span class=&quot;nt&quot;&gt;&amp;lt;mpvue-echarts&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;:echarts=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;echarts&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;:onInit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lineInit&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;canvasId=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;line&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-		&lt;span class=&quot;nt&quot;&gt;&amp;lt;/view&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/template&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;逻辑层&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;echarts&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'../../../components/echarts/echarts.simple.min.js'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mpvueEcharts&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'../../../components/mpvue-echarts/src/echarts.vue'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getPieOption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;na&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-			&lt;span class=&quot;na&quot;&gt;backgroundColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'#F8F8F8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-			&lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#37A2DA'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'#32C5E9'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'#67E0E3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'#91F2DE'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'#FFDB5C'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'#FF9F7F'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-			&lt;span class=&quot;na&quot;&gt;series&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-						&lt;span class=&quot;na&quot;&gt;fontSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;
-					&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-				&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'pie'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'50%'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'50%'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'60%'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;55&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'北京'&lt;/span&gt;
-				&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'武汉'&lt;/span&gt;
-				&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'杭州'&lt;/span&gt;
-				&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'广州'&lt;/span&gt;
-				&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;38&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'上海'&lt;/span&gt;
-				&lt;span class=&quot;p&quot;&gt;}],&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;itemStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;emphasis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-						&lt;span class=&quot;na&quot;&gt;shadowBlur&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-						&lt;span class=&quot;na&quot;&gt;shadowOffsetX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-						&lt;span class=&quot;na&quot;&gt;shadowColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'rgba(0, 2, 2, 0.3)'&lt;/span&gt;
-					&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-				&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;}]&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getLineOption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;na&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-			&lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#37A2DA'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'#9FE6B8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-			&lt;span class=&quot;na&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'蒸发量'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'降水量'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-			&lt;span class=&quot;na&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;y2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-			&lt;span class=&quot;na&quot;&gt;calculable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-			&lt;span class=&quot;na&quot;&gt;xAxis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'category'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'1月'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'2月'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'3月'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'4月'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'5月'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'6月'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'7月'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'8月'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'9月'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'10月'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'11月'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'12月'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;}],&lt;/span&gt;
-			&lt;span class=&quot;na&quot;&gt;yAxis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'value'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;splitArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-					&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
-				&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;}],&lt;/span&gt;
-			&lt;span class=&quot;na&quot;&gt;series&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'蒸发量'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'line'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;7.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;23.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;25.6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;76.7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;135.6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;162.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;32.6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;20.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;6.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'降水量'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'line'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;2.6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;5.9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;9.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;26.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;28.7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;70.7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;175.6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;182.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;48.7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;18.8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;6.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;}]&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-				&lt;span class=&quot;nx&quot;&gt;echarts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;pieInit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-					&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pieChart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;echarts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-						&lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-						&lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;
-					&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-					&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setChart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pieChart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-					&lt;span class=&quot;nx&quot;&gt;pieChart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setOption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getPieOption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-					&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pieChart&lt;/span&gt;
-				&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-				&lt;span class=&quot;na&quot;&gt;lineInit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-					&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lineChart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;echarts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-						&lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-						&lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;
-					&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-					&lt;span class=&quot;nx&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setChart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lineChart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-					&lt;span class=&quot;nx&quot;&gt;lineChart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setOption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getLineOption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-					&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lineChart&lt;/span&gt;
-				&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-			&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-		&lt;span class=&quot;na&quot;&gt;components&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;nx&quot;&gt;mpvueEcharts&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>nldrs</name></author><category term="构建工具" /><category term="uniapp" /><summary type="html">uni-app 的总结(开始的项目中可能用到的模块)</summary></entry><entry><title type="html">入职的第二周</title><link href="http://localhost:4000/work/" rel="alternate" type="text/html" title="入职的第二周" /><published>2018-09-20T15:18:00+08:00</published><updated>2018-09-20T15:18:00+08:00</updated><id>http://localhost:4000/work</id><content type="html" xml:base="http://localhost:4000/work/">&lt;h2 id=&quot;工作的感受&quot;&gt;工作的感受&lt;/h2&gt;
-
-&lt;p&gt;现在是公司的下班时间，想来我也不想回去那么早，想把自己这几天的感受和状态写下来，做个小总结。&lt;/p&gt;
-
-&lt;p&gt;对于这周的前期给自己计划的任务有点滞后了，好多的工作都没有开始，这几天忙着学习mysql 和混合app的开发 ，&lt;/p&gt;
-
-&lt;p&gt;node的相关知识就没有学习。总感觉自己的学习进度有点慢，想要提高，还要加紧步伐啊。&lt;/p&gt;
-
-&lt;p&gt;做前端两年多了，前期大部分时间是考代码 去完成任务 从来也没有好好想大神们是如何实现的和背后的原理又是什&lt;/p&gt;
-
-&lt;p&gt;么。一点点的积累到后来就成了只会考代码的机器人 ，和我在工厂做的流水线工作实在没有什么两样。好在，现在有&lt;/p&gt;
-
-&lt;p&gt;这个意识了，感觉还是要好好的去了解底层的原理。这样不管他怎么变，自己还是可以掌握到本质。&lt;/p&gt;
-
-&lt;p&gt;这个道理其实我很早就明白，但是其实现在看来当初是&lt;code class=&quot;highlighter-rouge&quot;&gt;不明白&lt;/code&gt;。我相信我的意识到这个问题还不晚 。就看自己如何&lt;/p&gt;
-
-&lt;p&gt;去解决了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvg4qdmm5oj30zk0sgao6.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;最近在看一本书《码农翻身》 作者写的真是好啊 好多问题看了以后感觉恍然大悟了。因为我不是科班出身，没有整&lt;/p&gt;
-
-&lt;p&gt;体的计算机技术架构。所以想提高自己的这方面的知识，一直也没有个靠谱的方法，看了这本书感觉书中的知识通俗&lt;/p&gt;
-
-&lt;p&gt;易懂 都是故事形势的感觉很好。&lt;/p&gt;
-
-&lt;p&gt;好了，今天就写到这里吧 。。。发发牢骚 。。。&lt;/p&gt;
-
-&lt;p&gt;生活还要继续，代码还要继续，要做有情怀的程序员！！！！！！！！！！！&lt;/p&gt;</content><author><name>nldrs</name></author><category term="随笔" /><category term="工作" /><summary type="html">工作的感受</summary></entry><entry><title type="html">JavaScript 数组去重</title><link href="http://localhost:4000/arr/" rel="alternate" type="text/html" title="JavaScript 数组去重" /><published>2018-09-20T07:45:00+08:00</published><updated>2018-09-20T07:45:00+08:00</updated><id>http://localhost:4000/arr</id><content type="html" xml:base="http://localhost:4000/arr/">&lt;h1 id=&quot;javascript-数组去重&quot;&gt;JavaScript 数组去重&lt;/h1&gt;
-
-&lt;p&gt;数组去重，一般都是在面试的时候才会碰到，一般是要求手写数组去重方法的代码。如果是被提问到，数组去重的方法有哪些？你能答出其中的10种，面试官很有可能对你刮目相看。&lt;/p&gt;
-
-&lt;p&gt;在真实的项目中碰到的数组去重，一般都是后台去处理，很少让前端处理数组去重。虽然日常项目用到的概率比较低，但还是需要了解一下，以防面试的时候可能回被问到。&lt;/p&gt;
-
-&lt;p&gt;一、利用ES6 Set去重（ES6中最常用）
-&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvft8hbnkaj30ox0pagnv.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvft8nokhzj30q80qnmyv.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvft8sfkjdj30rt0ppdhc.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvft8y7s4nj30pd0flt9u.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvft94gunbj30rp0qe766.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvft9afohmj30rq0f0aaw.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000016418021&quot;&gt;转载自沉静地闪光&lt;/a&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="随笔" /><category term="数组去重" /><summary type="html">JavaScript 数组去重</summary></entry><entry><title type="html">15行CSS代码让苹果设备崩溃，最新的iOS 12也无法幸免</title><link href="http://localhost:4000/ios/" rel="alternate" type="text/html" title="15行CSS代码让苹果设备崩溃，最新的iOS 12也无法幸免" /><published>2018-09-20T07:18:00+08:00</published><updated>2018-09-20T07:18:00+08:00</updated><id>http://localhost:4000/ios</id><content type="html" xml:base="http://localhost:4000/ios/">&lt;blockquote&gt;
-  &lt;p&gt;15行CSS代码让苹果设备崩溃，最新的iOS 12也无法幸免&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Wire 的安全研究员 Sabri Haddouche 发现了一种新的攻击，只需访问包含某些 CSS 和 HTML 的网页，就会导致 iOS 重新启动以及 macOS 冻结。 Windows 和 Linux 用户不受此错误的影响。&lt;/p&gt;
-
-&lt;p&gt;攻击利用 -webkit-backdrop-filter CSS 属性中的弱点，通过使用具有该属性的嵌套 div，可以快速消耗所有图形资源并崩溃或冻结操作系统。攻击不需要启用 Javascript，因此它也适用于 Mail。在 macOS 上，表现为 UI 冻结。在 iOS 上， 表现为设备重启。此攻击会影响 iOS 上的所有浏览器，以及 macOS 中的 Safari 和 Mail，因为它们都使用 WebKit 渲染引擎。&lt;/p&gt;
-
-&lt;p&gt;对于那些想要查看导致此攻击的人，研究人员已将其发布在 GitHub 页面上。&lt;/p&gt;
-
-&lt;p&gt;点击 rawgit.com 链接时要小心，因为它会迅速导致 iOS 崩溃或导致 Mac 出现问题。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.bleepingcomputer.com/news/security/new-css-attack-restarts-an-iphone-or-freezes-a-mac/&quot;&gt;rawgit.com链接&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://gist.github.com/pwnsdx/ce64de2760996a6c432f06d612e33aea&quot;&gt;代码 GitHub&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;打开这个 GitHub 页面，可以看到代码如下：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fvfqaigxgmj30qg08xtbj.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;上面红色部分是一张经过 base64 编码的图片，下面是很多&amp;lt;div&amp;gt;标签。正如 Haddouche 所说，就是利用了在过滤器属性中嵌入大量 HTML 元素标签来消耗设备的资源，从而达到攻击的目的。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.oschina.net/news/100035/new-css-attack-restarts-an-iphone-or-freezes-a-mac&quot;&gt;文章转载自开源中国&lt;/a&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="随笔" /><category term="ios" /><summary type="html">15行CSS代码让苹果设备崩溃，最新的iOS 12也无法幸免</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8af26c2j30yq0fhdmd.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8aqtiobj30jw0j6jvu.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8awg422j30gc07smye.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8b24940j30er0dagmt.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8b7lxpyj30lo0hxq8y.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8bcelfoj30c20bwdgp.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8bh6zt0j30g00gidht.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8blz2zuj30si0dvqag.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8br2llbj30ux0e4429.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8bw286lj31d90ltn9d.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8c3v3puj318a0i9do9.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8ca7nydj31710lendy.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8cfkxblj30gm0i7ahm.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8clrs1lj30k30l377d.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8crzfhvj30hj090my9.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8cyjn8mj30jd0kiwn3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8d47dgqj31050k1qaj.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8d9kisej30ci0h6wgg.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8dg2jcuj315i0iidx4.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8dn9g53j316b0k7art.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8dt7igsj30y80cvwis.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8dysd1nj30lu0kr469.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8e56yizj312z0kmk3l.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="前端" /><category term="linux" /><summary type="html">linux bash 命令</summary></entry><entry><title type="html">linux 学习(一)</title><link href="http://localhost:4000/shell/" rel="alternate" type="text/html" title="linux 学习(一)" /><published>2018-10-20T20:16:00+08:00</published><updated>2018-10-20T20:16:00+08:00</updated><id>http://localhost:4000/shell</id><content type="html" xml:base="http://localhost:4000/shell/">&lt;h2 id=&quot;linux-学习&quot;&gt;linux 学习&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml47gvbbj30pf0eujvw.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml4e6wn6j30wl0gpah7.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml4j4h76j30ti0gbgr8.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml4o1t0gj30kq0h50zd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml4sxo3ij30f40cladx.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml50zwr6j30hw0aj77t.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml58qrnmj30ku0hsdng.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml5fdo6xj30l00gdjtu.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="构建工具" /><category term="linux" /><summary type="html">linux 学习</summary></entry><entry><title type="html">react 事件</title><link href="http://localhost:4000/react/" rel="alternate" type="text/html" title="react 事件" /><published>2018-10-17T14:10:00+08:00</published><updated>2018-10-17T14:10:00+08:00</updated><id>http://localhost:4000/react</id><content type="html" xml:base="http://localhost:4000/react/">&lt;h1 id=&quot;react-事件&quot;&gt;react 事件&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwcf1rtayvj30q10nrwkt.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwcf1xnu5qj30su0fyn4x.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwcf21cdqmj30r404rjtf.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwcf25iq7qj312i0lyguw.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="React" /><summary type="html">react 事件</summary></entry></feed>
