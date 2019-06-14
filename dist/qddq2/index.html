@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>React Fire：React DOM 的改造计划，使其更现代化 - Blog - 努力的人生</title>
+	<meta name="description" content="React Fire：React DOM 的改造计划，使其更现代化">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/blog.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/blog.ico">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	
+	
+	
+	
+	<!-- Google Fonts 1
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">-->
+	
+	
+	
+	
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>  
+	
+	<!--百度统计-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?660ee541ef48f4a94f8a59dd0f9e64ae";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	<!--谷歌统计-->
+	<!-- Global site tag (gtag.js) - Google Analytics 
+	<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', '');
+	</script>-->
+
+</head>
+
+<body>
+  <div class="flex-container">
+  <header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <!--<ul style="height:800px;overflow-y:scroll;overflow-y:auto;"> -->
+        <ul>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/"  data-hover="所有">所有(99)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/markdown"  data-hover="Markdown">Markdown(4)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/essays"  data-hover="随笔">随笔(8)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/jekyll"  data-hover="Jekyll">Jekyll(1)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/vue"  data-hover="Vue">Vue(5)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/react"  data-hover="React">React(5)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/anglur"  data-hover="Anglur">Anglur(3)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/youman"  data-hover="构建工具">构建工具(9)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/nginx2"  data-hover="Nginx2">Nginx2(5)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/python"  data-hover="Python">Python(2)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/abouttest"  data-hover="测试相关">测试相关(6)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/aboutweb"  data-hover="前端相关">前端相关(23)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/wechat"  data-hover="Wechat">Wechat(21)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/other"  data-hover="其它">其它(7)</a></li>
+		 
+          <!--<li style="margin-bottom:200px;"><a href="/about">About(7)</a></li>-->
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">nldrs</a></p>
+
+
+		<div class="navbar-container">
+
+		<div class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></div>
+
+			<div class="navbar-menu">
+			   
+				<a href="/"  data-hover="Home">Home</a>  <!--title="访问 Home"-->
+				<!--<a href="/">Home</a>-->
+					
+				<a href="/about"  data-hover="About">About</a>  <!--title="访问 About"-->
+				<!--<a href="/about">About</a>-->
+					
+			</div>
+
+
+			<div class="navbar-mobile-menu" onclick="">
+				<span class="icon-menu cross"><span class="middle"></span></span>
+				<ul>
+				   
+					 <li><a href="/"data-hover="Home">Home</a></li>  <!--title="访问 Home"-->
+					 <!--<li><a href="/">Home</a></li>-->
+				   
+					 <li><a href="/about"data-hover="About">About</a></li>  <!--title="访问 About"-->
+					 <!--<li><a href="/about">About</a></li>-->
+				   
+				</ul>
+			</div>
+
+
+
+		</div>
+
+    <!--  <div class="search-icon-container">
+	    <a href="/" style="text-decoration: none; color: inherit;margin-right:20px;">Home</a>
+		<a href="/about" style=" text-decoration: none; color: inherit;margin-right:20px;">About</a>
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div> -->
+
+
+    </div>
+  </div>
+</header> <!-- End Header -->
+
+  <article class="article-page">
+    <div class="page-image">
+      <div class="cover-image" style="background: url(/assets/img/lpf-1.jpg) center no-repeat; background-size: cover;"></div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <div class="header-page">
+          <h1 class="page-title">React Fire：React DOM 的改造计划，使其更现代化</h1>
+          <div class="page-date"><time datetime="2018-09-11 21:25:00 +0800">2018, Sep 11</time>
+		  <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+		  </div>
+        </div>
+        <p>React 开发者，同时也是 Redux 和 Create React App 作者之一的 Dan Abramov gaearon 昨日在 React 的 GitHub 仓库提了一个这样的 issue —— React Fire: Modernizing React DOM（React Fire：使 React DOM 现代化）。他表示目前随着对 React 的底层基础改造工作越来越接近尾声，维护团队开始考虑如何使 React 更好地与 DOM 的工作方式保持一致，并重新审视了过去一些导致大量问题的有争议的决策，同时希望使 React 变得更小更快。</p>
+
+<p>Dan 表示，目前 React DOM 存在着相当多的已知问题，如果没有更大的内部变化，其中一些问题很难或根本无法修复，这些问题导致了无数的后续修复工作并产生了大量的技术债务。在这项被称为 React Fire 的现代化 Reat DOM 改造计划中，开发团队希望删除事件系统中的一些抽象，这些抽象从 React 诞生以后就几乎没有被触及，并且是系统复杂性和项目包变大的根源。</p>
+
+<p>Dan 详细介绍了目前关于 React Fire 的一些想法：</p>
+
+<p>停止在 value 属性中映射输入值。这最初在 React 15.2.0 中被添加，它是一个非常普遍的要求，因为人们对 DOM 的概念模型是他们在 DOM 检查器中看到的值应该与 JSX 的属性匹配。但这并不是 DOM 的工作方式。当你在键入字段时，浏览器不会更新 value 属性，那么 React 也不应该这样做。事实证明，这种变化虽然可能对依赖 CSS 选择器的一些代码有所帮助，但却引发了一系列 bug，其中一些仍未得到修复。
+在 React 根目录而不是 document 对象中添加事件。将 React 应用程序嵌入到更大的系统中时，将事件处理程序添加到 document 对象会成为一个问题。Atom 编辑器是最早遇到这种情况的案例之一。任何大型网站最终也会发展出与 stopPropagation 相关的非常复杂的边缘案例，它们与非 React 代码或跨 React 进行交互。
+从 onChange 迁移到 onInput，并且不要填充不受控制的组件。React 在 DOM 中使用不同的事件名称来表示输入事件这让人十分困惑。虽然我们通常避免在没有显著优势的情况下进行这样的大改动，但在这种情况下，还是希望去消除一些复杂性，这些复杂性仅对改变控制输入等边缘情况是必需的。因此，将这两个更改结合在一起是有意义的，并将其用作为一种 onInput 和 onChange 完全按照 DOM 事件对不受控制的组件执行的操作的尝试。
+大大简化事件系统。自 2013 年实现以来，当前事件系统几乎没有变化。它在 React DOM 和 React Native 中被重复使用，因此它是不必要的抽象。它提供的许多 polyfills 对于现代浏览器来说是不必要的，并且其中一些会产生比他们解决的问题更多的问题。它也占据 React DOM 包的很大一部分。关于这一点，目前还没有非常具体的计划，但是可能会完全将事件系统再 fork 一份出来，然后看看在更接近 DOM 赋予的东西的时候可以去做些什么。而完全摆脱冒泡事件似乎是合理的。应该停止冒泡活动，比如媒体事件，这些事件不会在 DOM 中冒泡，也没有充分的理由冒泡。
+className → class。这已经被提出了无数次。目前已经允许在 React 16 中将 class 传递到 DOM 节点中，这样做导致的混乱实际上是比语法限制来得有意义的。</p>
+
+<p>Dan 还表示，为了达成此目标，可能需要降低与某些旧浏览器的兼容性，并且可能需要更多独立的 polyfill，详情可以查看原文：</p>
+
+<p>https://github.com/facebook/react/issues/13525</p>
+
+<p>对于这个 issue，你是怎么看待的呢？欢迎在评论中留下你的想法。
+<a href="https://www.oschina.net/">转载自开源中国</a></p>
+
+
+        <div class="page-footer">
+          <div class="page-tag">
+            <span>Tags:</span>
+            
+            <a href="/tags#前端" class="tag">| 前端</a>
+            
+            <a href="/tags#react" class="tag">| react</a>
+            
+          </div><!-- End Tags -->
+          <div class="page-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=React Fire：React DOM 的改造计划，使其更现代化&url=http://localhost:4000/qddq2/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/qddq2/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/qddq2/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+						
+			<!-- JiaThis Button BEGIN -->
+			<div class="jiathis_style_32x32">
+				<a class="jiathis_button_weixin"></a>
+				<a class="jiathis_button_tsina"></a>
+				<!--<a class="jiathis_button_tqq"></a>
+				<a class="jiathis_button_qzone"></a>
+				<a class="jiathis_button_renren"></a>-->
+				<a href="http://www.jiathis.com/share?uid=2157296" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+				<a class="jiathis_counter_style"></a>
+			</div>
+			<script type="text/javascript">var jiathis_config = {data_track_clickback:'true'};</script>
+			<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2157296" charset="utf-8"></script>
+			<!-- JiaThis Button END -->
+          </div><!-- End Share -->
+		  
+		
+		  
+		  <section>
+			<!--<div style="background:#000;border-bottom: 1px solid #d9d9d9;"></div> -->
+
+            <div class="content-play">
+              <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一下呗</a></p>
+              <div class="hide_box-play"></div>
+              <div class="shang_box-play">
+                <a class="shang_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/img/close.jpg" alt="取消" /></a>
+                <div class="shang_tit-play">
+                  <p>对你有帮助，那就打赏一下吧</p>
+                </div>
+				
+				<div class="shang_payimg">    
+                    <img src="/assets/img/wechatimg.jpg" alt="扫码支持" title="扫一扫"/>
+                </div>
+				
+				 <div class="pay_item" data-id="weipay">
+                    <span class="pay_logo"><img src="/assets/img/wechat.jpg" alt="微信" /></span>
+                  </div>
+				
+                <div class="shang_payimg">
+                    <img src="/assets/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+				
+				 <div class="pay_item checked" data-id="alipay">
+                    <span class="pay_logo"><img src="/assets/img/alipay.jpg" alt="支付宝" /></span>
+                  </div>
+				
+                <div class="pay_explain">扫码打赏,金额随意</div>
+               
+              </div>
+            </div>
+            <script type="text/javascript">
+            function dashangToggle(){
+              $(".hide_box-play").fadeToggle();
+              $(".shang_box-play").fadeToggle();
+            }
+            </script>
+
+            <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+
+            <style type="text/css">
+              .content-play{width:100%;margin-top: 20px;margin-bottom: 10px;height:40px;text-align:center;}
+              .hide_box-play{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
+              .shang_box-play{width:100%;height:540px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:0%;top:50%;margin-left:0px;margin-top:-280px;border:1px dotted #dedede;display:none;}
+              .shang_box-play img{border:none;border-width:0;}
+              .dashang{width:100px;margin:5px auto;height:25px;line-height:25px;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;}
+              .dashang:hover{opacity:0.8;padding:15px;font-size:18px;}
+              .shang_close-play{float:right;display:inline-block;
+                margin-right: 10px;margin-top: 20px;
+              }
+              .shang_logo{display:block;text-align:center;margin:20px auto;}
+              .shang_tit-play{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url('/images/payimg/cy-reward-title-bg.jpg');font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
+              .shang_tit-play p{color:#a3a3a3;text-align:center;font-size:16px;}
+              .shang_payimg{padding:10px;/*border:6px solid #EA5F00;**/margin:0 auto;border-radius:3px;height:140px;display:inline-block;}
+              .shang_payimg img{display:inline-block;margin-right:10px;float:left;text-align:center;width:140px;height:140px; }
+              .pay_explain{text-align:center;margin:10px auto;font-size:12px;color:#545454;}
+              .shang_payselect{text-align:center;margin:0 auto;margin-top:40px;cursor:pointer;height:60px;width:500px;margin-left:110px;}
+              .shang_payselect .pay_item{display:inline-block;margin-right:140px;float:left;}
+              .shang_info-play{clear:both;}
+              .shang_info-play p,.shang_info-play a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
+            </style>
+
+       <ul class="pager">
+	    
+        <li class="previous">
+            <a href="/token/" data-toggle="tooltip" data-placement="top" title="token是什么">上一篇：  <span>token是什么</span>
+            </a>
+        </li>
+		
+		<br><br>
+		
+        
+        
+        <li class="next">
+            <a href="/qddq1/" data-toggle="tooltip" data-placement="top" title="小程序构建骨架屏的探索">下一篇：  <span>小程序构建骨架屏的探索</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+        </div>
+		
+		
+        <section class="author-box">
+  <img src="/assets/img/leach-face.jpg" alt="nldrs" class="author-img">
+  <div class="author-desc">
+    <h2>nldrs</h2>
+    <p>码农，嘿说你呢！！？</p>
+    <ul>
+      
+        <li class="email"><a href="mailto:lpfwch777@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      
+      
+        <li class="phone"><a href="tel:0"><i class="fa fa-phone"></i></a></li>
+      
+      <!--
+        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      -->
+    </ul>
+  </div>
+</section>
+
+        <div class="recent-box">
+  <h2 class="recent-title">Recent post</h2>
+  <div class="recent-list">
+    
+      
+        <a href="/newYearTarget/" class="recent-item" style="background: url(/assets/img/wch9.jpg) center no-repeat; background-size: cover;"><span>2019新年目标</span></a>
+      
+    
+      
+        <a href="/linux2/" class="recent-item" style="background: url(/assets/img/lpf-32.jpg) center no-repeat; background-size: cover;"><span>linux</span></a>
+      
+    
+      
+        <a href="/nginx/" class="recent-item" style="background: url(/assets/img/lpf-35.jpg) center no-repeat; background-size: cover;"><span>nginx学习之旅（五）</span></a>
+      
+    
+      
+        <a href="/linux1/" class="recent-item" style="background: url(/assets/img/lpf-31.jpg) center no-repeat; background-size: cover;"><span>linux</span></a>
+      
+    
+  </div>
+</div> <!-- End Recent-Box -->
+
+        <div class="newsletter" id="mc_embed_signup" style="display:none">
+  <h2 class="newsletter-title">Newsletter</h2>
+  <div class="form-container">
+    <p>Subscribe here to get our latest updates</p>
+    <form action="//" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
+      <div class="newsletter-box" id="mc_embed_signup_scroll">
+        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
+      </div>
+    </form>
+  </div>
+</div> <!-- End Newsletter -->
+
+        <section class="comment-area">
+  <div class="comment-wrapper">
+   
+	  <div id="disqus_thread" class="article-comments"></div>
+	    <script>
+			var idcomments_acct = '8b1583de29c0b1f23510ee43fce7d4e7';
+			var idcomments_post_id;
+			var idcomments_post_url;
+		</script>
+		<span id="IDCommentsPostTitle" style="display:none"></span>
+		<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+	
+  </div>
+</section>
+      </div>
+    </div> <!-- End Wrapper -->
+  </article>
+  <div class="search-box">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" id="search-input" class="search" placeholder="Search">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search"  style="height:400px;overflow-y:scroll;overflow-y:auto;"></ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="main-footer">
+	<div class="footer-social">
+		<div class="footer-container clearfix">
+			<div class="social-list">
+				<a class="social github" target="blank" href="https://github.com/nldrs">GitHub</a>
+				<a class="social github" target="blank" href="https://www.jianshu.com/u/042fe873dc7c">简书</a>
+				<a class="social github" target="blank" href="https://juejin.im/user/5a20a378f265da4311200031/collections">掘金</a>
+				<a class="social github" target="blank" href="http://blog.csdn.net/">Csdn</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<p>2019 &copy; nldrs</p>
+		
+			
+	<div style="font-size:12px;color:#B3B3B3;padding-right:30px;float:right"> 
+		<iframe
+                style="margin-left: 2px; margin-bottom:-5px;"
+                frameborder="0" scrolling="0" width="91px" height="20px"
+                src="https://ghbtns.com/github-btn.html?user=leach-chen&repo=leach-chen.github.io&type=star&count=true" >
+            </iframe>
+		<span id="busuanzi_container_site_pv">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+	</div>
+	</div>
+
+</footer> <!-- End Footer -->
+
+</div>
+  
+  
+<div class="top" title="Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div> <!-- End Top Scroll -->
+  <!-- JS -->
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jekyll-search.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+<script src="/assets/js/main.js"></script>
+
+  <!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

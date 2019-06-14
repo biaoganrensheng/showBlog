@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>vueRouter 实用技巧 - Blog - 努力的人生</title>
+	<meta name="description" content="vuex 实用技巧">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/blog.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/blog.ico">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	
+	
+	
+	
+	<!-- Google Fonts 1
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">-->
+	
+	
+	
+	
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>  
+	
+	<!--百度统计-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?660ee541ef48f4a94f8a59dd0f9e64ae";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	<!--谷歌统计-->
+	<!-- Global site tag (gtag.js) - Google Analytics 
+	<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', '');
+	</script>-->
+
+</head>
+
+<body>
+  <div class="flex-container">
+  <header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <!--<ul style="height:800px;overflow-y:scroll;overflow-y:auto;"> -->
+        <ul>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/"  data-hover="所有">所有(99)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/markdown"  data-hover="Markdown">Markdown(4)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/essays"  data-hover="随笔">随笔(8)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/jekyll"  data-hover="Jekyll">Jekyll(1)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/vue"  data-hover="Vue">Vue(5)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/react"  data-hover="React">React(5)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/anglur"  data-hover="Anglur">Anglur(3)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/youman"  data-hover="构建工具">构建工具(9)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/nginx2"  data-hover="Nginx2">Nginx2(5)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/python"  data-hover="Python">Python(2)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/abouttest"  data-hover="测试相关">测试相关(6)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/aboutweb"  data-hover="前端相关">前端相关(23)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/wechat"  data-hover="Wechat">Wechat(21)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/other"  data-hover="其它">其它(7)</a></li>
+		 
+          <!--<li style="margin-bottom:200px;"><a href="/about">About(7)</a></li>-->
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">nldrs</a></p>
+
+
+		<div class="navbar-container">
+
+		<div class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></div>
+
+			<div class="navbar-menu">
+			   
+				<a href="/"  data-hover="Home">Home</a>  <!--title="访问 Home"-->
+				<!--<a href="/">Home</a>-->
+					
+				<a href="/about"  data-hover="About">About</a>  <!--title="访问 About"-->
+				<!--<a href="/about">About</a>-->
+					
+			</div>
+
+
+			<div class="navbar-mobile-menu" onclick="">
+				<span class="icon-menu cross"><span class="middle"></span></span>
+				<ul>
+				   
+					 <li><a href="/"data-hover="Home">Home</a></li>  <!--title="访问 Home"-->
+					 <!--<li><a href="/">Home</a></li>-->
+				   
+					 <li><a href="/about"data-hover="About">About</a></li>  <!--title="访问 About"-->
+					 <!--<li><a href="/about">About</a></li>-->
+				   
+				</ul>
+			</div>
+
+
+
+		</div>
+
+    <!--  <div class="search-icon-container">
+	    <a href="/" style="text-decoration: none; color: inherit;margin-right:20px;">Home</a>
+		<a href="/about" style=" text-decoration: none; color: inherit;margin-right:20px;">About</a>
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div> -->
+
+
+    </div>
+  </div>
+</header> <!-- End Header -->
+
+  <article class="article-page">
+    <div class="page-image">
+      <div class="cover-image" style="background: url(/assets/img/lpf-44.jpg) center no-repeat; background-size: cover;"></div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <div class="header-page">
+          <h1 class="page-title">vueRouter 实用技巧</h1>
+          <div class="page-date"><time datetime="2017-07-07 10:01:00 +0800">2017, Jul 07</time>
+		  <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+		  </div>
+        </div>
+        <h2 id="1基本的创建结构">1.基本的创建结构</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    1.1 定义路由组件（可以import）
+    1.2 定义路由 routes
+    1.3 创建router实例
+    1.4 创建并挂在根实例 &gt; 注意：
+   1.通过注入路由器，我们可以在任何组件内通过 this.$router（也可以使用router实例） 访问路由器
+   2.可以通过 this.$route 访问当前路由
+   3.&lt;router-link&gt; 对应的路由匹配成功，将自动设置 class 属性值 .router-link-active
+</code></pre></div></div>
+
+<h2 id="2动态路由">2.动态路由</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    2.1 定义 （一个“路径参数”使用冒号 : 标记，匹配到一个路由时，参数值会被设置到 this.$route.params，可以在每个组件内使用）
+
+    2.2 相应路由参数的变化（当使用路由参数时，例如从 /user/foo 导航到 /user/bar，原来的组件实例会被复用。因为两个路由都渲染同个组件，比起销毁再创建，复用则显得更加高效。不过，这也意味着组件的生命周期钩子不会再被调用）
+    解决方法：（复用组件时，想对路由参数的变化作出响应的话，你可以简单地 watch (监测变化) $route 对象 /  或者使用 2.2 中引入的 beforeRouteUpdate 守卫）
+
+    2.3 匹配优先级 （同一个路径可以匹配多个路由，谁先定义的，谁的优先级就最高）
+
+    2.4 高级匹配模式 （ 可选的动态路径参数、匹配零个或多个、一个或多个，甚至是自定义正则匹配。）
+</code></pre></div></div>
+
+<h2 id="3路由嵌套">3.路由嵌套</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    3.1 定义 （children 配置就是像 routes 配置一样的路由配置数组） 
+注意：
+        1.以 / 开头的嵌套路径会被当作根路径。 这让你充分的使用嵌套组件而无须设置嵌套的路径
+</code></pre></div></div>
+
+<h2 id="4命名路由">4.命名路由</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        1.定义 （有时候，通过一个名称来标识一个路由显得更方便一些，特别是在链接一个路由，或者是执行一些跳转的时候。你可以在创建 Router 实例的时候，在 routes 配置中给某个路由设置名称）   
+注意：
+        1.要链接到一个命名路由，可以给 router-link 的 to 属性传一个对象
+        2.这跟代码调用 router.push() 是一回事
+</code></pre></div></div>
+
+<h2 id="5编程式导航">5.编程式导航</h2>
+
+<p>5.1 router.push(location, onComplete?, onAbort?) 
+ （想要导航到不同的 URL，则使用 router.push 方法。这个方法会向 history 栈添加一个新的记录，所以，当用户点击浏览器后退按钮时，则回到之前的 URL。
+当你点击 <router-link> 时，这个方法会在内部调用，所以说，点击 <router-link :to="..."> 等同于调用 router.push(...)。）</router-link></router-link></p>
+
+<p>5.2 router.replace(location, onComplete?, onAbort?)</p>
+
+<p>（跟 router.push 很像，唯一的不同就是，它不会向 history 添加新记录，而是跟它的方法名一样 —— 替换掉当前的 history 记录。）</p>
+
+<p>5.3  router.go(n)</p>
+
+<h2 id="6路由的三种传参方式">6.路由的三种传参方式</h2>
+
+<p>场景，点击父组件的li元素跳转到子组件中，并携带参数，便于子组件获取对应li的数据，显示相应的正确的内容。
+父组件中：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="o">&lt;</span><span class="nx">li</span> <span class="nx">v</span><span class="o">-</span><span class="k">for</span><span class="o">=</span><span class="s2">"article in articles"</span> <span class="p">@</span><span class="nd">click</span><span class="o">=</span><span class="s2">"getDescribe(article.id)"</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>方案一</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">getDescribe</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// 直接调用$router.push 实现携带参数的跳转</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">$router</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+     <span class="na">path</span><span class="p">:</span> <span class="s2">`/describe/</span><span class="p">${</span><span class="nx">id</span><span class="p">}</span><span class="s2">`</span><span class="p">,</span>
+    <span class="p">})</span>
+ 
+<span class="c1">// 方案一，需要对应路由配置如下：</span>
+  <span class="p">{</span>
+   <span class="nl">path</span><span class="p">:</span> <span class="s1">'/describe/:id'</span><span class="p">,</span>
+   <span class="nx">name</span><span class="p">:</span> <span class="s1">'Describe'</span><span class="p">,</span>
+   <span class="nx">component</span><span class="p">:</span> <span class="nx">Describe</span>
+  <span class="p">}</span>
+<span class="c1">// 很显然，需要在path中添加/:id来对应 $router.push 中path携带的参数。</span>
+ 
+<span class="c1">// 在子组件中可以使用来获取传递的参数值。</span>
+<span class="nx">$route</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">id</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>方案二</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 父组件中：通过路由属性中的name来确定匹配的路由，通过params来传递参数。</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">$router</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+     <span class="na">name</span><span class="p">:</span> <span class="s1">'Describe'</span><span class="p">,</span>
+     <span class="na">params</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">id</span><span class="p">:</span> <span class="nx">id</span>
+     <span class="p">}</span>
+    <span class="p">})</span>
+ 
+<span class="c1">// 对应路由配置: 注意这里不能使用:/id来传递参数了，因为父组件中，已经使用params来携带参数了。</span>
+  <span class="p">{</span>
+   <span class="na">path</span><span class="p">:</span> <span class="s1">'/describe'</span><span class="p">,</span>
+   <span class="na">name</span><span class="p">:</span> <span class="s1">'Describe'</span><span class="p">,</span>
+   <span class="na">component</span><span class="p">:</span> <span class="nx">Describe</span>
+  <span class="p">}</span>
+ 
+<span class="c1">//子组件中: 这样来获取参数</span>
+<span class="nx">$route</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">id</span>
+</code></pre></div></div>
+
+<ul>
+  <li>方案三</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 父组件：使用path来匹配路由，然后通过query来传递参数</span>
+<span class="err">这种情况下</span> <span class="nx">query</span><span class="err">传递的参数会显示在</span><span class="nx">url</span><span class="err">后面</span><span class="p">?</span><span class="nx">id</span><span class="o">=</span><span class="err">？</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">$router</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+     <span class="na">path</span><span class="p">:</span> <span class="s1">'/describe'</span><span class="p">,</span>
+     <span class="na">query</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">id</span><span class="p">:</span> <span class="nx">id</span>
+     <span class="p">}</span>
+    <span class="p">})</span>
+ 
+<span class="c1">// 对应路由配置：</span>
+  <span class="p">{</span>
+   <span class="na">path</span><span class="p">:</span> <span class="s1">'/describe'</span><span class="p">,</span>
+   <span class="na">name</span><span class="p">:</span> <span class="s1">'Describe'</span><span class="p">,</span>
+   <span class="na">component</span><span class="p">:</span> <span class="nx">Describe</span>
+  <span class="p">}</span>
+ 
+<span class="c1">// 对应子组件: 这样来获取参数</span>
+<span class="nx">$route</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="nx">id</span>
+ 
+<span class="c1">// 这里要特别注意 在子组件中 获取参数的时候是$route.params 而不是</span>
+<span class="nx">$router</span> <span class="err">这很重要</span><span class="o">~~~</span>
+
+</code></pre></div></div>
+
+<h2 id="7导航守卫---就是组件或者全局级别的-组件的钩子函数">7.导航守卫 （  就是组件或者全局级别的 组件的钩子函数）</h2>
+
+<ul>
+  <li>全局守卫</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">router</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">VueRouter</span><span class="p">({</span> <span class="p">...</span> <span class="p">})</span>
+<span class="nx">router</span><span class="p">.</span><span class="nx">beforeEach</span><span class="p">((</span><span class="nx">to</span><span class="p">,</span> <span class="k">from</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+ <span class="c1">// ...</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>每个守卫方法接收三个参数：
+to: Route: 即将要进入的目标 路由对象
+from: Route: 当前导航正要离开的路由
+next: Function: 一定要调用该方法来 resolve 这个钩子。执行效果依赖 next 方法的调用参数。
+next(): 进行管道中的下一个钩子。如果全部钩子执行完了，则导航的状态就是 confirmed （确认的）。
+next(false): 中断当前的导航。如果浏览器的 URL 改变了（可能是用户手动或者浏览器后退按钮），那么 URL 地址会重置到 from 路由对应的地址。
+next(‘/’) 或者 next({ path: ‘/’ }): 跳转到一个不同的地址。当前的导航被中断，然后进行一个新的导航。你可以向 next 传递任意位置对象，且允许设置诸如 replace: true、name: ‘home’ 之类的选项以及任何用在 router-link 的 to prop 或 router.push 中的选项。
+next(error): (2.4.0+) 如果传入 next 的参数是一个 Error 实例，则导航会被终止且该错误会被传递给 router.onError() 注册过的回调。
+确保要调用 next 方法，否则钩子就不会被 resolved。
+全局后置钩子
+你也可以注册全局后置钩子，然而和守卫不同的是，这些钩子不会接受 next 函数也不会改变导航本身：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">router</span><span class="p">.</span><span class="nx">afterEach</span><span class="p">((</span><span class="nx">to</span><span class="p">,</span> <span class="k">from</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+ <span class="c1">// ...</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>路由独享的守卫 
+你可以在路由配置上直接定义 beforeEnter 守卫：</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">router</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">VueRouter</span><span class="p">({</span>
+ <span class="na">routes</span><span class="p">:</span> <span class="p">[</span>
+  <span class="p">{</span>
+   <span class="na">path</span><span class="p">:</span> <span class="s1">'/foo'</span><span class="p">,</span>
+   <span class="na">component</span><span class="p">:</span> <span class="nx">Foo</span><span class="p">,</span>
+   <span class="na">beforeEnter</span><span class="p">:</span> <span class="p">(</span><span class="nx">to</span><span class="p">,</span> <span class="k">from</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+   <span class="p">}</span>
+  <span class="p">}</span>
+ <span class="p">]</span>
+<span class="p">})</span>
+</code></pre></div></div>
+<p>这些守卫与全局前置守卫的方法参数是一样的。
+组件内的守卫
+最后，你可以在路由组件内直接定义以下路由导航守卫：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">beforeRouteEnter</span>
+<span class="nx">beforeRouteUpdate</span> <span class="p">(</span><span class="mf">2.2</span> <span class="err">新增</span><span class="p">)</span>
+<span class="nx">beforeRouteLeave</span>
+ 
+<span class="kd">const</span> <span class="nx">Foo</span> <span class="o">=</span> <span class="p">{</span>
+ <span class="na">template</span><span class="p">:</span> <span class="s2">`...`</span><span class="p">,</span>
+ <span class="nx">beforeRouteEnter</span> <span class="p">(</span><span class="nx">to</span><span class="p">,</span> <span class="k">from</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 在渲染该组件的对应路由被 confirm 前调用</span>
+  <span class="c1">// 不！能！获取组件实例 `this`</span>
+  <span class="c1">// 因为当守卫执行前，组件实例还没被创建</span>
+ <span class="p">},</span>
+ <span class="nx">beforeRouteUpdate</span> <span class="p">(</span><span class="nx">to</span><span class="p">,</span> <span class="k">from</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 在当前路由改变，但是该组件被复用时调用</span>
+  <span class="c1">// 举例来说，对于一个带有动态参数的路径 /foo/:id，在 /foo/1 和 /foo/2 之间跳转的时候，</span>
+  <span class="c1">// 由于会渲染同样的 Foo 组件，因此组件实例会被复用。而这个钩子就会在这个情况下被调用。</span>
+  <span class="c1">// 可以访问组件实例 `this`</span>
+ <span class="p">},</span>
+ <span class="nx">beforeRouteLeave</span> <span class="p">(</span><span class="nx">to</span><span class="p">,</span> <span class="k">from</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 导航离开该组件的对应路由时调用</span>
+  <span class="c1">// 可以访问组件实例 `this`</span>
+ <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>beforeRouteEnter 守卫 不能 访问 this，因为守卫在导航确认前被调用,因此即将登场的新组件还没被创建。</p>
+
+        <div class="page-footer">
+          <div class="page-tag">
+            <span>Tags:</span>
+            
+            <a href="/tags#Vue" class="tag">| Vue</a>
+            
+            <a href="/tags#vueRouter" class="tag">| vueRouter</a>
+            
+          </div><!-- End Tags -->
+          <div class="page-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=vueRouter 实用技巧&url=http://localhost:4000/vue3/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/vue3/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/vue3/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+						
+			<!-- JiaThis Button BEGIN -->
+			<div class="jiathis_style_32x32">
+				<a class="jiathis_button_weixin"></a>
+				<a class="jiathis_button_tsina"></a>
+				<!--<a class="jiathis_button_tqq"></a>
+				<a class="jiathis_button_qzone"></a>
+				<a class="jiathis_button_renren"></a>-->
+				<a href="http://www.jiathis.com/share?uid=2157296" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+				<a class="jiathis_counter_style"></a>
+			</div>
+			<script type="text/javascript">var jiathis_config = {data_track_clickback:'true'};</script>
+			<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2157296" charset="utf-8"></script>
+			<!-- JiaThis Button END -->
+          </div><!-- End Share -->
+		  
+		
+		  
+		  <section>
+			<!--<div style="background:#000;border-bottom: 1px solid #d9d9d9;"></div> -->
+
+            <div class="content-play">
+              <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一下呗</a></p>
+              <div class="hide_box-play"></div>
+              <div class="shang_box-play">
+                <a class="shang_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/img/close.jpg" alt="取消" /></a>
+                <div class="shang_tit-play">
+                  <p>对你有帮助，那就打赏一下吧</p>
+                </div>
+				
+				<div class="shang_payimg">    
+                    <img src="/assets/img/wechatimg.jpg" alt="扫码支持" title="扫一扫"/>
+                </div>
+				
+				 <div class="pay_item" data-id="weipay">
+                    <span class="pay_logo"><img src="/assets/img/wechat.jpg" alt="微信" /></span>
+                  </div>
+				
+                <div class="shang_payimg">
+                    <img src="/assets/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+				
+				 <div class="pay_item checked" data-id="alipay">
+                    <span class="pay_logo"><img src="/assets/img/alipay.jpg" alt="支付宝" /></span>
+                  </div>
+				
+                <div class="pay_explain">扫码打赏,金额随意</div>
+               
+              </div>
+            </div>
+            <script type="text/javascript">
+            function dashangToggle(){
+              $(".hide_box-play").fadeToggle();
+              $(".shang_box-play").fadeToggle();
+            }
+            </script>
+
+            <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+
+            <style type="text/css">
+              .content-play{width:100%;margin-top: 20px;margin-bottom: 10px;height:40px;text-align:center;}
+              .hide_box-play{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
+              .shang_box-play{width:100%;height:540px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:0%;top:50%;margin-left:0px;margin-top:-280px;border:1px dotted #dedede;display:none;}
+              .shang_box-play img{border:none;border-width:0;}
+              .dashang{width:100px;margin:5px auto;height:25px;line-height:25px;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;}
+              .dashang:hover{opacity:0.8;padding:15px;font-size:18px;}
+              .shang_close-play{float:right;display:inline-block;
+                margin-right: 10px;margin-top: 20px;
+              }
+              .shang_logo{display:block;text-align:center;margin:20px auto;}
+              .shang_tit-play{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url('/images/payimg/cy-reward-title-bg.jpg');font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
+              .shang_tit-play p{color:#a3a3a3;text-align:center;font-size:16px;}
+              .shang_payimg{padding:10px;/*border:6px solid #EA5F00;**/margin:0 auto;border-radius:3px;height:140px;display:inline-block;}
+              .shang_payimg img{display:inline-block;margin-right:10px;float:left;text-align:center;width:140px;height:140px; }
+              .pay_explain{text-align:center;margin:10px auto;font-size:12px;color:#545454;}
+              .shang_payselect{text-align:center;margin:0 auto;margin-top:40px;cursor:pointer;height:60px;width:500px;margin-left:110px;}
+              .shang_payselect .pay_item{display:inline-block;margin-right:140px;float:left;}
+              .shang_info-play{clear:both;}
+              .shang_info-play p,.shang_info-play a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
+            </style>
+
+       <ul class="pager">
+	    
+        <li class="previous">
+            <a href="/docs/" data-toggle="tooltip" data-placement="top" title="markdown 的写接口文档 (四)">上一篇：  <span>markdown 的写接口文档 (四)</span>
+            </a>
+        </li>
+		
+		<br><br>
+		
+        
+        
+        <li class="next">
+            <a href="/vue2/" data-toggle="tooltip" data-placement="top" title="vuex 实用技巧">下一篇：  <span>vuex 实用技巧</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+        </div>
+		
+		
+        <section class="author-box">
+  <img src="/assets/img/leach-face.jpg" alt="nldrs" class="author-img">
+  <div class="author-desc">
+    <h2>nldrs</h2>
+    <p>码农，嘿说你呢！！？</p>
+    <ul>
+      
+        <li class="email"><a href="mailto:lpfwch777@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      
+      
+        <li class="phone"><a href="tel:0"><i class="fa fa-phone"></i></a></li>
+      
+      <!--
+        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      -->
+    </ul>
+  </div>
+</section>
+
+        <div class="recent-box">
+  <h2 class="recent-title">Recent post</h2>
+  <div class="recent-list">
+    
+      
+        <a href="/newYearTarget/" class="recent-item" style="background: url(/assets/img/wch9.jpg) center no-repeat; background-size: cover;"><span>2019新年目标</span></a>
+      
+    
+      
+        <a href="/linux2/" class="recent-item" style="background: url(/assets/img/lpf-32.jpg) center no-repeat; background-size: cover;"><span>linux</span></a>
+      
+    
+      
+        <a href="/nginx/" class="recent-item" style="background: url(/assets/img/lpf-35.jpg) center no-repeat; background-size: cover;"><span>nginx学习之旅（五）</span></a>
+      
+    
+      
+        <a href="/linux1/" class="recent-item" style="background: url(/assets/img/lpf-31.jpg) center no-repeat; background-size: cover;"><span>linux</span></a>
+      
+    
+  </div>
+</div> <!-- End Recent-Box -->
+
+        <div class="newsletter" id="mc_embed_signup" style="display:none">
+  <h2 class="newsletter-title">Newsletter</h2>
+  <div class="form-container">
+    <p>Subscribe here to get our latest updates</p>
+    <form action="//" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
+      <div class="newsletter-box" id="mc_embed_signup_scroll">
+        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
+      </div>
+    </form>
+  </div>
+</div> <!-- End Newsletter -->
+
+        <section class="comment-area">
+  <div class="comment-wrapper">
+   
+	  <div id="disqus_thread" class="article-comments"></div>
+	    <script>
+			var idcomments_acct = '8b1583de29c0b1f23510ee43fce7d4e7';
+			var idcomments_post_id;
+			var idcomments_post_url;
+		</script>
+		<span id="IDCommentsPostTitle" style="display:none"></span>
+		<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+	
+  </div>
+</section>
+      </div>
+    </div> <!-- End Wrapper -->
+  </article>
+  <div class="search-box">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" id="search-input" class="search" placeholder="Search">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search"  style="height:400px;overflow-y:scroll;overflow-y:auto;"></ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="main-footer">
+	<div class="footer-social">
+		<div class="footer-container clearfix">
+			<div class="social-list">
+				<a class="social github" target="blank" href="https://github.com/nldrs">GitHub</a>
+				<a class="social github" target="blank" href="https://www.jianshu.com/u/042fe873dc7c">简书</a>
+				<a class="social github" target="blank" href="https://juejin.im/user/5a20a378f265da4311200031/collections">掘金</a>
+				<a class="social github" target="blank" href="http://blog.csdn.net/">Csdn</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<p>2019 &copy; nldrs</p>
+		
+			
+	<div style="font-size:12px;color:#B3B3B3;padding-right:30px;float:right"> 
+		<iframe
+                style="margin-left: 2px; margin-bottom:-5px;"
+                frameborder="0" scrolling="0" width="91px" height="20px"
+                src="https://ghbtns.com/github-btn.html?user=leach-chen&repo=leach-chen.github.io&type=star&count=true" >
+            </iframe>
+		<span id="busuanzi_container_site_pv">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+	</div>
+	</div>
+
+</footer> <!-- End Footer -->
+
+</div>
+  
+  
+<div class="top" title="Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div> <!-- End Top Scroll -->
+  <!-- JS -->
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jekyll-search.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+<script src="/assets/js/main.js"></script>
+
+  <!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

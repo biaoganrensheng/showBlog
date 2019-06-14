@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-18T14:18:35+08:00</updated><id>http://localhost:4000/</id><title type="html">Blog - 努力的人生</title><subtitle>面向标杆直奔
+</subtitle><author><name>nldrs</name></author><entry><title type="html">2019新年目标</title><link href="http://localhost:4000/newYearTarget/" rel="alternate" type="text/html" title="2019新年目标" /><published>2019-02-18T07:13:00+08:00</published><updated>2019-02-18T07:13:00+08:00</updated><id>http://localhost:4000/newYearTarget</id><content type="html" xml:base="http://localhost:4000/newYearTarget/">&lt;h2 id=&quot;2019新年目标&quot;&gt;2019新年目标&lt;/h2&gt;
+
+&lt;p&gt;想着占用几分钟，写一下2019新年目标。&lt;/p&gt;
+
+&lt;h3 id=&quot;1重学前端&quot;&gt;1.重学前端&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-算法&quot;&gt;2. 算法&lt;/h3&gt;
+
+&lt;h3 id=&quot;3react&quot;&gt;3.react&lt;/h3&gt;
+
+&lt;h3 id=&quot;4nginx&quot;&gt;4.nginx&lt;/h3&gt;
+
+&lt;h3 id=&quot;5-git&quot;&gt;5. git&lt;/h3&gt;</content><author><name>nldrs</name></author><category term="随笔" /><category term="工作" /><summary type="html">2019新年目标</summary></entry><entry><title type="html">linux</title><link href="http://localhost:4000/linux2/" rel="alternate" type="text/html" title="linux" /><published>2018-10-26T15:49:00+08:00</published><updated>2018-10-26T15:49:00+08:00</updated><id>http://localhost:4000/linux2</id><content type="html" xml:base="http://localhost:4000/linux2/">&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sythw8ej30se0cfwp3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sys5pgsj30k70brgrj.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqc5x6j30j108pq5x.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqiialj30jv0aajua.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syr9stqj30s2097q78.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqj7f2j30t4070acx.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sysx9qqj30to0i0ahq.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrczewj30kz0aa0x3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sys7snaj30oo0ccn2o.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syte5q9j30mo0hf47c.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrcb2dj30mu080gq1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrlgf2j30y5072wjf.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqh77wj30ff06nq5l.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syt281wj30xb0ft7bj.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sytxxagj30y00avk1w.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sytp77wj30va0duk1z.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sys9ffwj30wt0aogs2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrblx8j30q10dzaev.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqiv9oj30ga04bdht.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sysfn6dj30up0ai7ao.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqfc3oj30kw09kmzj.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syscvybj30te0k0n2t.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sytumgnj311w0mwgye.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrg32gj30pg0brq7f.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrjj0tj30p30dg78z.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqm25wj30tp08h41r.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syt88ycj30ue0e7tge.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sysj9ppj30xw0btwl8.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sys7rr7j30pj0een3g.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syu4ah7j30s10fhanc.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqiap8j30sf072gok.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sysg4pjj30m20dojwg.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syt3nv0j30r40g4tgx.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sytlu4rj30pu0g4aln.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sysjmomj30r10ecagm.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syt2p2lj30va0brdmz.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syssbaej30t30gkq8b.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sys8oa8j30pr0d5dln.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syts4wyj30pe0l7tla.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrkvu1j30t00c278y.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqqx6cj30ld0a00uh.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sysm05ej30ri0dojxz.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqog1oj30kc087whi.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syq5d15j30gn075gmr.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syq5h5hj30hb07k3ze.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syq9c8mj30jv04rdgx.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqsxczj30nl053wgn.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrkc44j30to097wig.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sysuazxj30v50bi79f.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sys0h1xj30sx0ahgqk.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqo3kuj30ib076q5i.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrpuo7j30mj0avq6y.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syso6h7j30oj0af0xy.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sytgd8sj30pz0bu10b.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8systus5j30sc0jbdli.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sytjlruj30uj0fqn55.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrqfvkj30iu0diwhu.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrsv7qj30pf0a8tc9.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqpurej30j20e241i.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syq5pinj309j06owfc.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqtur1j30hu0c3q5t.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqvdzaj30fo0enq5l.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sysybiwj30s70dr0y5.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqt8owj30k20380uc.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqx4jkj30pr07vq65.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrs9ekj30o00a9n1e.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrtna4j30ue061n1b.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqc0d8j30jk09hmyd.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syq5pb5j30ev0663zp.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrxzimj30l20eutce.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqyp2aj30e80cu414.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrwrw6j30p40cbae4.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sys4m6lj30oz07djvg.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syr0u8aj30lt05o76b.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syr1ng7j30h709n40z.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrzpgjj30u20ajjv3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syrzn5uj30hg0b9n0j.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqafegj30c008kjss.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syqam3yj30cd068js7.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syr38cvj30ge0chdhn.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sytbkk0j30wi0adwlm.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syth364j30r20hpjzd.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syr2e6mj30t805cwhd.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syr2xodj30ye05b40o.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8sysualcj31130f67b1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmgy1fy8syr37i9j30mq08vabq.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="linux" /><summary type="html"></summary></entry><entry><title type="html">nginx学习之旅（五）</title><link href="http://localhost:4000/nginx/" rel="alternate" type="text/html" title="nginx学习之旅（五）" /><published>2018-10-25T15:49:00+08:00</published><updated>2018-10-25T15:49:00+08:00</updated><id>http://localhost:4000/nginx</id><content type="html" xml:base="http://localhost:4000/nginx/">&lt;h2 id=&quot;nginx&quot;&gt;Nginx&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0u47aj30sd0hl4bm.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0p3p8j30ud0grti3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0p8wzj30v00cs457.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0raqhj30pt0gtais.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0v9rcj30vf0hztlh.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0s6vmj30oo0hzk24.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0m7bij30r70b241j.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0ofruj30x10j9tfw.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0nk9nj30i80jodks.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmll0of8pj30oq0fk0xp.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Nginx2" /><summary type="html">Nginx</summary></entry><entry><title type="html">linux</title><link href="http://localhost:4000/linux1/" rel="alternate" type="text/html" title="linux" /><published>2018-10-25T15:49:00+08:00</published><updated>2018-10-25T15:49:00+08:00</updated><id>http://localhost:4000/linux1</id><content type="html" xml:base="http://localhost:4000/linux1/">&lt;h3 id=&quot;linux&quot;&gt;linux&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqzct1j30kh0kotfv.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqc6ccj30kh0f3gq6.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqcau3j30i00ebgql.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqk8fej30n00gvjx8.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqlr8nj30ne0es0yj.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkr2zqlj30n10k47be.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkra44hj30nu0gf10t.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqdf6tj30uy0b1792.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqecjhj30of064n20.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkri68oj30r80gz48g.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqe48qj30jo08uq75.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqn98ej30wz0f80yq.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetksdsixj30zn0ifwpf.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetks781ej30yw0a57ep.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkrk01lj30uw0bqdpe.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkr5veoj30t70frthb.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkra1u3j30ix0he7d1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkq81khj30oh06mq5i.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkr6atcj30hw0dj7b6.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqesj6j30ol096gpm.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqfunhj30lm06cjv1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqpajmj30kc0de79t.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkq94juj30iu09kn1d.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqkwbnj30kw0aaaf2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetksuetsj30q00enwp3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqhoo6j30e00b841x.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqpgwmj30n90b3wjs.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkq8mscj30kd09140r.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkq7jomj30rj04n0u9.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkr4xg7j30pg0g4gty.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkq6z6vj30m803amxv.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqqg21j30nw0beafr.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqqs9qj30tc0cu44d.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetksab37j30zv0hugut.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqrburj30l70angqo.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkrb9n9j30yq0jpgsv.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkro9jyj30w10e6ait.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkt3eokj312p0ifkbu.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkt49xej311n0l7tww.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkt1wegj31050gfh2j.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkt7x6mj310v0k7trt.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkrc293j30ye08r10c.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqtos1j30yp0b77a8.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqvc5oj30qz0f57b1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkski4gj30of0eiqdi.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqvccbj30np0avafg.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkrpoljj30wn0a6479.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkreue0j30tq0cjah0.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetks792nj30tt0jvajv.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqkmsvj30t908ejvf.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqim8jj30ma08agpd.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqvodkj30op0efjwx.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkreu83j30o90cbdlk.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkq8mmpj30iq06jwh3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetksdf4bj30wd0dgtk6.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkqy6xnj30pb0agtew.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkrkxn8j30xa0hlqbq.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fxetkr7e7xj30gd0ettfp.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="linux" /><summary type="html">linux</summary></entry><entry><title type="html">nginx学习之旅（四）</title><link href="http://localhost:4000/nginx/" rel="alternate" type="text/html" title="nginx学习之旅（四）" /><published>2018-10-24T15:49:00+08:00</published><updated>2018-10-24T15:49:00+08:00</updated><id>http://localhost:4000/nginx</id><content type="html" xml:base="http://localhost:4000/nginx/">&lt;h2 id=&quot;nginx&quot;&gt;Nginx&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju6mefj30wm0hydst.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju5t32j30v50hgtlb.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmljuujexj30vs0hb18k.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmljuol9mj30v10h318g.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju8w2cj30s10ia4bl.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmljudra9j30wb0hsdwj.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju5rx7j30sx0gxdp6.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju51h3j30t40hawoy.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju34qoj30os0947ab.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlju1yw9j30s50eztgv.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Nginx2" /><summary type="html">Nginx</summary></entry><entry><title type="html">nginx学习之旅（三）</title><link href="http://localhost:4000/nginx/" rel="alternate" type="text/html" title="nginx学习之旅（三）" /><published>2018-10-23T15:49:00+08:00</published><updated>2018-10-23T15:49:00+08:00</updated><id>http://localhost:4000/nginx</id><content type="html" xml:base="http://localhost:4000/nginx/">&lt;h2 id=&quot;nginx&quot;&gt;Nginx&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhou8t7j30vp0i0qec.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhom90zj30e505vgmk.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhp8d23j30w50hi13w.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhoucqej30rx0hcgw3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhomvodj30e207hq4e.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhoq4wvj30oq0f7grv.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhow6k9j30vl0hywnl.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhotr2dj30u60hqguu.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhowipbj30t20igalf.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmlhopu0rj30vv0g3n5m.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Nginx2" /><summary type="html">Nginx</summary></entry><entry><title type="html">nginx学习之旅（二）</title><link href="http://localhost:4000/nginx/" rel="alternate" type="text/html" title="nginx学习之旅（二）" /><published>2018-10-22T15:49:00+08:00</published><updated>2018-10-22T15:49:00+08:00</updated><id>http://localhost:4000/nginx</id><content type="html" xml:base="http://localhost:4000/nginx/">&lt;h2 id=&quot;nginx&quot;&gt;Nginx&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmld2yspgj30qc0i3qf9.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmldakn5yj30vv0es4ah.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmldkm741j30w00fp14i.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmldr9q74j30vo0glqeq.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmle3bbybj30ny0gxwkc.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmle3a8tkj30o5080tbz.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmle3bcaoj30zz082n39.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmle3hshkj30uf0inqgd.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmle3f61zj30pv0hhaon.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwmle3dl7vj30qh0g2k1k.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="Nginx2" /><summary type="html">Nginx</summary></entry><entry><title type="html">linux 学习(二)</title><link href="http://localhost:4000/shell/" rel="alternate" type="text/html" title="linux 学习(二)" /><published>2018-10-21T20:16:00+08:00</published><updated>2018-10-21T20:16:00+08:00</updated><id>http://localhost:4000/shell</id><content type="html" xml:base="http://localhost:4000/shell/">&lt;h2 id=&quot;linux-学习&quot;&gt;linux 学习&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml7i382jj30e60e8dhr.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml7m3xo9j30ap0cymyy.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml7rtaayj30qq0f4wj7.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml7woh4rj314s0eik05.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml821x3vj30lo0g5afv.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml8a19tej30jm0kcgo9.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml8hedl3j30jd05pwg4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="构建工具" /><category term="linux" /><summary type="html">linux 学习</summary></entry><entry><title type="html">linux bash 命令</title><link href="http://localhost:4000/linux/" rel="alternate" type="text/html" title="linux bash 命令" /><published>2018-10-21T08:00:00+08:00</published><updated>2018-10-21T08:00:00+08:00</updated><id>http://localhost:4000/linux</id><content type="html" xml:base="http://localhost:4000/linux/">&lt;h1 id=&quot;linux-bash-命令&quot;&gt;linux bash 命令&lt;/h1&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;linux / 目录的结构&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;bin 放置着linux启动程序&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;boot 放置linux的内核&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;dev 包含linux 的设备文件&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;etc 放置配置文件&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;home（没创建一个新用户） 家目录&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;lib 动态链接库&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;media、mnt 可移除设备的挂载点&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;proc 进程文件&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8af26c2j30yq0fhdmd.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8aqtiobj30jw0j6jvu.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8awg422j30gc07smye.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8b24940j30er0dagmt.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8b7lxpyj30lo0hxq8y.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8bcelfoj30c20bwdgp.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8bh6zt0j30g00gidht.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8blz2zuj30si0dvqag.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8br2llbj30ux0e4429.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8bw286lj31d90ltn9d.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8c3v3puj318a0i9do9.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8ca7nydj31710lendy.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8cfkxblj30gm0i7ahm.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8clrs1lj30k30l377d.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8crzfhvj30hj090my9.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8cyjn8mj30jd0kiwn3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8d47dgqj31050k1qaj.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8d9kisej30ci0h6wgg.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8dg2jcuj315i0iidx4.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8dn9g53j316b0k7art.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8dt7igsj30y80cvwis.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8dysd1nj30lu0kr469.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwh8e56yizj312z0kmk3l.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="前端" /><category term="linux" /><summary type="html">linux bash 命令</summary></entry><entry><title type="html">linux 学习(一)</title><link href="http://localhost:4000/shell/" rel="alternate" type="text/html" title="linux 学习(一)" /><published>2018-10-20T20:16:00+08:00</published><updated>2018-10-20T20:16:00+08:00</updated><id>http://localhost:4000/shell</id><content type="html" xml:base="http://localhost:4000/shell/">&lt;h2 id=&quot;linux-学习&quot;&gt;linux 学习&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml47gvbbj30pf0eujvw.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml4e6wn6j30wl0gpah7.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml4j4h76j30ti0gbgr8.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml4o1t0gj30kq0h50zd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml4sxo3ij30f40cladx.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml50zwr6j30hw0aj77t.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml58qrnmj30ku0hsdng.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/large/006uNFWmly1fwml5fdo6xj30l00gdjtu.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>nldrs</name></author><category term="构建工具" /><category term="linux" /><summary type="html">linux 学习</summary></entry></feed>

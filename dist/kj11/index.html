@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>学习微信开发框架(十一) - Blog - 努力的人生</title>
+	<meta name="description" content="学习微信开发框架">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/blog.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/blog.ico">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	
+	
+	
+	
+	<!-- Google Fonts 1
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">-->
+	
+	
+	
+	
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>  
+	
+	<!--百度统计-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?660ee541ef48f4a94f8a59dd0f9e64ae";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	<!--谷歌统计-->
+	<!-- Global site tag (gtag.js) - Google Analytics 
+	<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', '');
+	</script>-->
+
+</head>
+
+<body>
+  <div class="flex-container">
+  <header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <!--<ul style="height:800px;overflow-y:scroll;overflow-y:auto;"> -->
+        <ul>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/"  data-hover="所有">所有(99)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/markdown"  data-hover="Markdown">Markdown(4)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/essays"  data-hover="随笔">随笔(8)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/jekyll"  data-hover="Jekyll">Jekyll(1)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/vue"  data-hover="Vue">Vue(5)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/react"  data-hover="React">React(5)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/anglur"  data-hover="Anglur">Anglur(3)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/youman"  data-hover="构建工具">构建工具(9)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/nginx2"  data-hover="Nginx2">Nginx2(5)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/python"  data-hover="Python">Python(2)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/abouttest"  data-hover="测试相关">测试相关(6)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/aboutweb"  data-hover="前端相关">前端相关(23)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/wechat"  data-hover="Wechat">Wechat(21)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/other"  data-hover="其它">其它(7)</a></li>
+		 
+          <!--<li style="margin-bottom:200px;"><a href="/about">About(7)</a></li>-->
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">nldrs</a></p>
+
+
+		<div class="navbar-container">
+
+		<div class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></div>
+
+			<div class="navbar-menu">
+			   
+				<a href="/"  data-hover="Home">Home</a>  <!--title="访问 Home"-->
+				<!--<a href="/">Home</a>-->
+					
+				<a href="/about"  data-hover="About">About</a>  <!--title="访问 About"-->
+				<!--<a href="/about">About</a>-->
+					
+			</div>
+
+
+			<div class="navbar-mobile-menu" onclick="">
+				<span class="icon-menu cross"><span class="middle"></span></span>
+				<ul>
+				   
+					 <li><a href="/"data-hover="Home">Home</a></li>  <!--title="访问 Home"-->
+					 <!--<li><a href="/">Home</a></li>-->
+				   
+					 <li><a href="/about"data-hover="About">About</a></li>  <!--title="访问 About"-->
+					 <!--<li><a href="/about">About</a></li>-->
+				   
+				</ul>
+			</div>
+
+
+
+		</div>
+
+    <!--  <div class="search-icon-container">
+	    <a href="/" style="text-decoration: none; color: inherit;margin-right:20px;">Home</a>
+		<a href="/about" style=" text-decoration: none; color: inherit;margin-right:20px;">About</a>
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div> -->
+
+
+    </div>
+  </div>
+</header> <!-- End Header -->
+
+  <article class="article-page">
+    <div class="page-image">
+      <div class="cover-image" style="background: url(/assets/img/lpf-12.jpg) center no-repeat; background-size: cover;"></div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <div class="header-page">
+          <h1 class="page-title">学习微信开发框架(十一)</h1>
+          <div class="page-date"><time datetime="2018-08-29 14:18:00 +0800">2018, Aug 29</time>
+		  <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+		  </div>
+        </div>
+        <h1 id="学习微信开发框架worker">学习微信开发框架(worker)</h1>
+
+<h1 id="基础库">基础库</h1>
+<hr />
+
+<h2 id="基础库更新">基础库更新</h2>
+<p>为了避免新版本的基础库给线上小程序带来未知的影响，微信客户端都是携带 上一个稳定版 的基础库发布的。</p>
+
+<p>在新版本客户端发布后，再通过后台灰度新版本基础库，灰度时长一般为 12 ～ 24 小时，在灰度结束后，用户设备上才会有新版本的基础库。</p>
+
+<p>以微信 6.5.8 为例，客户端在发布时携带的是 1.1.1 基础库（6.5.7 上已全量的稳定版）发布，在 6.5.8 发布后，我们再通过后台灰度 1.2.0 基础库。</p>
+
+<p>基础库与客户端之间的关系
+小程序的能力需要微信客户端来支撑，每一个基础库都只能在对应的客户端版本上运行，高版本的基础库无法兼容低版本的微信客户端。通常：</p>
+
+<p>第 1（major）、2（minor）位版本号更新需要依赖新版本的客户端，如：基础库 v2.1.3 运行在 v6.6.7 客户端，基础库 v2.2.0 需要 v6.7.0 客户端。
+第 3（patch） 位版本号的更新不需要依赖客户端更新，如：基础库v2.1.0 ~ v2.1.3 都运行在 v6.6.7 客户端，新版本发布会覆盖旧版本。</p>
+
+<h1 id="兼容">兼容</h1>
+
+<hr />
+
+<p>小程序的功能不断的增加，但是旧版本的微信客户端并不支持新功能，所以在使用这些新能力的时候需要做兼容。</p>
+
+<p>文档会在组件，API等页面描述中带上各个功能所支持的版本号。</p>
+
+<p>可以通过 wx.getSystemInfo 或者 wx.getSystemInfoSync 获取到小程序的基础库版本号。</p>
+
+<p>也可以通过 wx.canIUse 详情 来判断是否可以在该基础库版本下直接使用对应的API或者组件</p>
+
+<h1 id="兼容方式---版本比较">兼容方式 - 版本比较</h1>
+
+<hr />
+
+<p>微信客户端和小程序基础库的版本号风格为 Major.Minor.Patch（主版本号.次版本号.修订号）。 开发者可以根据版本号去做兼容，以下为参考代码：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">compareVersion</span><span class="p">(</span><span class="nx">v1</span><span class="p">,</span> <span class="nx">v2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">v1</span> <span class="o">=</span> <span class="nx">v1</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">'.'</span><span class="p">)</span>
+  <span class="nx">v2</span> <span class="o">=</span> <span class="nx">v2</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">'.'</span><span class="p">)</span>
+  <span class="kd">var</span> <span class="nx">len</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">v1</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span> <span class="nx">v2</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+
+  <span class="k">while</span> <span class="p">(</span><span class="nx">v1</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">v1</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'0'</span><span class="p">)</span>
+  <span class="p">}</span>
+  <span class="k">while</span> <span class="p">(</span><span class="nx">v2</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">v2</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'0'</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">num1</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">v1</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+    <span class="kd">var</span> <span class="nx">num2</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">v2</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">num1</span> <span class="o">&gt;</span> <span class="nx">num2</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="mi">1</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num1</span> <span class="o">&lt;</span> <span class="nx">num2</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="mi">0</span>
+<span class="p">}</span>
+
+<span class="nx">compareVersion</span><span class="p">(</span><span class="s1">'1.11.0'</span><span class="p">,</span> <span class="s1">'1.9.9'</span><span class="p">)</span>
+<span class="c1">// 1</span>
+</code></pre></div></div>
+
+<p>兼容方式 - 接口
+对于新增的 API，可以用以下代码来判断是否支持用户的手机。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">wx</span><span class="p">.</span><span class="nx">openBluetoothAdapter</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">wx</span><span class="p">.</span><span class="nx">openBluetoothAdapter</span><span class="p">()</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="c1">// 如果希望用户在最新版本的客户端上体验您的小程序，可以这样子提示</span>
+  <span class="nx">wx</span><span class="p">.</span><span class="nx">showModal</span><span class="p">({</span>
+    <span class="na">title</span><span class="p">:</span> <span class="s1">'提示'</span><span class="p">,</span>
+    <span class="na">content</span><span class="p">:</span> <span class="s1">'当前微信版本过低，无法使用该功能，请升级到最新微信版本后重试。'</span>
+  <span class="p">})</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>兼容方式 - 参数
+对于 API 的参数或者返回值有新增的参数，可以判断用以下代码判断。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">wx</span><span class="p">.</span><span class="nx">showModal</span><span class="p">({</span>
+  <span class="na">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">wx</span><span class="p">.</span><span class="nx">canIUse</span><span class="p">(</span><span class="s1">'showModal.cancel'</span><span class="p">))</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">cancel</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+</code></pre></div></div>
+<p>兼容方式 - 组件
+对于组件，新增的组件或属性在旧版本上不会被处理，不过也不会报错。如果特殊场景需要对旧版本做一些降级处理，可以这样子做。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Page</span><span class="p">({</span>
+  <span class="na">data</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">canIUse</span><span class="p">:</span> <span class="nx">wx</span><span class="p">.</span><span class="nx">canIUse</span><span class="p">(</span><span class="s1">'cover-view'</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+
+<span class="o">&lt;</span><span class="nx">video</span> <span class="nx">controls</span><span class="o">=</span><span class="s2">""</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">cover</span><span class="o">-</span><span class="nx">view</span> <span class="na">wx</span><span class="p">:</span><span class="k">if</span><span class="o">=</span><span class="s2">""</span><span class="o">&gt;</span><span class="nx">play</span><span class="o">&lt;</span><span class="sr">/cover-view</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/video</span><span class="err">&gt;
+</span></code></pre></div></div>
+<h1 id="运行机制">运行机制</h1>
+
+<hr />
+
+<p>小程序启动会有两种情况，一种是「冷启动」，一种是「热启动」。 假如用户已经打开过某小程序，然后在一定时间内再次打开该小程序，此时无需重新启动，只需将后台态的小程序切换到前台，这个过程就是热启动；冷启动指的是用户首次打开或小程序被微信主动销毁后再次打开的情况，此时小程序需要重新加载启动。</p>
+
+<h2 id="更新机制">更新机制</h2>
+<p>小程序冷启动时如果发现有新版本，将会异步下载新版本的代码包，并同时用客户端本地的包进行启动，即新版本的小程序需要等下一次冷启动才会应用上。 如果需要马上应用最新版本，可以使用 wx.getUpdateManager API 进行处理。</p>
+
+<h2 id="运行机制-1">运行机制</h2>
+<p>小程序没有重启的概念
+当小程序进入后台，客户端会维持一段时间的运行状态，超过一定时间后（目前是5分钟）会被微信主动销毁
+当短时间内（5s）连续收到两次以上收到系统内存告警，会进行小程序的销毁
+再次打开逻辑
+基础库 1.4.0 开始支持，低版本需做兼容处理</p>
+
+<p>用户打开小程序的预期有以下两类场景：</p>
+
+<p>A. 打开首页： 场景值有 1001, 1019, 1022, 1023, 1038, 1056</p>
+
+<p>B. 打开小程序指定的某个页面： 场景值为除 A 以外的其他</p>
+
+<p>当再次打开一个小程序逻辑如下</p>
+
+<p><img src="http://ww1.sinaimg.cn/large/006uNFWmgy1fuqma5abinj30xu07raaa.jpg" alt="" /></p>
+
+        <div class="page-footer">
+          <div class="page-tag">
+            <span>Tags:</span>
+            
+            <a href="/tags#Wechat" class="tag">| Wechat</a>
+            
+            <a href="/tags#基础库" class="tag">| 基础库</a>
+            
+            <a href="/tags#兼容" class="tag">| 兼容</a>
+            
+            <a href="/tags#运行机制" class="tag">| 运行机制</a>
+            
+          </div><!-- End Tags -->
+          <div class="page-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=学习微信开发框架(十一)&url=http://localhost:4000/kj11/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/kj11/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/kj11/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+						
+			<!-- JiaThis Button BEGIN -->
+			<div class="jiathis_style_32x32">
+				<a class="jiathis_button_weixin"></a>
+				<a class="jiathis_button_tsina"></a>
+				<!--<a class="jiathis_button_tqq"></a>
+				<a class="jiathis_button_qzone"></a>
+				<a class="jiathis_button_renren"></a>-->
+				<a href="http://www.jiathis.com/share?uid=2157296" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+				<a class="jiathis_counter_style"></a>
+			</div>
+			<script type="text/javascript">var jiathis_config = {data_track_clickback:'true'};</script>
+			<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2157296" charset="utf-8"></script>
+			<!-- JiaThis Button END -->
+          </div><!-- End Share -->
+		  
+		
+		  
+		  <section>
+			<!--<div style="background:#000;border-bottom: 1px solid #d9d9d9;"></div> -->
+
+            <div class="content-play">
+              <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一下呗</a></p>
+              <div class="hide_box-play"></div>
+              <div class="shang_box-play">
+                <a class="shang_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/img/close.jpg" alt="取消" /></a>
+                <div class="shang_tit-play">
+                  <p>对你有帮助，那就打赏一下吧</p>
+                </div>
+				
+				<div class="shang_payimg">    
+                    <img src="/assets/img/wechatimg.jpg" alt="扫码支持" title="扫一扫"/>
+                </div>
+				
+				 <div class="pay_item" data-id="weipay">
+                    <span class="pay_logo"><img src="/assets/img/wechat.jpg" alt="微信" /></span>
+                  </div>
+				
+                <div class="shang_payimg">
+                    <img src="/assets/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+				
+				 <div class="pay_item checked" data-id="alipay">
+                    <span class="pay_logo"><img src="/assets/img/alipay.jpg" alt="支付宝" /></span>
+                  </div>
+				
+                <div class="pay_explain">扫码打赏,金额随意</div>
+               
+              </div>
+            </div>
+            <script type="text/javascript">
+            function dashangToggle(){
+              $(".hide_box-play").fadeToggle();
+              $(".shang_box-play").fadeToggle();
+            }
+            </script>
+
+            <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+
+            <style type="text/css">
+              .content-play{width:100%;margin-top: 20px;margin-bottom: 10px;height:40px;text-align:center;}
+              .hide_box-play{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
+              .shang_box-play{width:100%;height:540px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:0%;top:50%;margin-left:0px;margin-top:-280px;border:1px dotted #dedede;display:none;}
+              .shang_box-play img{border:none;border-width:0;}
+              .dashang{width:100px;margin:5px auto;height:25px;line-height:25px;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;}
+              .dashang:hover{opacity:0.8;padding:15px;font-size:18px;}
+              .shang_close-play{float:right;display:inline-block;
+                margin-right: 10px;margin-top: 20px;
+              }
+              .shang_logo{display:block;text-align:center;margin:20px auto;}
+              .shang_tit-play{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url('/images/payimg/cy-reward-title-bg.jpg');font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
+              .shang_tit-play p{color:#a3a3a3;text-align:center;font-size:16px;}
+              .shang_payimg{padding:10px;/*border:6px solid #EA5F00;**/margin:0 auto;border-radius:3px;height:140px;display:inline-block;}
+              .shang_payimg img{display:inline-block;margin-right:10px;float:left;text-align:center;width:140px;height:140px; }
+              .pay_explain{text-align:center;margin:10px auto;font-size:12px;color:#545454;}
+              .shang_payselect{text-align:center;margin:0 auto;margin-top:40px;cursor:pointer;height:60px;width:500px;margin-left:110px;}
+              .shang_payselect .pay_item{display:inline-block;margin-right:140px;float:left;}
+              .shang_info-play{clear:both;}
+              .shang_info-play p,.shang_info-play a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
+            </style>
+
+       <ul class="pager">
+	    
+        <li class="previous">
+            <a href="/kj12/" data-toggle="tooltip" data-placement="top" title="学习微信开发框架(十二)">上一篇：  <span>学习微信开发框架(十二)</span>
+            </a>
+        </li>
+		
+		<br><br>
+		
+        
+        
+        <li class="next">
+            <a href="/kj10/" data-toggle="tooltip" data-placement="top" title="学习微信开发框架(十)">下一篇：  <span>学习微信开发框架(十)</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+        </div>
+		
+		
+        <section class="author-box">
+  <img src="/assets/img/leach-face.jpg" alt="nldrs" class="author-img">
+  <div class="author-desc">
+    <h2>nldrs</h2>
+    <p>码农，嘿说你呢！！？</p>
+    <ul>
+      
+        <li class="email"><a href="mailto:lpfwch777@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      
+      
+        <li class="phone"><a href="tel:0"><i class="fa fa-phone"></i></a></li>
+      
+      <!--
+        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      -->
+    </ul>
+  </div>
+</section>
+
+        <div class="recent-box">
+  <h2 class="recent-title">Recent post</h2>
+  <div class="recent-list">
+    
+      
+        <a href="/newYearTarget/" class="recent-item" style="background: url(/assets/img/wch9.jpg) center no-repeat; background-size: cover;"><span>2019新年目标</span></a>
+      
+    
+      
+        <a href="/linux2/" class="recent-item" style="background: url(/assets/img/lpf-32.jpg) center no-repeat; background-size: cover;"><span>linux</span></a>
+      
+    
+      
+        <a href="/nginx/" class="recent-item" style="background: url(/assets/img/lpf-35.jpg) center no-repeat; background-size: cover;"><span>nginx学习之旅（五）</span></a>
+      
+    
+      
+        <a href="/linux1/" class="recent-item" style="background: url(/assets/img/lpf-31.jpg) center no-repeat; background-size: cover;"><span>linux</span></a>
+      
+    
+  </div>
+</div> <!-- End Recent-Box -->
+
+        <div class="newsletter" id="mc_embed_signup" style="display:none">
+  <h2 class="newsletter-title">Newsletter</h2>
+  <div class="form-container">
+    <p>Subscribe here to get our latest updates</p>
+    <form action="//" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
+      <div class="newsletter-box" id="mc_embed_signup_scroll">
+        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
+      </div>
+    </form>
+  </div>
+</div> <!-- End Newsletter -->
+
+        <section class="comment-area">
+  <div class="comment-wrapper">
+   
+	  <div id="disqus_thread" class="article-comments"></div>
+	    <script>
+			var idcomments_acct = '8b1583de29c0b1f23510ee43fce7d4e7';
+			var idcomments_post_id;
+			var idcomments_post_url;
+		</script>
+		<span id="IDCommentsPostTitle" style="display:none"></span>
+		<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+	
+  </div>
+</section>
+      </div>
+    </div> <!-- End Wrapper -->
+  </article>
+  <div class="search-box">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" id="search-input" class="search" placeholder="Search">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search"  style="height:400px;overflow-y:scroll;overflow-y:auto;"></ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="main-footer">
+	<div class="footer-social">
+		<div class="footer-container clearfix">
+			<div class="social-list">
+				<a class="social github" target="blank" href="https://github.com/nldrs">GitHub</a>
+				<a class="social github" target="blank" href="https://www.jianshu.com/u/042fe873dc7c">简书</a>
+				<a class="social github" target="blank" href="https://juejin.im/user/5a20a378f265da4311200031/collections">掘金</a>
+				<a class="social github" target="blank" href="http://blog.csdn.net/">Csdn</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<p>2019 &copy; nldrs</p>
+		
+			
+	<div style="font-size:12px;color:#B3B3B3;padding-right:30px;float:right"> 
+		<iframe
+                style="margin-left: 2px; margin-bottom:-5px;"
+                frameborder="0" scrolling="0" width="91px" height="20px"
+                src="https://ghbtns.com/github-btn.html?user=leach-chen&repo=leach-chen.github.io&type=star&count=true" >
+            </iframe>
+		<span id="busuanzi_container_site_pv">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+	</div>
+	</div>
+
+</footer> <!-- End Footer -->
+
+</div>
+  
+  
+<div class="top" title="Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div> <!-- End Top Scroll -->
+  <!-- JS -->
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jekyll-search.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+<script src="/assets/js/main.js"></script>
+
+  <!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

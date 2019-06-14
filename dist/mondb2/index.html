@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>mongoDB数据库的方法二 - Blog - 努力的人生</title>
+	<meta name="description" content="mongoDB数据库的方法二">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/blog.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/blog.ico">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/blog.ico">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	
+	
+	
+	
+	<!-- Google Fonts 1
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">-->
+	
+	
+	
+	
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>  
+	
+	<!--百度统计-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?660ee541ef48f4a94f8a59dd0f9e64ae";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	<!--谷歌统计-->
+	<!-- Global site tag (gtag.js) - Google Analytics 
+	<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', '');
+	</script>-->
+
+</head>
+
+<body>
+  <div class="flex-container">
+  <header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <!--<ul style="height:800px;overflow-y:scroll;overflow-y:auto;"> -->
+        <ul>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/"  data-hover="所有">所有(99)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/markdown"  data-hover="Markdown">Markdown(4)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/essays"  data-hover="随笔">随笔(8)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/jekyll"  data-hover="Jekyll">Jekyll(1)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/vue"  data-hover="Vue">Vue(5)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/react"  data-hover="React">React(5)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/anglur"  data-hover="Anglur">Anglur(3)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/youman"  data-hover="构建工具">构建工具(9)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/nginx2"  data-hover="Nginx2">Nginx2(5)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/python"  data-hover="Python">Python(2)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/abouttest"  data-hover="测试相关">测试相关(6)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/aboutweb"  data-hover="前端相关">前端相关(23)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/wechat"  data-hover="Wechat">Wechat(21)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+       
+			 <li><a  href="/blog/other"  data-hover="其它">其它(7)</a></li>
+		 
+          <!--<li style="margin-bottom:200px;"><a href="/about">About(7)</a></li>-->
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">nldrs</a></p>
+
+
+		<div class="navbar-container">
+
+		<div class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></div>
+
+			<div class="navbar-menu">
+			   
+				<a href="/"  data-hover="Home">Home</a>  <!--title="访问 Home"-->
+				<!--<a href="/">Home</a>-->
+					
+				<a href="/about"  data-hover="About">About</a>  <!--title="访问 About"-->
+				<!--<a href="/about">About</a>-->
+					
+			</div>
+
+
+			<div class="navbar-mobile-menu" onclick="">
+				<span class="icon-menu cross"><span class="middle"></span></span>
+				<ul>
+				   
+					 <li><a href="/"data-hover="Home">Home</a></li>  <!--title="访问 Home"-->
+					 <!--<li><a href="/">Home</a></li>-->
+				   
+					 <li><a href="/about"data-hover="About">About</a></li>  <!--title="访问 About"-->
+					 <!--<li><a href="/about">About</a></li>-->
+				   
+				</ul>
+			</div>
+
+
+
+		</div>
+
+    <!--  <div class="search-icon-container">
+	    <a href="/" style="text-decoration: none; color: inherit;margin-right:20px;">Home</a>
+		<a href="/about" style=" text-decoration: none; color: inherit;margin-right:20px;">About</a>
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div> -->
+
+
+    </div>
+  </div>
+</header> <!-- End Header -->
+
+  <article class="article-page">
+    <div class="page-image">
+      <div class="cover-image" style="background: url(/assets/img/lpf-8.jpg) center no-repeat; background-size: cover;"></div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <div class="header-page">
+          <h1 class="page-title">mongoDB数据库的方法二</h1>
+          <div class="page-date"><time datetime="2018-09-18 07:25:00 +0800">2018, Sep 18</time>
+		  <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+		  </div>
+        </div>
+        <h1 id="mongodb数据库的方法">mongoDB数据库的方法</h1>
+
+<h2 id="使用mongoose进行crud操作">使用Mongoose进行CRUD操作</h2>
+
+<h3 id="使用步骤">使用步骤</h3>
+
+<p>Mongose基于mongodb的原生方法，自己定义了一套操作MongoDB数据库的接口，比原生方法更加简单方便。为了更加直观，下面的步骤结合例子来讲。假如我需要做一个教务系统，需要存储学生Student的信息，学生信息通常包含姓名name，学号id，电话phone，登录日期date等。我把学生的信息存在mongodb的myDB数据库中，集合的名字叫students。如图：
+<img src="http://img.blog.csdn.net/20160810190435037" alt="" /></p>
+
+<p>_id这个域你可以自己定义，但如果你没有定义，系统会自动给你加上。下面先介绍在node中通过mongoose对mongodb进行操作的必须前提步骤：</p>
+
+<p>1.node连接数据库</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">mongoose</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">'mongodb://user:pass@ip:port/database'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>这只是最基本的连接，我们一般还会加一些设置，是否开启调试模式，连接提示等。通常我会这么写：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">mongoose</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"mongoose"</span><span class="p">);</span>
+<span class="nx">mongoose</span><span class="p">.</span><span class="nb">Promise</span> <span class="o">=</span> <span class="nb">global</span><span class="p">.</span><span class="nb">Promise</span><span class="p">;</span>
+
+<span class="cm">/*调试模式是mongoose提供的一个非常实用的功能，用于查看mongoose模块对mongodb操作的日志，一般开发时会打开此功能，以便更好的了解和优化对mongodb的操作。*/</span>
+<span class="nx">mongoose</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="s1">'debug'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+
+<span class="cm">/*一般默认没有user和password*/</span>
+<span class="kd">var</span> <span class="nx">db</span><span class="o">=</span><span class="nx">mongoose</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">'mongodb://localhost/myDB'</span><span class="p">);</span>
+
+<span class="nx">db</span><span class="p">.</span><span class="nx">connection</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"error"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>  
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"数据库连接失败："</span> <span class="o">+</span> <span class="nx">error</span><span class="p">);</span> 
+<span class="p">});</span> 
+
+<span class="nx">db</span><span class="p">.</span><span class="nx">connection</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"open"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>  
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"数据库连接成功"</span><span class="p">);</span> 
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>没有mongoose.Promise = global.Promise会出现如下错误（这个错误没有什么影响）：意思是mongoose自带的promise过期了，然后需要使用v8引擎的promise。</p>
+
+<p>2.定义模式（Schema）</p>
+
+<p>每个模式映射mongoDB的一个集合（注意映射这个词，下面会讲为什么），它定义（只是定义，不是实现）这个集合里面文档的结构，就是定义这个文档有什么字段，字段类型是什么，字段默认值是什么等。除了定义结构外，还定义文档的实例方法，静态模型方法，复合索引，中间件等。详情自己查看mongoose官方文档。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">mongoose</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'mongoose'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">Schema</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">;</span>
+
+<span class="cm">/*定义模式Student_Schema*/</span>
+<span class="kd">var</span> <span class="nx">Student_Schema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Schema</span><span class="p">({</span>
+  <span class="na">name</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span>
+  <span class="na">id</span><span class="p">:</span> <span class="nb">Number</span><span class="p">,</span>
+  <span class="na">phone</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span>
+  <span class="na">date</span><span class="p">:</span> <span class="nb">Date</span>
+<span class="p">},</span> <span class="p">{</span>
+  <span class="na">versionKey</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">});</span>
+
+<span class="cm">/*定义模型Student，注意数据库存的是students*/</span>
+<span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s2">"Student"</span><span class="p">,</span> <span class="nx">Student_Schema</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>{versionKey: false}是干嘛用？如果不加这个设置，我们通过mongoose第一次创建某个集合时，它会给这个集合设定一个versionKey属性值，这个属性值包含这个文档的内部版本，数据库中显示为_v，如图：</p>
+
+<p><img src="http://img.blog.csdn.net/20160810191138916" alt="" /></p>
+
+<p>3.定义模型（Model）</p>
+
+<p>模型用来实现我们定义的模式，调用mongoose.model来编译Schema得到Model。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*定义模型Student，数据库存的是students*/</span>
+<span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s2">"Student"</span><span class="p">,</span> <span class="nx">Student_Schema</span><span class="p">);</span>
+</code></pre></div></div>
+<p>为什么上面我强调模式的映射，那是因为模式仅仅是和db中集合文档的结构相对应（映射），它并不直接在数据库中操作这个结构，模型才是直接与数据库打交道的存在，可以这么说：模式是定义结构，模型是实现操作。当我们使用mongoose.model(“Student”, Student_Schema)创建Student模型对数据进行操作时，数据库会寻找一个名字叫students集合接受Student模型的操作，特别需要注意的是：1.如果是增加（instance.save）操作时，数据库中没有这个集合，数据库会自动创建这个集合存储数据，这个集合产生规则为：把Model名字字母全部变小写和在后面加复数s。2.如果是删改查三个操作数据库中没有这个集合，那就是没有，删除空修改空返回空。</p>
+
+<p>4.访问模型</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">MyStudent</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s2">"Student"</span><span class="p">);</span>
+</code></pre></div></div>
+<p>这里，已经基本完成了使用mongoose前提操作了。有没有觉得有点繁琐，其实我也觉得挺繁琐，幸运的是234可以一步创建：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">MyStudent</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s1">'Student'</span><span class="p">,{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span>
+  <span class="na">id</span><span class="p">:</span> <span class="nb">Number</span><span class="p">,</span>
+  <span class="na">phone</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span>
+  <span class="na">date</span><span class="p">:</span> <span class="nb">Date</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>5.创建实例（instance）</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">sam</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyStudent</span><span class="p">({</span>
+    <span class="na">name</span><span class="p">:</span> <span class="s2">"sam976"</span><span class="p">,</span>
+    <span class="na">id</span><span class="p">:</span> <span class="mi">123</span><span class="p">,</span>
+    <span class="na">phone</span><span class="p">:</span> <span class="s2">"18706888888"</span><span class="p">,</span>
+    <span class="na">date</span><span class="p">:</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span>
+<span class="p">});</span>
+</code></pre></div></div>
+<p>一般只在save（增加）操作中需要。</p>
+
+<p>模型的实例是集合中真实的数据，就是collection中的document，用mysql中的术语来说就是一条记录。模型在数据库中建好了集合和文档结构后，通过实例往里面添加真实的document。</p>
+
+<p>捋一捋模式、模型、实例的关系：模式定义了操作和属性，这些操作和属性包括mongoose自带和自定义，而模型和实例可以对模式里面定义的属性和方法进行引用。模型是mongoose用来和数据库直接打交道的中介，实例是往数据库存的真实数据。模式并非必须，那为什么要分开模式和模型呢？我觉得是遵循了软件设计中“定义和实现分开”这个原则。有的文章说模式没有操作数据库的能力，模型才有，对这个观点，我觉得部分对，虽说模式不能直接操作数据库，但模式定义的方法可以被模型用来操作数据库。官方文档是这么说的</p>
+
+<h2 id="crud操作">CRUD操作</h2>
+
+<h2 id="1crud之create">1.CRUD之create</h2>
+
+<p>使用模型创建sam实例，sam实例调用save方法把document存入数据库的students集合中，代码如下</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">var</span> <span class="nx">MyStudent</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s2">"Student"</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">sam</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyStudent</span><span class="p">({</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s2">"sam976"</span><span class="p">,</span>
+        <span class="na">id</span><span class="p">:</span> <span class="mi">123</span><span class="p">,</span>
+        <span class="na">phone</span><span class="p">:</span> <span class="s2">"18706888888"</span><span class="p">,</span>
+        <span class="na">date</span><span class="p">:</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span>
+    <span class="p">});</span>
+    <span class="nx">sam</span><span class="p">.</span><span class="nx">save</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{});</span>
+</code></pre></div></div>
+
+<p>通过robomongo查看数据库，可以看到数据已经存放成功，如图</p>
+
+<p><img src="http://img.blog.csdn.net/20160810234525156" alt="" /></p>
+
+<h2 id="2crud之read">2.CRUD之read</h2>
+
+<p>使用MyStudent模型调用find()方法返回students集合的所有内容，第一个参数定义条件，第二个参数是回调函数，回调函数中的docs是返回的是查找结果，结果形式为一个json数据数组[{},{}]。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">var</span> <span class="nx">MyStudent</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s2">"Student"</span><span class="p">);</span>
+    <span class="nx">MyStudent</span><span class="p">.</span><span class="nx">find</span><span class="p">({},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">docs</span><span class="p">)</span> <span class="p">{});</span>
+</code></pre></div></div>
+<p>比如数据库students集合中，有如下数据：</p>
+
+<p><img src="http://img.blog.csdn.net/20160810235035773" alt="" /></p>
+
+<p>运行上面代码，结果console.log输出显示如下：</p>
+
+<p><img src="http://img.blog.csdn.net/20160810235549229" alt="" /></p>
+
+<p>模型还可以调用其他很多查询的函数，比如</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Model</span><span class="p">.</span><span class="nx">findById</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="p">[</span><span class="nx">projection</span><span class="p">],</span> <span class="p">[</span><span class="nx">options</span><span class="p">],</span> <span class="p">[</span><span class="nx">callback</span><span class="p">])</span><span class="err">；</span>
+<span class="nx">Model</span><span class="p">.</span><span class="nx">findOne</span><span class="p">([</span><span class="nx">conditions</span><span class="p">],</span> <span class="p">[</span><span class="nx">projection</span><span class="p">],</span> <span class="p">[</span><span class="nx">options</span><span class="p">],</span> <span class="p">[</span><span class="nx">callback</span><span class="p">])</span><span class="err">；</span>
+</code></pre></div></div>
+
+<h2 id="3crud之update">3.CRUD之update</h2>
+
+<p>使用MyStudent模型调用update()方法完成更新，第一个参数是条件（也就是where name=”sam976”），第二个参数修改的内容。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="kd">var</span> <span class="nx">MyStudent</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s2">"Student"</span><span class="p">);</span>
+    <span class="nx">MyStudent</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="na">name</span><span class="p">:</span><span class="s2">"sam976"</span><span class="p">},{</span><span class="na">id</span><span class="p">:</span><span class="mi">456</span><span class="p">,</span><span class="na">phone</span><span class="p">:</span><span class="s2">"12345678910"</span><span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">){})</span>
+</code></pre></div></div>
+<p><img src="http://img.blog.csdn.net/20160811000712014" alt="" />
+<img src="http://img.blog.csdn.net/20160811000817108" alt="" /></p>
+
+<h2 id="4crud之delete">4.CRUD之delete</h2>
+
+<p>使用MyStudent模型调用remove()方法删除文档。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">MyStudent</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s2">"Student"</span><span class="p">);</span>
+<span class="nx">MyStudent</span><span class="p">.</span><span class="nx">remove</span><span class="p">({</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'sam976'</span> <span class="p">},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{});</span>
+</code></pre></div></div>
+
+<p>源码结构
+使用mongoose的时候，通常会在项目中创建三个文件：connect.js，mongoose-db.js，app.js。</p>
+
+<p>其中connect.js存放的是连接数据库的操作，我们只需要加载一次即可在程序运行期间一直连接数据库。</p>
+
+<p>mongoose-db.js文件存放模式和模型的生成的代码，没有连接信息，也没有其他额外不相干代码，可以在在mongoose-db.js中把模型exports公开：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">MyStudent</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s2">"Student"</span><span class="p">,</span> <span class="nx">Student_Schema</span><span class="p">);</span>
+<span class="nx">exports</span><span class="p">.</span><span class="nx">MyStudent</span><span class="o">=</span><span class="nx">MyStudent</span><span class="p">;</span>
+
+<span class="cm">/*定义其他模型和模式*/</span>
+<span class="kd">var</span> <span class="nx">MyTeacher</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s2">"Teacher"</span><span class="p">,</span> <span class="nx">Teacher_Schema</span><span class="p">);</span>
+<span class="nx">exports</span><span class="p">.</span><span class="nx">MyTeacher</span><span class="o">=</span><span class="nx">MyTeacher</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>然后在app.js中引用：</p>
+
+<pre><code class="language-javacript">var MyStudent = require("./mongoose-db").MyStudent;
+var MyTeacher = require("./mongoose-db").MyTeacher;
+</code></pre>
+
+<p>app.js存放对数据库的操作，比如CRUD。通过这样的方式，结构比较清晰，代码可读性大大增强。</p>
+
+<p>下面放源码（目的是给自己备份，笑脸…）</p>
+
+<h3 id="connectjs"><code class="highlighter-rouge">connect.js</code></h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">mongoose</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"mongoose"</span><span class="p">);</span>
+<span class="nx">mongoose</span><span class="p">.</span><span class="nb">Promise</span> <span class="o">=</span> <span class="nb">global</span><span class="p">.</span><span class="nb">Promise</span><span class="p">;</span><span class="c1">//为了解决过期的问题</span>
+<span class="cm">/*调试模式是mongoose提供的一个非常实用的功能，用于查看mongoose模块对mongodb操作的日志，一般开发时会打开此功能，以便更好的了解和优化对mongodb的操作。*/</span>
+<span class="nx">mongoose</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="s1">'debug'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="cm">/*mongoose会缓存命令，只要connect成功，处于其前其后的命令都会被执行，connect命令也就无所谓放哪里*/</span>
+<span class="kd">var</span> <span class="nx">db</span><span class="o">=</span><span class="nx">mongoose</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">'mongodb://localhost/myDB'</span><span class="p">);</span>
+
+<span class="nx">db</span><span class="p">.</span><span class="nx">connection</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"error"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>  
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"数据库连接失败："</span> <span class="o">+</span> <span class="nx">error</span><span class="p">);</span> 
+<span class="p">});</span>
+
+<span class="nx">db</span><span class="p">.</span><span class="nx">connection</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"open"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>  
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"数据库连接成功"</span><span class="p">);</span> 
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">mongoose-db.js</code></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">require</span><span class="p">(</span><span class="s1">'./connect'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">mongoose</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'mongoose'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">Schema</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">;</span>
+<span class="cm">/*定义模式Student_Schema*/</span>
+<span class="kd">var</span> <span class="nx">Student_Schema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Schema</span><span class="p">({</span>
+  <span class="na">name</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span>
+  <span class="na">id</span><span class="p">:</span> <span class="nb">Number</span><span class="p">,</span>
+  <span class="na">phone</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span>
+  <span class="na">date</span><span class="p">:</span> <span class="nb">Date</span>
+
+<span class="p">},</span> <span class="p">{</span>
+  <span class="na">versionKey</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">});</span>
+
+<span class="cm">/*定义模型Student，数据库存的是students*/</span>
+<span class="kd">var</span> <span class="nx">MyStudent</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s2">"Student"</span><span class="p">,</span> <span class="nx">Student_Schema</span><span class="p">);</span>
+<span class="nx">exports</span><span class="p">.</span><span class="nx">MyStudent</span><span class="o">=</span><span class="nx">MyStudent</span><span class="p">;</span>
+
+<span class="cm">/*mongoose.Schema({
+  username: {// 真实姓名
+    type: String,
+    required: true
+  },
+  password: { // 密码
+    type: String,
+    required: true
+  }
+});*/</span>
+</code></pre></div></div>
+<h2 id="appjs"><code class="highlighter-rouge">app.js</code></h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">require</span><span class="p">(</span><span class="s2">"./mongoose-db"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"express"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">mongoose</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"mongoose"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">MyStudent</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"./mongoose-db"</span><span class="p">).</span><span class="nx">MyStudent</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span><span class="s2">"./"</span><span class="p">));</span>
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/create"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"create 函数"</span><span class="p">)</span>
+    <span class="kd">var</span> <span class="nx">beta</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyStudent</span><span class="p">({</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s2">"beta"</span><span class="p">,</span>
+        <span class="na">id</span><span class="p">:</span> <span class="mi">124</span><span class="p">,</span>
+        <span class="na">phone</span><span class="p">:</span> <span class="s2">"1871111111"</span><span class="p">,</span>
+        <span class="na">date</span><span class="p">:</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span>
+    <span class="p">});</span>
+    <span class="nx">beta</span><span class="p">.</span><span class="nx">save</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'存入成功'</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s2">"存入成功！！"</span><span class="p">);</span>
+
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/read"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"读取函数"</span><span class="p">);</span>
+    <span class="nx">MyStudent</span><span class="p">.</span><span class="nx">find</span><span class="p">({},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">docs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">docs</span><span class="p">);</span>
+        <span class="cm">/*对docs进行操作*/</span>
+    <span class="p">});</span>
+
+    <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s2">"读取成功！！"</span><span class="p">);</span>
+
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/readOne"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"读取单值函数"</span><span class="p">);</span>
+    <span class="nx">MyStudent</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({</span>
+        <span class="na">name</span><span class="p">:</span> <span class="nx">req</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="nx">student_name</span>
+    <span class="p">},</span> <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"_id"</span><span class="p">:</span> <span class="mi">0</span>
+    <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">docs</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">docs</span><span class="p">.</span><span class="nx">id</span> <span class="o">===</span> <span class="nx">req</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="nx">student_id</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">'登录成功'</span><span class="p">);</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">docs</span><span class="p">.</span><span class="nx">password</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">docs</span><span class="p">.</span><span class="nx">password</span><span class="p">);</span>
+            <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">'登录失败'</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+    <span class="cm">/*过滤查询,参数2: {'name':1, 'password':0} 查询文档的返回结果包含name , 不包含password.(_id默认是1)*/</span>
+    <span class="cm">/*model.find({},null,{limit:20});过滤查询,参数3: 游标操作 limit限制返回结果数量为20个,如不足20个则返回所有*/</span>
+
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/update"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"更新函数"</span><span class="p">);</span>
+    <span class="nx">MyStudent</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s2">"sam976"</span>
+    <span class="p">},</span> <span class="p">{</span>
+        <span class="na">id</span><span class="p">:</span> <span class="mi">456</span><span class="p">,</span>
+        <span class="na">phone</span><span class="p">:</span> <span class="s2">"12345678910"</span>
+    <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{});</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s2">"更新成功！！"</span><span class="p">);</span>
+
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s2">"/delete"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"删除函数"</span><span class="p">);</span>
+    <span class="nx">MyStudent</span><span class="p">.</span><span class="nx">remove</span><span class="p">({</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s1">'sam976'</span>
+    <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">handleError</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+        <span class="c1">// removed!</span>
+    <span class="p">});</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s2">"删除成功！！"</span><span class="p">);</span>
+
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3001</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"start server"</span><span class="p">)</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="为了测试我还写了个htmldata-operatehtml"><code class="highlighter-rouge">为了测试，我还写了个html。data-operate.html</code></h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>data-operate<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"./create"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"创建"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;br/&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"./read"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"读取"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;br/&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"./update"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"更新"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;br/&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"./delete"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"删除"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;br/&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"./readOne"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"student_name"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"student_id"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"单值读取"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p><a href="http://www.cnblogs.com/sam976/p/5762279.html">文章转载自博客园sam976</a></p>
+
+
+        <div class="page-footer">
+          <div class="page-tag">
+            <span>Tags:</span>
+            
+            <a href="/tags#前端" class="tag">| 前端</a>
+            
+            <a href="/tags#数据库" class="tag">| 数据库</a>
+            
+          </div><!-- End Tags -->
+          <div class="page-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=mongoDB数据库的方法二&url=http://localhost:4000/mondb2/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/mondb2/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/mondb2/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+						
+			<!-- JiaThis Button BEGIN -->
+			<div class="jiathis_style_32x32">
+				<a class="jiathis_button_weixin"></a>
+				<a class="jiathis_button_tsina"></a>
+				<!--<a class="jiathis_button_tqq"></a>
+				<a class="jiathis_button_qzone"></a>
+				<a class="jiathis_button_renren"></a>-->
+				<a href="http://www.jiathis.com/share?uid=2157296" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+				<a class="jiathis_counter_style"></a>
+			</div>
+			<script type="text/javascript">var jiathis_config = {data_track_clickback:'true'};</script>
+			<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2157296" charset="utf-8"></script>
+			<!-- JiaThis Button END -->
+          </div><!-- End Share -->
+		  
+		
+		  
+		  <section>
+			<!--<div style="background:#000;border-bottom: 1px solid #d9d9d9;"></div> -->
+
+            <div class="content-play">
+              <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一下呗</a></p>
+              <div class="hide_box-play"></div>
+              <div class="shang_box-play">
+                <a class="shang_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/img/close.jpg" alt="取消" /></a>
+                <div class="shang_tit-play">
+                  <p>对你有帮助，那就打赏一下吧</p>
+                </div>
+				
+				<div class="shang_payimg">    
+                    <img src="/assets/img/wechatimg.jpg" alt="扫码支持" title="扫一扫"/>
+                </div>
+				
+				 <div class="pay_item" data-id="weipay">
+                    <span class="pay_logo"><img src="/assets/img/wechat.jpg" alt="微信" /></span>
+                  </div>
+				
+                <div class="shang_payimg">
+                    <img src="/assets/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+				
+				 <div class="pay_item checked" data-id="alipay">
+                    <span class="pay_logo"><img src="/assets/img/alipay.jpg" alt="支付宝" /></span>
+                  </div>
+				
+                <div class="pay_explain">扫码打赏,金额随意</div>
+               
+              </div>
+            </div>
+            <script type="text/javascript">
+            function dashangToggle(){
+              $(".hide_box-play").fadeToggle();
+              $(".shang_box-play").fadeToggle();
+            }
+            </script>
+
+            <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+
+            <style type="text/css">
+              .content-play{width:100%;margin-top: 20px;margin-bottom: 10px;height:40px;text-align:center;}
+              .hide_box-play{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
+              .shang_box-play{width:100%;height:540px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:0%;top:50%;margin-left:0px;margin-top:-280px;border:1px dotted #dedede;display:none;}
+              .shang_box-play img{border:none;border-width:0;}
+              .dashang{width:100px;margin:5px auto;height:25px;line-height:25px;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;}
+              .dashang:hover{opacity:0.8;padding:15px;font-size:18px;}
+              .shang_close-play{float:right;display:inline-block;
+                margin-right: 10px;margin-top: 20px;
+              }
+              .shang_logo{display:block;text-align:center;margin:20px auto;}
+              .shang_tit-play{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url('/images/payimg/cy-reward-title-bg.jpg');font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
+              .shang_tit-play p{color:#a3a3a3;text-align:center;font-size:16px;}
+              .shang_payimg{padding:10px;/*border:6px solid #EA5F00;**/margin:0 auto;border-radius:3px;height:140px;display:inline-block;}
+              .shang_payimg img{display:inline-block;margin-right:10px;float:left;text-align:center;width:140px;height:140px; }
+              .pay_explain{text-align:center;margin:10px auto;font-size:12px;color:#545454;}
+              .shang_payselect{text-align:center;margin:0 auto;margin-top:40px;cursor:pointer;height:60px;width:500px;margin-left:110px;}
+              .shang_payselect .pay_item{display:inline-block;margin-right:140px;float:left;}
+              .shang_info-play{clear:both;}
+              .shang_info-play p,.shang_info-play a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
+            </style>
+
+       <ul class="pager">
+	    
+        <li class="previous">
+            <a href="/mysql8/" data-toggle="tooltip" data-placement="top" title="mysql 命令介绍">上一篇：  <span>mysql 命令介绍</span>
+            </a>
+        </li>
+		
+		<br><br>
+		
+        
+        
+        <li class="next">
+            <a href="/mondb/" data-toggle="tooltip" data-placement="top" title="mongoDB数据库的方法">下一篇：  <span>mongoDB数据库的方法</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+        </div>
+		
+		
+        <section class="author-box">
+  <img src="/assets/img/leach-face.jpg" alt="nldrs" class="author-img">
+  <div class="author-desc">
+    <h2>nldrs</h2>
+    <p>码农，嘿说你呢！！？</p>
+    <ul>
+      
+        <li class="email"><a href="mailto:lpfwch777@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      
+      
+        <li class="phone"><a href="tel:0"><i class="fa fa-phone"></i></a></li>
+      
+      <!--
+        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      -->
+    </ul>
+  </div>
+</section>
+
+        <div class="recent-box">
+  <h2 class="recent-title">Recent post</h2>
+  <div class="recent-list">
+    
+      
+        <a href="/newYearTarget/" class="recent-item" style="background: url(/assets/img/wch9.jpg) center no-repeat; background-size: cover;"><span>2019新年目标</span></a>
+      
+    
+      
+        <a href="/linux2/" class="recent-item" style="background: url(/assets/img/lpf-32.jpg) center no-repeat; background-size: cover;"><span>linux</span></a>
+      
+    
+      
+        <a href="/nginx/" class="recent-item" style="background: url(/assets/img/lpf-35.jpg) center no-repeat; background-size: cover;"><span>nginx学习之旅（五）</span></a>
+      
+    
+      
+        <a href="/linux1/" class="recent-item" style="background: url(/assets/img/lpf-31.jpg) center no-repeat; background-size: cover;"><span>linux</span></a>
+      
+    
+  </div>
+</div> <!-- End Recent-Box -->
+
+        <div class="newsletter" id="mc_embed_signup" style="display:none">
+  <h2 class="newsletter-title">Newsletter</h2>
+  <div class="form-container">
+    <p>Subscribe here to get our latest updates</p>
+    <form action="//" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
+      <div class="newsletter-box" id="mc_embed_signup_scroll">
+        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
+      </div>
+    </form>
+  </div>
+</div> <!-- End Newsletter -->
+
+        <section class="comment-area">
+  <div class="comment-wrapper">
+   
+	  <div id="disqus_thread" class="article-comments"></div>
+	    <script>
+			var idcomments_acct = '8b1583de29c0b1f23510ee43fce7d4e7';
+			var idcomments_post_id;
+			var idcomments_post_url;
+		</script>
+		<span id="IDCommentsPostTitle" style="display:none"></span>
+		<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+	
+  </div>
+</section>
+      </div>
+    </div> <!-- End Wrapper -->
+  </article>
+  <div class="search-box">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" id="search-input" class="search" placeholder="Search">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search"  style="height:400px;overflow-y:scroll;overflow-y:auto;"></ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="main-footer">
+	<div class="footer-social">
+		<div class="footer-container clearfix">
+			<div class="social-list">
+				<a class="social github" target="blank" href="https://github.com/nldrs">GitHub</a>
+				<a class="social github" target="blank" href="https://www.jianshu.com/u/042fe873dc7c">简书</a>
+				<a class="social github" target="blank" href="https://juejin.im/user/5a20a378f265da4311200031/collections">掘金</a>
+				<a class="social github" target="blank" href="http://blog.csdn.net/">Csdn</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<p>2019 &copy; nldrs</p>
+		
+			
+	<div style="font-size:12px;color:#B3B3B3;padding-right:30px;float:right"> 
+		<iframe
+                style="margin-left: 2px; margin-bottom:-5px;"
+                frameborder="0" scrolling="0" width="91px" height="20px"
+                src="https://ghbtns.com/github-btn.html?user=leach-chen&repo=leach-chen.github.io&type=star&count=true" >
+            </iframe>
+		<span id="busuanzi_container_site_pv">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+	</div>
+	</div>
+
+</footer> <!-- End Footer -->
+
+</div>
+  
+  
+<div class="top" title="Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div> <!-- End Top Scroll -->
+  <!-- JS -->
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jekyll-search.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+<script src="/assets/js/main.js"></script>
+
+  <!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
